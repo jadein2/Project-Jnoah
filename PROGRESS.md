@@ -192,10 +192,38 @@ The upstream data layer. Feeds all other engines with evidence-based research be
 
 ---
 
+## Phase 11 — Staged decision pipeline (complete)
+
+Wired the research → production handoff into a gated, two-stage flow so research never auto-fires and nothing gets drafted before Jap confirms direction.
+
+- [x] CLAUDE.md — research rule rewritten: research is an independent engine, manual-trigger only, never auto-checks before content tasks (2026-05-21)
+- [x] ROUTER.md — pre-execution gate added (Gate 2): on research→production handoff, surface a plan and wait for confirmation before executing (2026-05-21)
+- [x] ROUTER.md — research → production handoff row added ("use [topic] for [output]") routing through SELECTION.md (2026-05-21)
+- [x] /RESEARCH/_template/[topic-slug]-SELECTION.md — selection template created (which findings, which engine, what intent) (2026-05-21)
+
+**Phase 11 complete.** Research output now flows to downstream engines only through an explicit selection step and a pre-execution confirmation gate.
+
+---
+
+## Phase 12 — Goals system (complete)
+
+The daily entry point. Goals engine, skill, folder, and a posting-log bridge into the campaign engine. Morning brief is now how each day starts.
+
+- [x] /ENGINES/goals/goals-engine.md — goal-setting workflow (2026-05-21)
+- [x] /.claude/skills/goals/SKILL.md — auto-fires on "morning brief" / "goal check" / "north star" (2026-05-21)
+- [x] /GOALS/ folder — active-goals.md (manifest), per-goal files, _template/, posting-log.md bridge to campaign engine (2026-05-21)
+- [x] CLAUDE.md — quick command reference + load order updated; morning brief set as daily entry point (2026-05-21)
+
+**Phase 12 complete.** Month goals are tracked in /GOALS/active-goals.md; the morning brief reads from it.
+
+---
+
 ## Decisions log
 
 Append one line per session — what was built, what was decided.
 
+- 2026-05-21 — Phase 12 complete. Goals system built: goals-engine.md, goals SKILL.md, /GOALS/ folder (active-goals manifest + per-goal files + posting-log bridge to campaign engine). Morning brief is now the daily entry point.
+- 2026-05-21 — Phase 11 complete. Staged decision pipeline wired: research rule rewritten (independent, manual-only), pre-execution gate added to ROUTER.md, SELECTION.md template created for research→production handoff.
 - 2026-05-21 — Phase 10 complete. P3 batch: research-analyst skill, Wix engine (restartfitnessph.com), campaign performance log, CLAUDE.md research rule + engine list update.
 - 2026-05-21 — Phase 9 complete. Full system audit (15 issues). All P1 and P2 fixes applied. Sales engine built (/ENGINES/sales/). Offer engine built. ROUTER.md fully wired.
 - 2026-05-21 — Phase 8 complete. Research engine built. /RESEARCH/ folder scaffolded with per-topic repo structure. 6 routing rows added. Token-saving + drop zone system designed.

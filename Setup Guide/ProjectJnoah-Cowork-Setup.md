@@ -9,6 +9,16 @@ Master reference. All phases, all instructions, in order.
 
 ---
 
+> ## ⚠️ CANONICAL LOCATION — read first
+>
+> As of **2026-05-24**, the live system lives at **`C:\Jnoah\vault`**. This is the only source of truth.
+>
+> The old `~/Documents/ProjectJnoah/` (OneDrive) folder is **LEGACY — a frozen backup**. Do not edit it or point Cowork at it; it will drift out of sync.
+>
+> **Anywhere this guide says `~/Documents/ProjectJnoah/`, read it as `C:\Jnoah\vault`.** The Cowork project should point at `C:\Jnoah\vault` with Read + Write. The companion dashboard app ("Jnoah OS") lives separately at `C:\Jnoah\jnoah-os-app` and is run via terminal, not Cowork. See /MEMORY/projects/jnoah-os-interface.md for the full migration record.
+
+---
+
 ## Build status at a glance
 
 | Phase | Name | Status |
@@ -78,7 +88,7 @@ When finished with any output, log a one-line entry to
 
 ### Cowork Project setup
 1. Cowork → New Project → name: `Project Jnoah`
-2. Point at `~/Documents/ProjectJnoah/`
+2. Point at `C:\Jnoah\vault`  (NOT the legacy `~/Documents/ProjectJnoah/` — see banner above)
 3. Grant Read + Write
 4. Project-level instructions → paste:
 

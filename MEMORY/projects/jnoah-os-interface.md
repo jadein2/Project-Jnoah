@@ -57,7 +57,7 @@ Next.js (App Router) + TypeScript · Tailwind + shadcn/ui · gray-matter + remar
 
 | Stage | Engine | Status | Output | Approved |
 |---|---|---|---|---|
-| Phase 0 — Vault move + scaffold + Today/Goals/Clients (read-only) + live refresh + theming | — | IN PROGRESS | — | — |
+| Phase 0 — Vault move + scaffold + Today/Goals/Clients (read-only) + live refresh + theming | — | COMPLETE | C:\Jnoah\jnoah-os-app | 2026-05-24 |
 | Phase 1 — Full read-layer: Programs, Research, Marketing, Social, Outputs library, search | — | PENDING | — | — |
 | Phase 2 — Live connectors: Google Calendar, ClickUp, Wix status | — | PENDING | — | — |
 | Phase 3 — Claude orchestration: Run-engine buttons (Agent SDK), write-back + logging, chat panel | — | PENDING | — | — |
@@ -70,12 +70,35 @@ Status options: PENDING / IN PROGRESS / COMPLETE / SKIPPED
 ## Gate Log
 
 2026-05-23 — Gate 1 — Architecture + 3 locked decisions approved (execution model phased, vault moves out of OneDrive, browser runtime). Go-ahead given to begin Phase 0 starting with the vault move (copy + verify, no deletion of OneDrive copy until app confirmed working).
+2026-05-24 — Phase 0 COMPLETE — App built at C:\Jnoah\jnoah-os-app (Next.js 16 + React 19 + Tailwind v4, themed to Restart Fitness PH). Three live read-only modules wired to the vault: Today (daily brief), Goals (manifest), Clients (16 profiles + drill-in detail). chokidar→SSE live refresh active. Production build passes clean. Verified serving real data at localhost:3000. Node v24.16.0 installed via winget.
 
 ---
 
 ## Current Stage
 
-Phase 0, Step 1: vault move. Copy `Project Jnoah` → `C:\Jnoah\vault`, verify file count + key files, set up backup. OneDrive copy retained as backup until the app is confirmed working. Internal vault-relative references survive the move. Awaiting confirmation after copy+verify before proceeding to scaffold.
+PHASE 0 COMPLETE — 2026-05-24. App live at http://localhost:3000.
+
+Environment:
+- Node v24.16.0 + npm 11.13.0 installed (winget).
+- Canonical vault: `C:\Jnoah\vault`. OneDrive copy = stale backup, do not edit.
+- Vault git backup: local repo, commit f0d3863. No remote yet.
+- App: `C:\Jnoah\jnoah-os-app` (its own git repo from create-next-app). Vault path set in `jnoah.config.ts` (env override: JNOAH_VAULT_PATH).
+
+Run the app:
+- `cd C:\Jnoah\jnoah-os-app; npm run dev` → open http://localhost:3000
+- A dev server is CURRENTLY RUNNING in the background of the build session (bg id baxpqcuf7); restart with the command above after closing.
+
+What's built (read-only, live-refreshing via SSE):
+- Today (daily brief: P1 focus, goals at a glance, roster count)
+- Goals (full manifest with status chips + deadline countdowns)
+- Clients (16 profiles as cards + drill-in to full profile markdown)
+- Sidebar shows Programs/Research/Marketing/Social/Calendar/Website/Outputs as "soon" (Phase 1+).
+
+Stack: Next.js 16, React 19, Tailwind v4, gray-matter, react-markdown+remark-gfm, chokidar, lucide-react, date-fns. Themed to Restart Fitness PH (Cormorant Garamond Italic + DM Sans, charcoal/orange/gold, 2px radius, no gradients).
+
+NEXT (Phase 1): Programs, Research, Marketing, Social, Outputs library, global search (SQLite FTS). Then Phase 2 live connectors (GCal/ClickUp/Wix), Phase 3 Agent SDK run-engine buttons.
+
+Optional housekeeping not yet done: git private remote for vault (gh not installed); commit the app repo; add a one-click launcher script.
 
 ---
 
