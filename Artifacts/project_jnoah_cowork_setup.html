@@ -1,0 +1,557 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@5.0.20/700-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.18/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.18/500.css">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.rf-root {
+  --rf-black: #141210;
+  --rf-charcoal: #2C2B28;
+  --rf-orange: #E8601C;
+  --rf-gold: #C89B3C;
+  --rf-cream: #F8F5EF;
+  --rf-cream2: #F0EDE5;
+  --rf-border: rgba(44,43,40,0.12);
+  --rf-border2: rgba(44,43,40,0.2);
+  font-family: 'DM Sans', var(--font-sans), sans-serif;
+  background: var(--rf-cream);
+  color: var(--rf-charcoal);
+}
+
+.rf-header {
+  background: var(--rf-black);
+  padding: 20px 24px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px 12px 0 0;
+}
+.rf-logo-img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+.rf-header-right {
+  text-align: right;
+}
+.rf-header-title {
+  font-family: 'Cormorant Garamond', var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--rf-gold);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.rf-header-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+.rf-body {
+  padding: 20px;
+  border: 0.5px solid var(--rf-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+}
+
+.rf-brand-strip {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.rf-brand-card {
+  border-radius: 8px;
+  border: 0.5px solid var(--rf-border);
+  padding: 14px 16px;
+  background: #fff;
+}
+.rf-brand-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(44,43,40,0.4);
+  margin-bottom: 4px;
+}
+.rf-brand-name {
+  font-family: 'Cormorant Garamond', var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--rf-charcoal);
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.rf-brand-row {
+  font-size: 12px;
+  color: rgba(44,43,40,0.55);
+  padding: 4px 0;
+  border-bottom: 0.5px solid var(--rf-border);
+  line-height: 1.4;
+}
+.rf-brand-row:last-child { border-bottom: none; }
+.rf-brand-row strong { color: var(--rf-charcoal); font-weight: 500; }
+.rf-tag-gold {
+  display: inline-block;
+  background: rgba(200,155,60,0.12);
+  color: #8a6a1a;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+.rf-tag-orange {
+  display: inline-block;
+  background: rgba(232,96,28,0.1);
+  color: #b04510;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+.rf-tag-gray {
+  display: inline-block;
+  background: rgba(44,43,40,0.07);
+  color: rgba(44,43,40,0.5);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+.rf-section-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(44,43,40,0.4);
+  margin: 18px 0 10px;
+}
+
+.rf-phase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.rf-phase-card {
+  background: #fff;
+  border: 0.5px solid var(--rf-border);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.rf-phase-card:hover { border-color: var(--rf-border2); }
+.rf-phase-card.active { border: 1.5px solid var(--rf-orange); background: #fff; }
+.rf-phase-num { font-size: 10px; color: rgba(44,43,40,0.4); margin-bottom: 3px; letter-spacing: 0.04em; }
+.rf-phase-name { font-size: 12px; font-weight: 500; color: var(--rf-charcoal); margin-bottom: 7px; line-height: 1.3; }
+.rf-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.dot-done { background: #639922; }
+.dot-next { background: var(--rf-orange); }
+.dot-defer { background: rgba(44,43,40,0.25); }
+.dot-pend { background: var(--rf-border2); }
+
+.rf-phase-detail {
+  background: #fff;
+  border: 0.5px solid var(--rf-border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: none;
+}
+.rf-phase-detail.on { display: block; }
+.rf-phase-detail h3 {
+  font-family: 'Cormorant Garamond', var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--rf-charcoal);
+  margin-bottom: 12px;
+}
+
+.rf-file-list { list-style: none; }
+.rf-file-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 12px;
+  color: rgba(44,43,40,0.5);
+  border-bottom: 0.5px solid var(--rf-border);
+}
+.rf-file-list li:last-child { border-bottom: none; }
+.rf-file-list li i { font-size: 14px; margin-top: 1px; flex-shrink: 0; }
+.rf-fname { font-family: 'DM Mono', var(--font-mono), monospace; font-size: 11px; font-weight: 500; color: var(--rf-charcoal); white-space: nowrap; }
+.rf-fdesc { color: rgba(44,43,40,0.45); font-size: 12px; }
+
+.rf-load-order { display: flex; flex-direction: column; gap: 5px; margin-bottom: 4px; }
+.rf-load-step {
+  display: flex; align-items: center; gap: 10px;
+  background: #fff;
+  border: 0.5px solid var(--rf-border);
+  border-radius: 8px;
+  padding: 9px 12px;
+}
+.rf-step-num {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--rf-cream);
+  border: 0.5px solid var(--rf-border2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 500; color: rgba(44,43,40,0.5);
+  flex-shrink: 0;
+}
+.rf-step-file { font-family: 'DM Mono', var(--font-mono), monospace; font-size: 11px; font-weight: 500; color: var(--rf-charcoal); }
+.rf-step-desc { font-size: 11px; color: rgba(44,43,40,0.45); flex: 1; text-align: right; }
+
+.rf-tab-nav {
+  display: flex; gap: 2px;
+  border-bottom: 0.5px solid var(--rf-border);
+  margin-bottom: 12px;
+}
+.rf-tab-btn {
+  padding: 6px 14px; font-size: 12px; font-weight: 400;
+  color: rgba(44,43,40,0.45); background: none; border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer; margin-bottom: -0.5px;
+  font-family: 'DM Sans', var(--font-sans), sans-serif;
+}
+.rf-tab-btn.active { color: var(--rf-charcoal); font-weight: 500; border-bottom-color: var(--rf-orange); }
+
+.rf-tab-panel { display: none; }
+.rf-tab-panel.on { display: block; }
+
+.rf-engine-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px;
+}
+.rf-engine-card {
+  background: #fff; border: 0.5px solid var(--rf-border);
+  border-radius: 8px; padding: 12px;
+}
+.rf-engine-icon { font-size: 17px; color: rgba(44,43,40,0.35); margin-bottom: 5px; }
+.rf-engine-name { font-size: 12px; font-weight: 500; color: var(--rf-charcoal); margin-bottom: 3px; }
+.rf-engine-path { font-family: 'DM Mono', var(--font-mono), monospace; font-size: 10px; color: rgba(44,43,40,0.35); margin-bottom: 5px; }
+.rf-engine-fires { font-size: 11px; color: rgba(44,43,40,0.5); line-height: 1.5; }
+
+.rf-skill-list { display: flex; flex-direction: column; gap: 7px; }
+.rf-skill-item {
+  background: #fff; border: 0.5px solid var(--rf-border);
+  border-radius: 8px; padding: 12px 14px;
+  display: flex; align-items: flex-start; gap: 10px;
+}
+.rf-skill-icon {
+  width: 30px; height: 30px; border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; flex-shrink: 0;
+}
+.si-orange { background: rgba(232,96,28,0.1); color: #b04510; }
+.si-gold   { background: rgba(200,155,60,0.12); color: #8a6a1a; }
+.si-slate  { background: rgba(44,43,40,0.07); color: rgba(44,43,40,0.6); }
+.rf-skill-name { font-size: 12px; font-weight: 500; color: var(--rf-charcoal); margin-bottom: 3px; }
+.rf-skill-desc { font-size: 11px; color: rgba(44,43,40,0.5); line-height: 1.5; }
+
+.rf-cmd-block {
+  background: var(--rf-cream);
+  border: 0.5px solid var(--rf-border);
+  border-radius: 8px; padding: 12px 14px;
+  margin-bottom: 7px; position: relative;
+}
+.rf-cmd-label {
+  font-size: 10px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.07em; color: rgba(44,43,40,0.4); margin-bottom: 6px;
+}
+.rf-cmd-text {
+  font-family: 'DM Mono', var(--font-mono), monospace;
+  font-size: 11px; color: var(--rf-charcoal); line-height: 1.7;
+  white-space: pre-wrap; word-break: break-word; padding-right: 48px;
+}
+.rf-copy-btn {
+  position: absolute; top: 10px; right: 10px;
+  background: #fff; border: 0.5px solid var(--rf-border2);
+  border-radius: 6px; padding: 3px 8px;
+  font-size: 11px; color: rgba(44,43,40,0.45);
+  cursor: pointer; display: flex; align-items: center; gap: 4px;
+  font-family: 'DM Sans', var(--font-sans), sans-serif;
+}
+.rf-copy-btn:hover { border-color: var(--rf-orange); color: var(--rf-orange); }
+
+.rf-divider {
+  height: 0.5px; background: var(--rf-border); margin: 16px 0;
+}
+
+.rf-progress-bg {
+  background: var(--rf-cream2); border-radius: 20px; height: 4px; overflow: hidden; margin-top: 8px;
+}
+.rf-progress-fill {
+  height: 100%; border-radius: 20px; background: var(--rf-orange);
+}
+.rf-progress-label { font-size: 11px; color: rgba(44,43,40,0.45); margin-top: 5px; }
+
+.rf-gold-line {
+  width: 32px; height: 2px; background: var(--rf-gold); border-radius: 2px;
+  margin: 6px 0 14px;
+}
+</style>
+
+<div class="rf-root">
+  <h2 class="sr-only">Project Jnoah — Restart Fitness PH Cowork Setup</h2>
+
+  <div class="rf-header">
+    <img class="rf-logo-img" src="data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z" alt="Restart Fitness PH logo">
+    <div class="rf-header-right">
+      <div class="rf-header-title">Project Jnoah</div>
+      <div class="rf-header-sub">COWORK SETUP · v1.0</div>
+    </div>
+  </div>
+
+  <div class="rf-body">
+
+    <div class="rf-brand-strip">
+      <div class="rf-brand-card">
+        <div class="rf-brand-eyebrow">Online coaching</div>
+        <div class="rf-brand-name">Restart Fitness PH</div>
+        <div class="rf-gold-line"></div>
+        <div class="rf-brand-row"><strong>System:</strong> The Restart Fitness System</div>
+        <div class="rf-brand-row"><strong>Flagship:</strong> 90-Day Coaching System</div>
+        <div class="rf-brand-row"><strong>CTA:</strong> DM "RESTART" <span class="rf-tag-gold">social</span></div>
+        <div class="rf-brand-row"><strong>Fonts:</strong> Cormorant Garamond + DM Sans</div>
+        <div class="rf-brand-row"><strong>Status:</strong> <span class="rf-tag-gold">Brand locked ✓</span></div>
+      </div>
+      <div class="rf-brand-card">
+        <div class="rf-brand-eyebrow">In-person · Olongapo</div>
+        <div class="rf-brand-name">Urban Strong Fitness</div>
+        <div class="rf-gold-line"></div>
+        <div class="rf-brand-row"><strong>Offer:</strong> 6-Week Reset</div>
+        <div class="rf-brand-row"><strong>Site:</strong> urbanstrongfit.com</div>
+        <div class="rf-brand-row"><strong>Blog CTA:</strong> Book Free Assessment</div>
+        <div class="rf-brand-row"><strong>Target:</strong> Adults 28–45, Olongapo</div>
+        <div class="rf-brand-row"><strong>Status:</strong> <span class="rf-tag-gray">Phase 2b — deferred</span></div>
+      </div>
+    </div>
+
+    <div class="rf-divider"></div>
+
+    <p class="rf-section-label">Build Phases</p>
+
+    <div class="rf-phase-grid" id="rfPhaseGrid">
+      <div class="rf-phase-card active" onclick="rfPhase(0)" id="rpc0">
+        <div class="rf-phase-num">Phase 1</div>
+        <div class="rf-phase-name">Foundation</div>
+        <span class="rf-dot dot-done"></span>
+      </div>
+      <div class="rf-phase-card" onclick="rfPhase(1)" id="rpc1">
+        <div class="rf-phase-num">Phase 2a</div>
+        <div class="rf-phase-name">Brand — Restart PH</div>
+        <span class="rf-dot dot-done"></span>
+      </div>
+      <div class="rf-phase-card" onclick="rfPhase(2)" id="rpc2">
+        <div class="rf-phase-num">Phase 2b</div>
+        <div class="rf-phase-name">Brand — Urban Strong</div>
+        <span class="rf-dot dot-defer"></span>
+      </div>
+      <div class="rf-phase-card" onclick="rfPhase(3)" id="rpc3">
+        <div class="rf-phase-num">Phase 3</div>
+        <div class="rf-phase-name">Priority Engines</div>
+        <span class="rf-dot dot-next"></span>
+      </div>
+      <div class="rf-phase-card" onclick="rfPhase(4)" id="rpc4">
+        <div class="rf-phase-num">Phase 4</div>
+        <div class="rf-phase-name">Skills Layer</div>
+        <span class="rf-dot dot-pend"></span>
+      </div>
+      <div class="rf-phase-card" onclick="rfPhase(5)" id="rpc5">
+        <div class="rf-phase-num">Phase 5 / 6</div>
+        <div class="rf-phase-name">Validation + Expansion</div>
+        <span class="rf-dot dot-pend"></span>
+      </div>
+    </div>
+
+    <div id="rfDetail" class="rf-phase-detail on">
+      <h3 id="rfDetailTitle">Phase 1 — Foundation</h3>
+      <div id="rfDetailBody"></div>
+    </div>
+
+    <div class="rf-divider"></div>
+
+    <p class="rf-section-label">System Load Order</p>
+    <div class="rf-load-order">
+      <div class="rf-load-step"><div class="rf-step-num">1</div><div class="rf-step-file">CLAUDE.md</div><div class="rf-step-desc">Identity + universal rules</div></div>
+      <div class="rf-load-step"><div class="rf-step-num">2</div><div class="rf-step-file">ROUTER.md</div><div class="rf-step-desc">Task routing switchboard</div></div>
+      <div class="rf-load-step"><div class="rf-step-num">3</div><div class="rf-step-file">/BRANDS/[brand].md</div><div class="rf-step-desc">Locked brand identity</div></div>
+      <div class="rf-load-step"><div class="rf-step-num">4</div><div class="rf-step-file">/ENGINES/[type]/</div><div class="rf-step-desc">Workflow templates</div></div>
+      <div class="rf-load-step"><div class="rf-step-num">5</div><div class="rf-step-file">/GLOBAL/ + /MEMORY/</div><div class="rf-step-desc">Rules + history</div></div>
+      <div class="rf-load-step"><div class="rf-step-num">6</div><div class="rf-step-file">/.claude/skills/</div><div class="rf-step-desc">Craft skills — auto-fire</div></div>
+    </div>
+
+    <div class="rf-divider"></div>
+
+    <p class="rf-section-label">Engines &amp; Skills</p>
+
+    <div class="rf-tab-nav">
+      <button class="rf-tab-btn active" onclick="rfTab('engines',this)">Engines</button>
+      <button class="rf-tab-btn" onclick="rfTab('skills',this)">Skills</button>
+      <button class="rf-tab-btn" onclick="rfTab('commands',this)">Commands</button>
+    </div>
+
+    <div id="rf-tab-engines" class="rf-tab-panel on">
+      <div class="rf-engine-grid">
+        <div class="rf-engine-card">
+          <div class="rf-engine-icon"><i class="ti ti-barbell" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Training Program</div>
+          <div class="rf-engine-path">/ENGINES/coach-jap/training-program.md</div>
+          <div class="rf-engine-fires">Format A/B · RPE · block order · notation · scaling</div>
+        </div>
+        <div class="rf-engine-card">
+          <div class="rf-engine-icon"><i class="ti ti-salad" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Nutrition Plan</div>
+          <div class="rf-engine-path">/ENGINES/coach-jap/nutrition-plan.md</div>
+          <div class="rf-engine-fires">27-question intake · macros · 7-day meals · QA</div>
+        </div>
+        <div class="rf-engine-card">
+          <div class="rf-engine-icon"><i class="ti ti-layout-columns" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Carousel</div>
+          <div class="rf-engine-path">/ENGINES/design/carousel.md</div>
+          <div class="rf-engine-fires">7-slide anatomy · 2-sec test · hook bank · caption</div>
+        </div>
+        <div class="rf-engine-card">
+          <div class="rf-engine-icon"><i class="ti ti-article" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Blog Post</div>
+          <div class="rf-engine-path">/ENGINES/content/blog-post.md</div>
+          <div class="rf-engine-fires">Hook → Science → Action → Close → CTA · 550 words</div>
+        </div>
+        <div class="rf-engine-card">
+          <div class="rf-engine-icon"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Social Post</div>
+          <div class="rf-engine-path">/ENGINES/content/social-post.md</div>
+          <div class="rf-engine-fires">C/C/V · platform rules · hooks · DM flow</div>
+        </div>
+        <div class="rf-engine-card" style="opacity:0.45;">
+          <div class="rf-engine-icon"><i class="ti ti-git-branch" aria-hidden="true"></i></div>
+          <div class="rf-engine-name">Post Routing</div>
+          <div class="rf-engine-path">/ENGINES/content/post-routing.md</div>
+          <div class="rf-engine-fires">8 pillars · weekly framework · C/C/V logic</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rf-tab-skills" class="rf-tab-panel">
+      <div class="rf-skill-list">
+        <div class="rf-skill-item">
+          <div class="rf-skill-icon si-orange"><i class="ti ti-pencil" aria-hidden="true"></i></div>
+          <div>
+            <div class="rf-skill-name">anti-ai-copywriter</div>
+            <div class="rf-skill-desc">Fires on any client-facing copy. Banned word sweep · sentence pattern check · 10-rule coach-voice protocol · pre-publish QA.</div>
+          </div>
+        </div>
+        <div class="rf-skill-item">
+          <div class="rf-skill-icon si-gold"><i class="ti ti-barbell" aria-hidden="true"></i></div>
+          <div>
+            <div class="rf-skill-name">coach-jap-programming-format</div>
+            <div class="rf-skill-desc">Fires on any training output. Enforces Format A/B, notation locks, stimulus tags, scaling tracks, hard refusals.</div>
+          </div>
+        </div>
+        <div class="rf-skill-item">
+          <div class="rf-skill-icon si-slate"><i class="ti ti-palette" aria-hidden="true"></i></div>
+          <div>
+            <div class="rf-skill-name">ui-ux-pro-max</div>
+            <div class="rf-skill-desc">Fires on any design output. 67 styles · 96 palettes · 57 font pairings · senior product-design judgment applied automatically.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rf-tab-commands" class="rf-tab-panel">
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Start any session</div>
+        <div class="rf-cmd-text">Read CLAUDE.md and ROUTER.md. I want to [task]. Brand: [Restart / Urban Strong].</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Social Post</div>
+        <div class="rf-cmd-text">Write a [Conversion/Connection/Value] post for [Brand].
+Platform: [IG / FB / Threads]. Topic: [topic].
+Read /BRANDS/[brand].md and /ENGINES/content/social-post.md.
+Apply anti-ai-copywriter skill.</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Training Program</div>
+        <div class="rf-cmd-text">Build a [X]-week training program for [client].
+Goal: [goal]. Frequency: [X] days/week. Equipment: [list].
+Read /ENGINES/coach-jap/training-program.md.
+Apply coach-jap-programming-format skill.
+Save to /OUTPUTS/programs/[client]/[date]-[name].md</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Nutrition Plan</div>
+        <div class="rf-cmd-text">Build a 7-day nutrition plan for [client].
+Goal: [goal]. Weight: [X]kg. Activity: [level]. Restrictions: [list].
+Read /ENGINES/coach-jap/nutrition-plan.md.
+Save to /OUTPUTS/nutrition/[client]/[date]-7day-plan.md</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Blog Post</div>
+        <div class="rf-cmd-text">Write a blog post for Urban Strong about [topic].
+Read /ENGINES/content/blog-post.md. Apply anti-ai-copywriter skill.
+Under 550 words. 5 action bullets. CTA at end.
+Save to /OUTPUTS/blog/[date]-[slug].md</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+      <div class="rf-cmd-block">
+        <div class="rf-cmd-label">Check system status</div>
+        <div class="rf-cmd-text">Read PROGRESS.md and MEMORY/decisions-log.md.
+Tell me where we are in the build and what was last worked on.</div>
+        <button class="rf-copy-btn" onclick="rfCopy(this)"><i class="ti ti-copy" aria-hidden="true"></i> copy</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const rfPhaseData = [
+  {title:"Phase 1 — Foundation",body:`<ul class="rf-file-list"><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">CLAUDE.md</span><span class="rf-fdesc">Identity + universal rules</span></li><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">ROUTER.md</span><span class="rf-fdesc">Task routing switchboard</span></li><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">README.md + PROGRESS.md</span><span class="rf-fdesc">System overview + build tracker</span></li><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">GLOBAL/anti-ai-output-rules.md</span><span class="rf-fdesc">Global copy filter initialized</span></li><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">MEMORY/decisions-log.md</span><span class="rf-fdesc">Initialized — append after every output</span></li><li><i class="ti ti-folder-check" aria-hidden="true"></i><span class="rf-fname">OUTPUTS/ ENGINES/ BRANDS/</span><span class="rf-fdesc">Folder skeleton created</span></li></ul>`},
+  {title:"Phase 2a — Brand: Restart Fitness PH",body:`<ul class="rf-file-list"><li><i class="ti ti-file-check" aria-hidden="true"></i><span class="rf-fname">/BRANDS/restart-fitness-ph.md</span><span class="rf-fdesc">Locked — source of truth v1.0</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">Naming corrections</span><span class="rf-fdesc">The Restart Fitness System · 90-Day Coaching System · 6FIX</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">Typography locked</span><span class="rf-fdesc">Cormorant Garamond Italic + DM Sans</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">14-token color palette</span><span class="rf-fdesc">Orange #E8601C · Gold #C89B3C confirmed</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">Anti-AI rules expanded</span><span class="rf-fdesc">grind · beast mode · shred fast · detox banned</span></li></ul>`},
+  {title:"Phase 2b — Brand: Urban Strong",body:`<p style="font-size:12px;color:rgba(44,43,40,0.5);margin-bottom:12px;">Deferred until Urban Strong brand doc is uploaded.</p><ul class="rf-file-list"><li><i class="ti ti-file-off" aria-hidden="true"></i><span class="rf-fname">/BRANDS/urban-strong.md</span><span class="rf-fdesc">Not yet built</span></li></ul><p style="font-size:11px;color:rgba(44,43,40,0.4);margin-top:10px;">When ready: upload brand doc → Claude extracts identity + voice + design → file built → ROUTER.md updated.</p>`},
+  {title:"Phase 3 — Priority Engines",body:`<div class="rf-progress-bg"><div class="rf-progress-fill" style="width:40%"></div></div><p class="rf-progress-label">3 of 5 engines built — content side complete, coach-jap pending</p><ul class="rf-file-list" style="margin-top:12px;"><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">carousel.md</span><span class="rf-fdesc">Built</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">social-post.md</span><span class="rf-fdesc">Built</span></li><li><i class="ti ti-check" aria-hidden="true"></i><span class="rf-fname">blog-post.md</span><span class="rf-fdesc">Built</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">training-program.md</span><span class="rf-fdesc">Pending — build next</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">nutrition-plan.md</span><span class="rf-fdesc">Pending</span></li></ul>`},
+  {title:"Phase 4 — Skills Layer",body:`<ul class="rf-file-list"><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">/.claude/skills/anti-ai-copywriter/SKILL.md</span><span class="rf-fdesc">Pending</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">/.claude/skills/coach-jap-programming-format/SKILL.md</span><span class="rf-fdesc">Pending</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">/.claude/skills/ui-ux-pro-max/SKILL.md</span><span class="rf-fdesc">Pending</span></li></ul><p style="font-size:11px;color:rgba(44,43,40,0.4);margin-top:10px;">Navigate to ~/Documents/ProjectJnoah/.claude/skills/ → create folders → paste SKILL.md content per skill → save.</p>`},
+  {title:"Phase 5 / 6 — Validation + Expansion",body:`<p style="font-size:12px;color:rgba(44,43,40,0.5);margin-bottom:12px;">Three real-task tests before production-ready status.</p><ul class="rf-file-list"><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">Test 1 — Carousel</span><span class="rf-fdesc">7-slide Restart PH — why people quit after 4 weeks</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">Test 2 — Training Program</span><span class="rf-fdesc">4-week kipping pull-up program for Aira</span></li><li><i class="ti ti-square" aria-hidden="true"></i><span class="rf-fname">Test 3 — Blog Post</span><span class="rf-fdesc">Urban Strong — why weight comes back (550 words)</span></li></ul>`}
+];
+
+function rfPhase(idx) {
+  for(let i=0;i<6;i++) document.getElementById('rpc'+i).classList.toggle('active',i===idx);
+  document.getElementById('rfDetailTitle').textContent = rfPhaseData[idx].title;
+  document.getElementById('rfDetailBody').innerHTML = rfPhaseData[idx].body;
+  document.getElementById('rfDetail').classList.add('on');
+}
+
+function rfTab(name, btn) {
+  document.querySelectorAll('.rf-tab-panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.rf-tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('rf-tab-'+name).classList.add('on');
+  btn.classList.add('active');
+}
+
+function rfCopy(btn) {
+  const text = btn.parentElement.querySelector('.rf-cmd-text').textContent;
+  navigator.clipboard.writeText(text).then(()=>{
+    const orig = btn.innerHTML;
+    btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> copied';
+    setTimeout(()=>{btn.innerHTML=orig;},1500);
+  });
+}
+
+rfPhase(0);
+</script>

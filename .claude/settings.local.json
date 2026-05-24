@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\" -Recurse -Force)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm list *)",
+      "Bash(pandoc --version)",
+      "Bash(dir \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Desktop\\\\COACHING\\\\Clients Program\" /s /b)",
+      "WebSearch",
+      "mcp__15ee0e2e-78b9-49c5-a805-12bd1548b06f__clickup_get_workspace_hierarchy",
+      "mcp__15ee0e2e-78b9-49c5-a805-12bd1548b06f__clickup_create_task",
+      "PowerShell($src = \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\"; Write-Output \"Source exists: $\\(Test-Path $src\\)\"; Write-Output \"C:\\\\Jnoah exists: $\\(Test-Path 'C:\\\\Jnoah'\\)\"; $srcCount = \\(Get-ChildItem -Path $src -Recurse -File -Force | Measure-Object\\).Count; Write-Output \"Source file count: $srcCount\"; $srcSize = [math]::Round\\(\\(Get-ChildItem -Path $src -Recurse -File -Force | Measure-Object -Property Length -Sum\\).Sum / 1MB, 2\\); Write-Output \"Source size MB: $srcSize\")",
+      "PowerShell($src = \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\"; $dst = \"C:\\\\Jnoah\\\\vault\"; robocopy $src $dst /E /COPY:DAT /R:1 /W:1 /NFL /NDL /NP | Out-Null; Write-Output \"Robocopy exit code: $LASTEXITCODE \\(0-7 = success\\)\")"
+    ]
+  }
+}

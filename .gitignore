@@ -1,0 +1,19 @@
+# OS cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Obsidian per-machine UI state (keep config + plugins, ignore local workspace/cache)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Temp / lock / backup files
+*.tmp
+~$*
+.trash/
+
+# The interface app lives outside the vault (C:\Jnoah\jnoah-os-app); never commit node deps if it ever lands inside
+node_modules/
+.next/

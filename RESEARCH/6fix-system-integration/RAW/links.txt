@@ -1,0 +1,4 @@
+# Drop zone — paste URLs here for research engine to fetch
+# Format: one URL per line, optional note after a space
+
+# No drops yet — first run.

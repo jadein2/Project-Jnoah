@@ -1,0 +1,158 @@
+{
+  "version": "V1.0",
+  "date": "2026-04-30",
+  "brand": {
+    "brand": "Restart Fitness PH",
+    "system": "The Restart Fitness System",
+    "tagline": "Stop guessing. Follow a system.",
+    "primary_cta": "Book a Discovery Call",
+    "social_cta": "DM \"RESTART\"",
+    "colors": {
+      "charcoal": "#1A1A18",
+      "off_white": "#F5F5F0",
+      "orange": "#E06D22",
+      "gold": "#C9A84C"
+    },
+    "voice": "Clear, grounded, coach-led, practical, professional, calm but firm, human, direct, supportive with standards."
+  },
+  "services": [
+    {
+      "name": "6Fix",
+      "full_name": "6Fix: 6-Week Foundation Program",
+      "role": "Entry foundation offer",
+      "best_for": "Beginners, returning clients, and inconsistent people who need a clear starting point.",
+      "outcome": "Build the first layer of structure in training, practical nutrition, habits, and accountability.",
+      "duration": "6 weeks",
+      "price_php": "₱4,500",
+      "price_usd": "$80 reference",
+      "support": "Weekly check-ins, key video feedback, practical nutrition guidance, habit targets, in-app messaging, accountability.",
+      "video_rule": "Key videos required weekly.",
+      "next_step": "Move into Restart-P, Restart-90, Restart-Base, or Restart-Perform depending on goal.",
+      "cta_line": "Start with structure before chasing intensity."
+    },
+    {
+      "name": "Restart-P",
+      "full_name": "Restart-P: Program-Only Access",
+      "role": "Flagship scalable recurring offer",
+      "best_for": "People who can train independently but still need structure, coaching support, video feedback, nutrition guidance, and accountability.",
+      "outcome": "Personalized programming with coaching feedback, not just a workout plan.",
+      "duration": "Monthly subscription",
+      "price_php": "P12 ₱2,500 / P16 ₱3,000 / P20 ₱3,500",
+      "price_usd": "$45 / $55 / $65 reference",
+      "support": "Onboarding call, weekly check-in, nutrition guidance, video feedback every session, in-app messaging, program adjustments.",
+      "video_rule": "Required every session.",
+      "next_step": "Continue monthly, add video coaching, or upgrade into Restart-90.",
+      "cta_line": "Train independently. Stay coached."
+    },
+    {
+      "name": "Restart-90",
+      "full_name": "Restart-90: 90-Day Full Transformation Package",
+      "role": "Premium transformation package",
+      "best_for": "Clients who need the full system: training, practical nutrition, habit coaching, accountability, group support, and progress review.",
+      "outcome": "Transform training, nutrition, habits, and consistency in 90 days through a structured coaching system.",
+      "duration": "90 days",
+      "price_php": "₱18,000 upfront or ₱6,500/month for 3 months",
+      "price_usd": "$320 reference",
+      "support": "Weekly check-ins, video feedback, in-app messaging, group coaching calls, phase workshops, habits, nutrition, final review.",
+      "video_rule": "Required based on assigned sessions and key movement checks.",
+      "next_step": "Renew, transition to Restart-P, Restart-Base, or Restart-Perform.",
+      "cta_line": "A complete 90-day coaching system."
+    },
+    {
+      "name": "Restart-Base",
+      "full_name": "Restart-Base: Strength and Longevity Program",
+      "role": "Long-term strength and health program",
+      "best_for": "People who want to build strength, move better, improve capacity, and train for long-term health.",
+      "outcome": "Stronger body, better movement, better long-term capacity.",
+      "duration": "Monthly subscription; 12 weeks recommended",
+      "price_php": "₱4,200/month reference",
+      "price_usd": "$75/month",
+      "support": "Weekly check-ins, key movement video feedback, basic nutrition guidance, habit/accountability support, program adjustments.",
+      "video_rule": "Key lifts and movement videos weekly.",
+      "next_step": "Continue monthly, add video coaching, or move into Restart-90 if transformation support is needed.",
+      "cta_line": "Build strength for the life you actually live."
+    },
+    {
+      "name": "Restart-Perform",
+      "full_name": "Restart-Perform: Performance and Athlete Program",
+      "role": "Premium performance and athlete program",
+      "best_for": "Athletes and performance-focused clients who need structured training, required video feedback, and event-based support.",
+      "outcome": "Train with structure, build performance, and get coached through every session.",
+      "duration": "Monthly or event-based cycle",
+      "price_php": "₱5,500/month reference",
+      "price_usd": "$95/month",
+      "support": "Weekly check-ins, required video feedback every session, performance guidance, messaging, program adjustments, event prep planning.",
+      "video_rule": "Required every session.",
+      "next_step": "Continue monthly, use event prep cycle, or add online video coaching.",
+      "cta_line": "Performance training with structure and feedback."
+    }
+  ],
+  "add_ons": [
+    {
+      "name": "Online Video Coaching",
+      "availability": "All active clients",
+      "price": "$35 single / $128 4-pack / $224 8-pack / $288 12-pack",
+      "php": "₱2,000 single / ₱7,500 / ₱13,000 / ₱16,500",
+      "scope": "Live training, movement assessment, technique correction, skill coaching, form review, workout supervision."
+    },
+    {
+      "name": "Personal Coaching Consultation",
+      "availability": "Restart-90 clients only",
+      "price": "$12",
+      "php": "PHP reference set later",
+      "scope": "30-45 minute private guidance call for nutrition, habits, accountability, schedule planning, progress review. Not live training."
+    },
+    {
+      "name": "Nutrition Add-On",
+      "availability": "Programs needing deeper nutrition support",
+      "price": "$40-$60 monthly recommendation",
+      "php": "₱2,500-₱3,500 recommendation",
+      "scope": "Meal structure, food log review, portion targets, habit tracking, accountability, progress adjustments."
+    }
+  ],
+  "policies": {
+    "core_rule": "Program-only does not mean coach-less. Every Restart Fitness PH program includes structure, support, feedback, and accountability.",
+    "response_time": "Messages are answered within 24 hours on business days during coaching office hours.",
+    "check_ins": "Clients must submit one check-in per week. The assigned check-in day may vary by start date or program schedule.",
+    "missed_checkins": "1 missed check-in: reminder. 2 missed: accountability message. 3 missed: review call or compliance warning. Ongoing missed check-ins: program continues but adjustments may be limited.",
+    "refund": "Payments are non-refundable once coaching has started, since program design, onboarding, and coaching resources are already allocated.",
+    "pause": "Online programs cannot be paused or frozen once the cycle starts.",
+    "cancellation": "Clients may cancel before the next billing cycle, but no cancellation is allowed inside an active paid program block.",
+    "currency": "Philippines pages use PHP primary with USD reference. International pages use USD primary with PHP reference."
+  },
+  "revenue_target": {
+    "target": "₱200,000/month within 6 months",
+    "sample_mix": [
+      {
+        "offer": "Restart-P",
+        "clients": 20,
+        "monthly_revenue_php": 60000
+      },
+      {
+        "offer": "6Fix",
+        "clients": 10,
+        "monthly_revenue_php": 45000
+      },
+      {
+        "offer": "Restart-90",
+        "clients": 5,
+        "monthly_revenue_php": 32500
+      },
+      {
+        "offer": "Restart-Base",
+        "clients": 8,
+        "monthly_revenue_php": 33600
+      },
+      {
+        "offer": "Restart-Perform",
+        "clients": 5,
+        "monthly_revenue_php": 27500
+      },
+      {
+        "offer": "Video Coaching Add-ons",
+        "clients": "5 sessions",
+        "monthly_revenue_php": 10000
+      }
+    ]
+  }
+}
