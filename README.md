@@ -6,6 +6,10 @@ Built to run in Claude Cowork (and Claude Code when needed). One folder, one sou
 
 ---
 
+> **Canonical location:** `C:\Jnoah\vault` (as of 2026-05-24). The old `~/Documents/ProjectJnoah/` (OneDrive) folder is **legacy — a frozen backup**. Point Cowork and Claude Code at `C:\Jnoah\vault`. A companion dashboard app, **Jnoah OS**, lives separately at `C:\Jnoah\jnoah-os-app` and runs in the browser (`npm run dev` → localhost:3000) as a read-only window over this vault.
+
+---
+
 ## What this is
 
 A structured set of markdown files that gives Claude persistent context about your two businesses — brand voice, design rules, programming format, content patterns, client history — so you stop re-explaining every chat.
@@ -21,7 +25,7 @@ Three layers:
 ## Folder map
 
 ```
-ProjectJnoah/
+C:\Jnoah\vault\               (canonical — formerly ~/Documents/ProjectJnoah, now legacy)
 ├── CLAUDE.md                  Identity + universal rules (read first, every session)
 ├── ROUTER.md                  Maps tasks → engines, brands, skills
 ├── README.md                  This file
@@ -34,7 +38,13 @@ ProjectJnoah/
 ├── ENGINES/                   Workflow files — how to produce each output type
 │   ├── coach-jap/             Training programs, nutrition plans, WODs
 │   ├── design/                Carousels, posters, web layouts
-│   └── content/               Blog posts, social posts, DMs
+│   ├── content/               Blog posts, social posts, DMs
+│   ├── client/                Onboarding, discovery call, check-ins, Trainerize handoff
+│   ├── marketing/             Campaigns, content calendars
+│   ├── sales/                 DM scripts, objection handling, offer/pricing
+│   ├── web/                   Wix site build + edits
+│   ├── research/              Research engine (independent, manual-only)
+│   └── goals/                 Goal setup, tracking, milestones → tasks
 │
 ├── MEMORY/                    Persistent history
 │   ├── decisions-log.md       One line per decision/output
@@ -52,11 +62,16 @@ ProjectJnoah/
 │   ├── nutrition/
 │   └── web/
 │
+├── GOALS/                     Active goals + posting log (drives the morning brief)
+├── RESEARCH/                  Research topics — raw findings, briefs, selections
+│
 └── .claude/
     ├── skills/                Craft expertise (auto-loaded by Claude)
-    │   ├── ui-ux-design-pro/
+    │   ├── ui-ux-pro-max/
     │   ├── anti-ai-copywriter/
-    │   └── coach-jap-programming-format/
+    │   ├── coach-jap-programming-format/
+    │   ├── research-analyst/
+    │   └── goals/
     └── agents/                Subagents (Claude Code only)
 ```
 
@@ -65,7 +80,7 @@ ProjectJnoah/
 ## How to use it in Cowork
 
 1. Open Claude Desktop → switch to Cowork mode
-2. Point Cowork at this folder (Work in a Folder → select `ProjectJnoah/`)
+2. Point Cowork at this folder (Work in a Folder → select `C:\Jnoah\vault`). Do **not** use the legacy `~/Documents/ProjectJnoah/` — it's a frozen backup.
 3. Grant read + write permission
 4. Start the conversation with your task — no need to re-explain context
 
@@ -83,7 +98,7 @@ Claude reads CLAUDE.md → ROUTER.md → relevant brand + engine → applies ski
 
 ## How to use it in Claude Code
 
-Same folder. `cd ~/Documents/ProjectJnoah/` and run `claude`. Skills and subagents in `.claude/` work automatically. Use when you want:
+Same folder. `cd C:\Jnoah\vault` and run `claude`. Skills and subagents in `.claude/` work automatically. Use when you want:
 
 - Parallel subagents (e.g. design reviewer running in isolated context)
 - Scripted/batched workflows
@@ -95,7 +110,7 @@ Files are interchangeable. Edit anywhere; the other surface sees it next session
 
 ## Editing the system
 
-- Add a new client → create `/MEMORY/clients/[name].md`
+- Add a new client → create `/MEMORY/clients/[name]/[name].md` (folder per client; say "new client [name]" to run the client-profile engine)
 - Add a new brand → create `/BRANDS/[brand-name].md`, update ROUTER.md
 - Add a new skill → create folder under `.claude/skills/` with `SKILL.md`
 - Change a universal rule → edit CLAUDE.md
