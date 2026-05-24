@@ -1,6 +1,6 @@
 # Project Jnoah
 
-Modular AI operating system for Urban Strong Fitness and Restart Fitness PH.
+Modular AI operating system for Restart Fitness PH.
 
 Built to run in Claude Cowork (and Claude Code when needed). One folder, one source of truth.
 
