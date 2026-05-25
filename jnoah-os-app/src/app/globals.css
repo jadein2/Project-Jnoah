@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap");
+@import "tailwindcss";
+
+:root {
+  --rf-black: #111110;
+  --rf-charcoal: #1a1a18;
+  --rf-dark: #242420;
+  --rf-mid: #3a3a36;
+  --rf-muted: #6b6b64;
+  --rf-soft: #a8a89e;
+  --rf-light: #e8e8e0;
+  --rf-white: #f5f5f0;
+  --rf-cream: #f5f5f0;
+  --rf-cream2: #ebebe4;
+  --rf-orange: #e06d22;
+  --rf-orange-dark: #b8541a;
+  --rf-gold: #c9a84c;
+  --rf-gold-light: #e8c870;
+  --rf-gold-muted: #8a7034;
+  --rf-border: rgba(26, 26, 24, 0.1);
+  --rf-border-strong: rgba(26, 26, 24, 0.18);
+  --rf-radius: 2px;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --background: var(--rf-cream);
+  --foreground: var(--rf-charcoal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--rf-cream);
+  background-image: radial-gradient(
+      ellipse 120% 80% at 100% 0%,
+      rgba(224, 109, 34, 0.04),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 80% 60% at 0% 100%,
+      rgba(201, 168, 76, 0.05),
+      transparent 45%
+    );
+  color: var(--rf-charcoal);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rf-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.rf-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rf-muted);
+}
+
+.rf-label-light {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rf-soft);
+}
+
+.rf-accent-line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--rf-orange);
+  border-radius: var(--rf-radius);
+}
+
+.rf-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
+}
+
+.rf-card-interactive {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.rf-card-interactive:hover {
+  border-color: rgba(224, 109, 34, 0.35);
+  box-shadow: 0 4px 16px rgba(26, 26, 24, 0.08);
+  transform: translateY(-1px);
+}
+
+@keyframes rf-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.rf-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--rf-cream2) 0%,
+    var(--rf-light) 45%,
+    var(--rf-cream2) 90%
+  );
+  background-size: 200% 100%;
+  animation: rf-shimmer 1.4s ease-in-out infinite;
+}
+
+.rf-card-dark {
+  background: var(--rf-charcoal);
+  color: var(--rf-white);
+  border-radius: var(--rf-radius);
+}
+
+.rf-link {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--rf-orange);
+  transition: color 0.15s ease;
+}
+
+.rf-link:hover {
+  color: var(--rf-orange-dark);
+}
+
+.rf-body-muted {
+  color: var(--rf-muted);
+  font-size: 14px;
+}
+
+.rf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--rf-white);
+  background: var(--rf-orange);
+  border-radius: var(--rf-radius);
+  transition: background 0.15s ease;
+}
+
+.rf-btn:hover {
+  background: var(--rf-orange-dark);
+}
+
+.rf-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--rf-orange);
+  border: 1px solid var(--rf-border);
+  background: var(--rf-white);
+  border-radius: var(--rf-radius);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.rf-btn-ghost:hover {
+  border-color: var(--rf-orange);
+  color: var(--rf-orange-dark);
+}
+
+/* Icon rail tooltips when sidebar is collapsed */
+@media (min-width: 1024px) {
+  #app-sidebar [title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 60;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    background: var(--rf-charcoal);
+    color: var(--rf-white);
+    border: 1px solid var(--rf-dark);
+    border-radius: var(--rf-radius);
+    box-shadow: 0 4px 12px rgba(17, 17, 16, 0.2);
+    pointer-events: none;
+  }
+}
