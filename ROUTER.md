@@ -55,6 +55,7 @@ If brand is ambiguous, ask. Don't guess.
 | "morning briefing" | /ENGINES/marketing/campaign.md — NOTE: use "morning brief" for the full daily brief including goals | brand-agnostic | — |
 | "close campaign" / "archive [campaign name]" | /ENGINES/marketing/campaign.md | brand-agnostic | — |
 | "pricing" / "offer structure" / "which offer" / "what program fits" | /ENGINES/sales/offer-engine.md | brand-specific | — |
+| "write website copy" / "homepage copy" / "write the [page] page" / "web copy for [page]" / "copy for the site" | /ENGINES/content/web-copy.md | Restart Fitness PH | anti-ai-copywriter |
 | "update the site" / "edit the website" / "publish blog to site" / "fix the CTA on" / "landing page for" | /ENGINES/web/wix.md | Restart Fitness PH | anti-ai-copywriter |
 | "client profile" / "update client" | /MEMORY/clients/[name]/[name].md | brand-agnostic | — |
 | "onboard client" / "new client pipeline" / "send agreement" | /ENGINES/client/client-onboarding.md | brand-agnostic | — |

@@ -17,6 +17,7 @@
 | 2 | poster.md built (if US kept) or formally marked N/A | PENDING | 2026-06-08 | — |
 | 3 | /design-reference-raw/ populated with actual reference images | PENDING | 2026-06-15 | — |
 | 4 | Final system audit + HOW-TO-USE.md fully updated | PENDING | 2026-06-22 | — |
+| 5 | One-click OS launcher created — GATED on Website Launch (Goal 1) = COMPLETE | BLOCKED | 2026-06-25 | — |
 
 ---
 
@@ -33,6 +34,7 @@
 | 7 | Run full system audit — all engines, all routing rows, all skill triggers | route-to-claude | 4 | PENDING | 2026-06-20 | — |
 | 8 | Update HOW-TO-USE.md — reflect all phases complete, current engine list | route-to-claude | 4 | PENDING | 2026-06-22 | — |
 | 9 | Update PROGRESS.md — all phases marked complete | action | 4 | PENDING | 2026-06-22 | — |
+| 10 | Create one-click OS launcher: bake 4GB heap into package.json (cross-env) + start-os.bat double-click. Full spec staged. | route-to-claude | 5 | BLOCKED | 2026-06-25 | — |
 
 ---
 
@@ -46,11 +48,13 @@
 | 6 | "wire design references into design-brief.md" | /ENGINES/design/design-brief.md |
 | 7 | "system audit — Jnoah OS" | All engine files |
 | 8 | "update HOW-TO-USE.md" | HOW-TO-USE.md |
+| 10 | "create the OS launcher" | /MEMORY/projects/os-launcher-spec.md → C:\Jnoah\jnoah-os-app |
 
 ---
 
 ## Progress Log
 
+2026-05-25 — Milestone 5 + Task 10 added: one-click OS launcher. GATED on Website Launch (Goal 1) = COMPLETE — do not build before then. Full build spec staged at /MEMORY/projects/os-launcher-spec.md (cross-env heap bake + start-os.bat). Trigger phrase: "create the OS launcher". Origin: 2026-05-25 dashboard OOM crash recovery.
 2026-05-22 — Goal created. System at Phase 12. Four open items: Urban Strong direction, poster.md, design-reference-raw, final audit.
 
 ---
@@ -60,3 +64,4 @@
 - This is a background goal. It does not block production work on Goals 1–3.
 - Urban Strong decision is the only blocker for downstream tasks (2, 3, 4). Everything else can proceed in parallel.
 - Priority 3 — only work on this when Goals 1 and 2 are on track.
+- Milestone 5 (launcher) is GATED: do NOT build until restartfitnessph.com is live (Goal 1 = COMPLETE), per Jap's instruction 2026-05-25. When ready, say "create the OS launcher" — everything is pre-specced at /MEMORY/projects/os-launcher-spec.md for a one-shot build (no decisions left to make).

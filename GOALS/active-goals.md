@@ -22,7 +22,7 @@ Update this file immediately after any goal is created, changed, or closed.
 
 | Goal | Slug | Type | Priority | Status | Target | Deadline | File |
 |---|---|---|---|---|---|---|---|
-| restartfitness.ph Website Launch | website-launch | project | 1 | PENDING | Full site live — 8 pages, CTAs active, DM funnels connected | 2026-06-25 | /GOALS/website-launch.md |
+| restartfitnessph.com Website Launch | website-launch | project | 1 | PENDING | Full site live — 8 pages, CTAs active, DM funnels connected | 2026-06-25 | /GOALS/website-launch.md |
 | Social Media Pipeline | social-media-pipeline | calendar + metric | 2 | PENDING | 300 followers · 7 online clients · 5x/week IG+Threads · 3x/week FB | 2026-06-25 | /GOALS/social-media-pipeline.md |
 | Marketing & Sales System Active | marketing-sales-active | project | 2 | PENDING | Campaign 001 complete · full DM→Call→Trainerize funnel executed · Campaign 002 started | 2026-06-25 | /GOALS/marketing-sales-active.md |
 | Jnoah OS Final Completion | jnoah-os-complete | project | 3 | PENDING | All open items resolved · system audit passed · HOW-TO-USE.md current | 2026-06-25 | /GOALS/jnoah-os-complete.md |

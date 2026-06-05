@@ -35,6 +35,7 @@ If the topic exists at the required depth, go to CROSS-REF mode — do not redo 
 | 6Fix System Integration (Trainerize + Social + Wix) | 6fix-system-integration | COMPLETE | QUICK | 1, 3 | 2026-05-21 | /RESEARCH/6fix-system-integration/RAW/6fix-system-integration-research.md |
 | Social Pipeline System (idea → design → copy → production → DM → call → onboarding) | social-pipeline-system | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/social-pipeline-system/RAW/social-pipeline-system-research.md |
 | Story-Driven Content and DM Strategy (story arcs → social posts → Stories → carousel → website → DMs) | story-content-dm-strategy | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/story-content-dm-strategy/RAW/story-content-dm-strategy-research.md |
+| Website Funnel & Conversion (4-section homepage, hooks, section order, lead capture, PH web behavior, web competitor teardown) | website-funnel-conversion | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-25 | /RESEARCH/website-funnel-conversion/RAW/website-funnel-conversion-research.md |
 
 ---
 
@@ -46,6 +47,7 @@ Format: `YYYY-MM-DD — [slug] — [filename] — [status: INGESTED / PENDING]`
 `2026-05-21 — 6fix-system-integration — web research (6 searches) — INGESTED`
 `2026-05-22 — social-pipeline-system — web research (10 searches, DEEP depth) — INGESTED`
 `2026-05-22 — story-content-dm-strategy — web research (10 searches, DEEP depth) — INGESTED`
+`2026-05-25 — website-funnel-conversion — web research (8 searches, DEEP depth) + cross-ref of social-pipeline-system & story-content-dm-strategy — INGESTED`
 
 ---
 

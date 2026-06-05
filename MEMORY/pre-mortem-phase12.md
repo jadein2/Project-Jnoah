@@ -17,7 +17,7 @@ The system is architecturally sound. All 23 engines exist, all 6 skills are live
 
 ---
 
-### P1-1 — Domain split: restartfitness.ph vs restartfitnessph.com
+### P1-1 — Domain split: restartfitness.ph vs restartfitnessph.com ✅ RESOLVED 2026-05-25
 
 **Where:** wix.md (engine) vs website-launch.md + active-goals.md (goals system)
 
@@ -32,13 +32,16 @@ Every page and blog post the wix engine publishes will embed `restartfitnessph.c
 **Fix:**
 Confirm the actual live domain with Jap. Update wix.md Site header + all CTA references to match. Update website-launch.md and active-goals.md to match. One canonical domain, zero exceptions.
 
+**Resolution:** Jap confirmed canonical domain is `restartfitnessph.com`. Updated `website-launch.md` and `active-goals.md` — all instances of `restartfitness.ph` replaced with `restartfitnessph.com`.
+
 ---
 
-### P1-2 — 5 active clients missing program-state.md
+### P1-2 — 5 active clients missing program-state.md ✅ PARTIALLY RESOLVED 2026-05-25
 
 **Where:** /MEMORY/clients/
 
-**Clients affected:** Jaedie-Padua · Anthony · Mach · Lenny-Calamba · Lily
+**Clients affected (original):** Jaedie-Padua · Anthony · Mach · Lenny-Calamba · Lily
+**Status update:** Jaedie, Anthony, Lenny, Lily confirmed INACTIVE — state files not required. Mach confirmed ACTIVE — state file created 2026-05-25. 3 new 6FIX clients (Arriana, Fame, Karen) also created. All current active clients with programming now have state files.
 
 **What's happening:**
 training-program.md mandates reading program-state.md before every session: "Do not rely on session context or output file parsing alone." The 7–10 day rotation checklist in wod-brain.md also depends on the pool log inside state files. All 5 of these clients have no state file.
@@ -51,11 +54,11 @@ Create state files for all 5 using the template at /ENGINES/coach-jap/program-st
 
 ---
 
-### P1-3 — 3 clients referenced but have no vault presence
+### P1-3 — 3 clients referenced but have no vault presence ✅ RESOLVED 2026-05-25
 
 **Where:** /MEMORY/clients/registry.md (flags section)
 
-**Clients:** Arriana Ramos · Fame Florendo · Katrina Carandang
+**Clients:** Arriana Ramos · Fame Florendo · Karen Carandang (name corrected from "Katrina")
 
 **What's happening:**
 Registry flags note "folders exist on Desktop with no files." There are no folders for these clients in /MEMORY/clients/ at all. Their existence is only in a flag note.
@@ -65,6 +68,8 @@ If any programming or nutrition work is requested for these clients, the system 
 
 **Fix:**
 Confirm status with Jap. If active: create folders and build profiles using client-profile.md schema. If inactive or never onboarded: remove from the registry flags or mark explicitly as "not onboarded."
+
+**Resolution:** Jap confirmed all 3 are active 6FIX Phase 1 clients. Folders and profiles created for all 3. "Katrina" corrected to "Karen" — legal name flag retained. Registry restructured with Active / Inactive / Test/Dummy sections. Mach also moved to Nutrition + Program. program-state.md files created for all 3.
 
 ---
 
@@ -261,3 +266,4 @@ wix.md hardcodes `restartfitnessph.com/start` on every page. The site is not liv
 
 ## Last updated
 2026-05-24 — Pre-mortem Phase 12. 15 issues found. 3 P1 · 6 P2 · 6 P3.
+2026-05-25 — P1-1 RESOLVED (domain confirmed + goals files updated). P1-2 PARTIALLY RESOLVED (Mach state file created; inactive clients removed from scope; 3 new 6FIX client state files created). P1-3 RESOLVED (all 3 clients profiled, registered, and state files initialized). All P1 items closed.

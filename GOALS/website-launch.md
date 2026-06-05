@@ -1,9 +1,9 @@
-# Website Launch — restartfitness.ph
+# Website Launch — restartfitnessph.com
 **Type:** project
 **Priority:** 1
 **Status:** PENDING
 **Baseline:** Zero — Wix, brand file locked, no pages built
-**Target:** Full website live at restartfitness.ph — all 8 pages, CTAs active, DM funnels connected
+**Target:** Full website live at restartfitnessph.com — all 8 pages, CTAs active, DM funnels connected
 **Deadline:** 2026-06-25
 **Created:** 2026-05-22
 
@@ -58,7 +58,7 @@
 | 10 | "build About and Programs Hub in Wix" | /ENGINES/web/wix.md |
 | 11 | "build 90-Day and 6FIX pages in Wix" | /ENGINES/web/wix.md |
 | 12 | "build Results, Book a Call, Blog shell in Wix" | /ENGINES/web/wix.md |
-| 14 | "QA pass — restartfitness.ph" | /ENGINES/web/wix.md |
+| 14 | "QA pass — restartfitnessph.com" | /ENGINES/web/wix.md |
 
 ---
 
@@ -74,4 +74,6 @@
 - DM → Trainerize is the active funnel until site is live. Website does not need to be live for client acquisition to continue.
 - Filler schema at: /OUTPUTS/web/restartfitness-ph-website-schema.md
 - Copy finalization happens page by page — not all at once. Prioritize Home and 90-Day page first.
-- 5 open decisions must be resolved before copy can be finalized. See schema Open Decisions table.
+- 5 open decisions must be resolved before copy can be finalized. See schema Open Decisions table. (Resolved 2026-05-25: #1 booking = dual-entry DM→ManyChat link + direct booking link; #4 6FIX = available at launch; #5 pricing = shown on site.)
+- DESIGN DIRECTIVE (Milestone 3 + 4) — **Mobile-first.** Design and approve mobile layouts BEFORE desktop, then adapt up. In Wix Studio, build and QA the mobile breakpoint first. The 4-section funnel hero/CTA/proof-early all live or die on the mobile fold. Align design-brief.md + ui-ux-pro-max output and the Wix build path to mobile-first. Set by Jap 2026-05-25.
+- Homepage refactored to a 4-section funnel page (was 8-section schema). Canonical domain: restartfitnessph.com. Lean launch set: Home/About/Programs/Results/Start; deeper pages deferred. Homepage copy draft at /OUTPUTS/web/homepage.md.
