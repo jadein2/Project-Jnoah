@@ -1,10 +1,12 @@
 # Campaign Brief
 ## 2026-06 Social Growth + Pipeline — Restart PH
 
-**Status:** DRAFT  
+**Status:** ACTIVE  
 **Brand:** Restart Fitness PH  
 **Built:** 2026-05-20  
+**Activated:** 2026-05-28  
 **Engine:** /ENGINES/marketing/campaign.md  
+**Week 1 production pack:** copy + design briefs + partial Canva builds completed 2026-05-28  
 
 ---
 

@@ -14,7 +14,18 @@
       "mcp__15ee0e2e-78b9-49c5-a805-12bd1548b06f__clickup_create_task",
       "PowerShell($src = \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\"; Write-Output \"Source exists: $\\(Test-Path $src\\)\"; Write-Output \"C:\\\\Jnoah exists: $\\(Test-Path 'C:\\\\Jnoah'\\)\"; $srcCount = \\(Get-ChildItem -Path $src -Recurse -File -Force | Measure-Object\\).Count; Write-Output \"Source file count: $srcCount\"; $srcSize = [math]::Round\\(\\(Get-ChildItem -Path $src -Recurse -File -Force | Measure-Object -Property Length -Sum\\).Sum / 1MB, 2\\); Write-Output \"Source size MB: $srcSize\")",
       "PowerShell($src = \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\"; $dst = \"C:\\\\Jnoah\\\\vault\"; robocopy $src $dst /E /COPY:DAT /R:1 /W:1 /NFL /NDL /NP | Out-Null; Write-Output \"Robocopy exit code: $LASTEXITCODE \\(0-7 = success\\)\")",
-      "PowerShell(node --version; npm --version; Get-ExecutionPolicy -List | Out-String; Write-Output \"---NODE PATH---\"; \\(Get-Command node\\).Source)"
+      "PowerShell($src = \"C:\\\\Users\\\\Japhet Felipe\\\\OneDrive\\\\Documents\\\\Project Jnoah\"; $dst = \"C:\\\\Jnoah\\\\vault\"; $srcCount = \\(Get-ChildItem $src -Recurse -File -Force | Measure-Object\\).Count; $dstCount = \\(Get-ChildItem $dst -Recurse -File -Force | Measure-Object\\).Count; $dstSize = [math]::Round\\(\\(Get-ChildItem $dst -Recurse -File -Force | Measure-Object -Property Length -Sum\\).Sum / 1MB, 2\\); Write-Output \"Source files: $srcCount\"; Write-Output \"Dest files:   $dstCount\"; Write-Output \"Dest size MB: $dstSize\"; Write-Output \"Match: $\\($srcCount -eq $dstCount\\)\"; Write-Output \"---Key files present in dest---\"; @\\('CLAUDE.md','ROUTER.md','GOALS\\\\active-goals.md','MEMORY\\\\decisions-log.md','MEMORY\\\\projects\\\\jnoah-os-interface.md','MEMORY\\\\clients\\\\Mach\\\\Mach.md','.claude\\\\skills\\\\ui-ux-pro-max\\\\SKILL.md'\\) | ForEach-Object { \"{0,-55} {1}\" -f $_, \\(Test-Path \\(Join-Path $dst $_\\)\\) })",
+      "PowerShell(winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements --silent 2>&1)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); Set-Location \"C:\\\\Jnoah\\\\jnoah-os-app\"; npm install gray-matter react-markdown remark-gfm chokidar lucide-react date-fns 2>&1 | Select-Object -Last 8)",
+      "Bash(cd \"C:\\\\Jnoah\\\\jnoah-os-app\" && find src -type f && echo \"---config---\" && ls *.* 2>/dev/null && echo \"---\" && cat package.json | head -40)",
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "Bash(Get-ChildItem -Path \"C:\\\\Jnoah\\\\vault\" -Force)",
+      "Bash(Select-Object Name)",
+      "PowerShell(head -30)"
     ]
   }
 }

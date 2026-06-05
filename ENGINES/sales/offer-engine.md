@@ -1,7 +1,8 @@
 # Offer Engine
 **Path:** /ENGINES/sales/offer-engine.md
-**Brand:** Restart Fitness PH
-**Source:** rfph_services_offers_pricing_source_of_truth_v1.md (April 30, 2026)
+**Brands:** Restart Fitness PH (online) · URBN Athletics (in-person — see URBN section below)
+**Source:** rfph_services_offers_pricing_source_of_truth_v1.md (April 30, 2026) · URBN: /Raw-Files/URBN Athletics/Program-Architecture-and-Offer-Ladder.md
+**Note:** The Restart ladder (online coaching) and the URBN ladder (in-person gym) are separate. Pick the brand first, then the ladder. The "program-only ≠ coach-less" rule below is Restart-specific.
 **Phase:** 9
 **Built:** 2026-05-21
 **Feeds:** discovery-call.md · campaign.md · sales-engine.md (when built) · social-post.md (conversion posts)
@@ -27,7 +28,7 @@ Five tiers. Each has a defined role, audience, and natural upgrade path. Present
 
 | Tier | Internal name | Role | Duration | PHP | USD |
 |---|---|---|---|---|---|
-| Entry | **6Fix** | Foundation offer — first layer of structure | 6 weeks | ₱4,500 | $80 ref |
+| Entry | **6FIX** | Foundation offer — first layer of structure | 6 weeks | ₱4,500 | $80 ref |
 | Flagship | **Restart-P** | Scalable recurring program with coaching | Monthly | ₱2,500–₱3,500 | $45–$65 ref |
 | Premium | **Restart-90** | Full 90-day transformation system | 90 days | ₱18,000 upfront / ₱6,500×3 | $320 ref |
 | Strength | **Restart-Base** | Long-term strength and health | Monthly (12 wks rec.) | ₱4,200 | $75/mo ref |
@@ -37,7 +38,7 @@ Five tiers. Each has a defined role, audience, and natural upgrade path. Present
 
 ## Service cards — full detail
 
-### 6Fix — 6-Week Foundation Program
+### 6FIX — 6-Week Foundation Program
 
 **Role:** Entry offer. First client experience with The Restart Fitness System.
 **Best for:** Beginners, returning clients, inconsistent people who need a clear starting point.
@@ -47,7 +48,7 @@ Five tiers. Each has a defined role, audience, and natural upgrade path. Present
 **Includes:** Weekly check-ins · key video feedback · practical nutrition guidance · habit targets · in-app messaging · accountability
 **Video rule:** Key videos required weekly
 **Positioning line:** Start with structure before chasing intensity.
-**Best next step:** Restart-P, Restart-90, Restart-Base, or Restart-Perform — depending on goal after 6Fix ends.
+**Best next step:** Restart-P, Restart-90, Restart-Base, or Restart-Perform — depending on goal after 6FIX ends.
 
 ---
 
@@ -139,8 +140,8 @@ Five tiers. Each has a defined role, audience, and natural upgrade path. Present
 
 | Situation | Recommended offer | Rationale |
 |---|---|---|
-| Complete beginner / no training structure | **6Fix** | Needs foundation before intensity |
-| Has been training inconsistently, unclear on direction | **6Fix** or **Restart-P** | Depends on budget and readiness |
+| Complete beginner / no training structure | **6FIX** | Needs foundation before intensity |
+| Has been training inconsistently, unclear on direction | **6FIX** or **Restart-P** | Depends on budget and readiness |
 | Can train independently but needs a program and feedback | **Restart-P** | Flagship — best fit for self-starters |
 | Wants full transformation: training + nutrition + habits + accountability | **Restart-90** | Full system — highest support tier |
 | Long-term strength and health, not a transformation mindset | **Restart-Base** | Longevity focus, no transformation pressure |
@@ -150,8 +151,8 @@ Five tiers. Each has a defined role, audience, and natural upgrade path. Present
 
 **Upgrade paths:**
 ```
-6Fix → Restart-P (most common)
-6Fix → Restart-90 (when transformation is the stated goal from day 1)
+6FIX → Restart-P (most common)
+6FIX → Restart-90 (when transformation is the stated goal from day 1)
 Restart-P → Restart-90 (when they want more accountability and structure)
 Restart-Base / Restart-Perform → Restart-90 (when transformation support is needed)
 Any tier → Video Coaching Add-On (when live movement coaching is needed)
@@ -177,7 +178,7 @@ Target: ₱200,000/month within 6 months
 | Offer | Volume | Monthly revenue |
 |---|---|---|
 | Restart-P | 20 clients | ₱60,000 |
-| 6Fix | 10 clients | ₱45,000 |
+| 6FIX | 10 clients | ₱45,000 |
 | Restart-90 | 5 clients | ₱32,500 |
 | Restart-Base | 8 clients | ₱33,600 |
 | Restart-Perform | 5 clients | ₱27,500 |
@@ -185,6 +186,42 @@ Target: ₱200,000/month within 6 months
 | **Total** | | **₱208,600** |
 
 Use this for campaign math — calculating how many leads, calls, and conversions are needed to hit targets.
+
+---
+
+## URBN Athletics — In-Person Offers (Olongapo gym)
+
+Separate brand from Restart. In-person coached gym. Source of truth: `/Raw-Files/URBN Athletics/Program-Architecture-and-Offer-Ladder.md`. Core line: **Built to Move Better.**
+
+- Primary CTA: **Book a Free Assessment** · Beginner: **Join the FIT45 waitlist** / Message "FIT45" · Performance: **Free PFT** / Message "PFT" · Early-joiner: **Ask about Pioneer Price**
+- **Present price after goal + pathway** — never lead with price.
+- **On-Ramp / Foundation Course is required before URBN FIT or URBN HYBRID.**
+
+### Program ladder
+
+| # | Program | Role | Price (PHP) | Free Trial |
+|---|---|---|---|---|
+| 1 | **FIT45** | Low-barrier beginner hook — 45-min, low-impact | ₱2,500/mo | ✅ |
+| 2 | **On-Ramp / Foundation** | Required bridge into URBN FIT / HYBRID | 1-on-1 ₱4,500 (8 sess) · Group ₱3,000 (4 sess) | — |
+| 3 | **URBN FIT** | Main coached group class (requires On-Ramp) | ₱4,500/mo · Annual ₱35,000 · Walk-in ₱500 · Student ₱3,000/mo or ₱400/day | ❌ never |
+| 4 | **URBN HYBRID** | Endurance + strength, HYROX-style — 6:15 PM | ₱3,000/mo | ✅ |
+| 5 | **Personal Training** | Premium 1-on-1 | confirm w/ ownership | — |
+| 6 | **Small Group Training** | Semi-private, 2–4 people | confirm w/ ownership | — |
+
+**Pioneer / comeback:** ₱3,000/mo · Annual ₱30,000 · limited to 20 · before Grand Opening · old-member comeback rate.
+
+### Free Trial rules (FIT45 + URBN HYBRID only)
+2 sessions · within 1 week · non-transferable · non-extendable. **URBN FIT has no Free Trial** — new members start with a Free Assessment + On-Ramp.
+
+### Entry pathways
+- Beginner / inconsistent → FIT45 (waitlist or Free Trial) or Free Assessment
+- Wants URBN FIT → Free Assessment → On-Ramp → URBN FIT
+- Fitness background → URBN HYBRID Free Trial or Free PFT
+- Price-aware but qualified → Pioneer rate after pathway fit
+- Wants 1-on-1 or small crew → Personal Training / Small Group
+
+### Schedules (reference)
+FIT45: Mon–Fri 6:30 AM / 3:15 PM (tentative) · URBN FIT: 9:15 AM, 4:15, 5:15, 7:15 PM · URBN HYBRID: 6:15 PM · Group On-Ramp: Tue/Thu 6 PM, Sat 10 AM. Soft Opening Jun 11 · Grand Opening (tentative) Jul 11 2026.
 
 ---
 
@@ -200,4 +237,5 @@ When a discovery call happens, load this engine alongside discovery-call.md. Thi
 ---
 
 ## Last updated
+2026-06-04 — Added URBN Athletics in-person offer ladder (FIT45, On-Ramp, URBN FIT, URBN HYBRID, PT, Small Group) + pricing, Free Trial rules, Pioneer rate, entry pathways. Engine is now brand-aware (Restart online + URBN in-person). Source: Program-Architecture-and-Offer-Ladder.md. PT + Small Group prices flagged "confirm w/ ownership."
 2026-05-21 — Phase 9. Built from rfph_services_offers_pricing_source_of_truth_v1.md (April 30, 2026). All 5 service tiers, pricing, add-ons, offer selection logic, upgrade paths, and operating rules included.

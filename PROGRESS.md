@@ -2,14 +2,27 @@
 
 Tracking the build phase-by-phase. Update after each session.
 
+**Current truth:** Read `STATE.md` first for what is active now. This file is the build history and may preserve older labels for context. Platform rule: Codex uses `AGENTS.md` + `/.agents/`; Claude/Cowork uses `CLAUDE.md` + `/.claude/`.
+
+**Current brand status:** Urban Strong → **URBN Athletics**, brand file LIVE (`/BRANDS/URBN-athletics.md`, canonical `/Raw-Files/URBN Athletics/Main-Brand-Brain.md`). Standalone, decoupled from Restart. Still pending: final visual identity + public domain. `/BRANDS/urban-strong.md` is legacy reference only.
+
 ---
 
-## Phase 1 — Foundation ✅ (Current)
+## Recent — June 2026 (post-phase build)
+
+- **Operator UX:** `STATE.md` + `CHATS.md` + Jnoah Cockpit v1 (artifact) + `sync jnoah` reconcile routine (`SYNC.md`).
+- **Governance:** platform-check (CLAUDE/AGENTS, `/.Codex/` path fix), domain lock, voice QA layering, scheduled-task merge (4 jobs → 2 recurring + 1 manual).
+- **URBN:** brand LIVE + decoupled; June Rebrand Launch campaign created; URBN offers folded into `offer-engine.md`; `design-engine.md` de-orphaned.
+- Read `STATE.md` for current active work; `decisions-log.md` for full history.
+
+---
+
+## Phase 1 — Foundation ✅
 
 The skeleton. CLAUDE, ROUTER, README, PROGRESS, folder structure, plus the global anti-AI ruleset.
 
 - [x] Folder structure scaffolded
-- [x] CLAUDE.md (identity + universal rules)
+- [x] CLAUDE.md / AGENTS.md control-file model (identity + universal rules)
 - [x] ROUTER.md (task → engine/brand/skill routing)
 - [x] README.md (system overview + how to use)
 - [x] PROGRESS.md (this file)
@@ -21,7 +34,7 @@ The skeleton. CLAUDE, ROUTER, README, PROGRESS, folder structure, plus the globa
 
 ---
 
-## Phase 2 — Brand identity (in progress)
+## Phase 2 — Brand identity ✅
 
 Lock down both brand files as the source of truth. Once these exist, every design/copy task pulls from them automatically.
 
@@ -32,7 +45,7 @@ Lock down both brand files as the source of truth. Once these exist, every desig
 
 **Phase 2 complete.** Both brand files exist. All copy and design tasks can now pull from a locked source of truth.
 
-**Note:** Urban Strong visual identity (specific colors, font stack) is not yet locked — Jap to confirm whether it shares the Restart Fitness PH palette or gets a distinct system. Flagged in /BRANDS/urban-strong.md Open Decisions.
+**Current note:** Urban Strong has since become URBN Athletics. The old `/BRANDS/urban-strong.md` file is reference-only until a URBN brand file is built.
 
 **Stashed for Phase 3 — content engine inputs needed:**
 - `restart_fitness_ph_content_brain_architecture.md` → /ENGINES/content/ (C/C/V framework, post formulas, DM logic) — upload pending
@@ -62,7 +75,7 @@ The three engines where 90% of your weekly work lives.
 
 ## Phase 4 — Skills layer ✅
 
-Three Skills, each one a folder with SKILL.md inside `.claude/skills/`.
+Skills are mirrored by platform: Codex uses `.agents/skills/`; Claude/Cowork uses `.claude/skills/`.
 
 - [x] ui-ux-pro-max/ — senior product-design judgment for any visual output (built Phase 1)
 - [x] anti-ai-copywriter/ — kills AI tells in any client-facing copy (built 2026-05-18)
@@ -104,12 +117,12 @@ Full pipeline from first DM to cycle close. Five files. All built.
 
 - [x] /ENGINES/design/design-brief.md — single modular design engine for all asset types and brands (2026-05-19)
 - [x] /BRANDS/restart-fitness-ph-design-brief.md — visual design shortcut for Restart PH (2026-05-19)
-- [ ] /BRANDS/[new-brand]-design-brief.md — Urban Strong on hold pending rebrand/deletion decision
-- [ ] /design-reference-raw/ — folder exists but not yet populated; wire into design engine when references are added
+- [ ] /BRANDS/[new-brand]-design-brief.md — URBN Athletics on hold pending Jap's brand details
+- [x] /Raw-Files/design-reference-raw/ — populated with logos, carousels, posts, story frames, Season 2 references, and 6FIX presentation assets
 - [x] /ENGINES/marketing/campaign.md — campaign orchestrator built (brief → thread map → calendar → asset production → ClickUp push + close protocol). Post-mortem audit applied. (2026-05-20)
 - [x] CAMPAIGNS folder created in ClickUp (ID: 90169722350) under RESTART FITNESS PH space. Asset-type lists reserved for evergreen content only.
 - [ ] /ENGINES/design/poster.md — promo flyers, event posters (low priority — design-brief.md partially covers this)
-- [ ] Additional subagents in `.claude/agents/` (Claude Code only)
+- [ ] Additional subagents in `.agents/agents/` for Codex and `.claude/agents/` for Claude/Cowork, only when repeatable batch work needs them
 
 ---
 
@@ -131,7 +144,7 @@ Post-mortem audit (Phases 1–8) run, all P1 and P2 items resolved.
 - [x] /MEMORY/clients/registry.md — P1 fix: Jerome Foo added (2026-05-21)
 
 **P3 items — all completed in Phase 10:**
-- [x] /.claude/skills/research-analyst/SKILL.md — T1/T2/T3 scoring rules, signal weighting hierarchy, source credibility table, gap detection format, drop zone evaluation (2026-05-21)
+- [x] research-analyst skill mirrored in both platform folders — T1/T2/T3 scoring rules, signal weighting hierarchy, source credibility table, gap detection format, drop zone evaluation (2026-05-21)
 - [x] /ENGINES/web/wix.md — Wix site editing workflow for restartfitnessph.com. 5 task types: blog publish, page copy edit, CTA update, program page, campaign landing page (2026-05-21)
 - [x] /MEMORY/campaigns/campaign-performance.md — initialized. Log format defined. (2026-05-21)
 - [x] CLAUDE.md — research rule added to load order, engine list updated, skills list updated (2026-05-21)
@@ -142,7 +155,7 @@ Post-mortem audit (Phases 1–8) run, all P1 and P2 items resolved.
 
 Final P3 items. System is now fully wired across all active engines, skills, and memory files.
 
-- [x] /.claude/skills/research-analyst/SKILL.md — T1/T2/T3 credibility scoring, signal weighting hierarchy, source credibility table, drop zone evaluation rules, gap detection format, output QA checklist (2026-05-21)
+- [x] research-analyst skill mirrored in both platform folders — T1/T2/T3 credibility scoring, signal weighting hierarchy, source credibility table, drop zone evaluation rules, gap detection format, output QA checklist (2026-05-21)
 - [x] /ENGINES/web/wix.md — Wix site workflow for restartfitnessph.com. 5 task types: blog publish, page copy edit, CTA update, program page, campaign landing page. MCP tools documented. (2026-05-21)
 - [x] /MEMORY/campaigns/campaign-performance.md — running log for campaign results. Log format with target vs. actual, what worked/didn't, and decision note. (2026-05-21)
 - [x] CLAUDE.md — research rule added to load order section, engine list updated (all 10 engines now listed), skills list updated (research-analyst added). (2026-05-21)
@@ -164,7 +177,7 @@ Final P3 items. System is now fully wired across all active engines, skills, and
 | Brands | restart-fitness-ph.md (locked) · urban-strong.md (⚠️ under review) | ✅/⚠️ |
 
 **Remaining open items (no engine needed — awaiting external decisions):**
-- Urban Strong brand direction (rebrand vs. deletion) — blocked on Jap's decision
+- URBN Athletics brand details — blocked on Jap's input
 - poster.md — low priority, design-brief.md partially covers this use case
 
 ---
@@ -176,7 +189,7 @@ The upstream data layer. Feeds all other engines with evidence-based research be
 - [x] /RESEARCH/ folder scaffolded — INDEX.md, _template/ with RAW/ drop zone structure (2026-05-21)
 - [x] /ENGINES/research/research-engine.md — 5-layer engine, depth prompt, drop zone scan, INDEX read/write, triage tag system [T1/T2/T3], token-saving rules, engine handoff format (2026-05-21)
 - [x] ROUTER.md — 6 new research routing rows added (2026-05-21)
-- [ ] /.claude/skills/research-analyst/SKILL.md — signal weighting, source credibility scoring (Phase 9)
+- [x] research-analyst skill — signal weighting, source credibility scoring (completed in Phase 9/10)
 
 **Folder structure per topic:**
 ```
@@ -192,38 +205,10 @@ The upstream data layer. Feeds all other engines with evidence-based research be
 
 ---
 
-## Phase 11 — Staged decision pipeline (complete)
-
-Wired the research → production handoff into a gated, two-stage flow so research never auto-fires and nothing gets drafted before Jap confirms direction.
-
-- [x] CLAUDE.md — research rule rewritten: research is an independent engine, manual-trigger only, never auto-checks before content tasks (2026-05-21)
-- [x] ROUTER.md — pre-execution gate added (Gate 2): on research→production handoff, surface a plan and wait for confirmation before executing (2026-05-21)
-- [x] ROUTER.md — research → production handoff row added ("use [topic] for [output]") routing through SELECTION.md (2026-05-21)
-- [x] /RESEARCH/_template/[topic-slug]-SELECTION.md — selection template created (which findings, which engine, what intent) (2026-05-21)
-
-**Phase 11 complete.** Research output now flows to downstream engines only through an explicit selection step and a pre-execution confirmation gate.
-
----
-
-## Phase 12 — Goals system (complete)
-
-The daily entry point. Goals engine, skill, folder, and a posting-log bridge into the campaign engine. Morning brief is now how each day starts.
-
-- [x] /ENGINES/goals/goals-engine.md — goal-setting workflow (2026-05-21)
-- [x] /.claude/skills/goals/SKILL.md — auto-fires on "morning brief" / "goal check" / "north star" (2026-05-21)
-- [x] /GOALS/ folder — active-goals.md (manifest), per-goal files, _template/, posting-log.md bridge to campaign engine (2026-05-21)
-- [x] CLAUDE.md — quick command reference + load order updated; morning brief set as daily entry point (2026-05-21)
-
-**Phase 12 complete.** Month goals are tracked in /GOALS/active-goals.md; the morning brief reads from it.
-
----
-
 ## Decisions log
 
 Append one line per session — what was built, what was decided.
 
-- 2026-05-21 — Phase 12 complete. Goals system built: goals-engine.md, goals SKILL.md, /GOALS/ folder (active-goals manifest + per-goal files + posting-log bridge to campaign engine). Morning brief is now the daily entry point.
-- 2026-05-21 — Phase 11 complete. Staged decision pipeline wired: research rule rewritten (independent, manual-only), pre-execution gate added to ROUTER.md, SELECTION.md template created for research→production handoff.
 - 2026-05-21 — Phase 10 complete. P3 batch: research-analyst skill, Wix engine (restartfitnessph.com), campaign performance log, CLAUDE.md research rule + engine list update.
 - 2026-05-21 — Phase 9 complete. Full system audit (15 issues). All P1 and P2 fixes applied. Sales engine built (/ENGINES/sales/). Offer engine built. ROUTER.md fully wired.
 - 2026-05-21 — Phase 8 complete. Research engine built. /RESEARCH/ folder scaffolded with per-topic repo structure. 6 routing rows added. Token-saving + drop zone system designed.

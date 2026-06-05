@@ -10,12 +10,12 @@ Brand-agnostic until a brand is specified. Routes by asset type, not by brand. A
 
 Do not produce any brief until all four items are confirmed. If any are missing, ask — never guess.
 
-- **Brand specified** → load `/BRANDS/[brand].md` + `/BRANDS/[brand]-design-brief.md`
+- **Brand specified** → load `/BRANDS/[brand].md` + `/BRANDS/[brand]-design-brief.md`. For Restart Fitness PH Canva execution, also load `/ENGINES/design/design-engine.md` (template-ID map). URBN Athletics → `/BRANDS/URBN-athletics.md`.
 - **Asset type confirmed** → route to correct tool using the table below
 - **Objective confirmed** → Awareness / Conversion / Education / Proof
 - **Design references** → check `/Raw-Files/design-reference-raw/` — read relevant subfolders before producing the visual concept. Folders: `logos/` · `carousels/` · `posts/` · `stories/` · `templates/` · `Core Purpose/`. No brand subfolders — organized by asset type.
 
-If Urban Strong Fitness is specified: flag that the brand is under review for rebrand or deletion. Confirm with Jap whether to proceed before building anything.
+If Urban Strong is referenced: it is now **URBN Athletics** (rebrand LIVE — `/BRANDS/URBN-athletics.md`). URBN visual identity (logo/palette/type) is still pending, so keep URBN designs on the temporary direction — clean black & white, wordmark placeholder, real gym photography — and flag before producing any final-identity visuals.
 
 ---
 

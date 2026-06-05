@@ -22,7 +22,7 @@ The job of the DM conversation is not to close. It is to qualify, connect, and r
 
 **Rule: The goal of every DM thread is one of three outcomes:**
 1. Book a discovery call
-2. Start enrollment (for low-friction entry offers like 6Fix)
+2. Start enrollment (for low-friction entry offers like 6FIX)
 3. Graceful hold — keep the relationship warm until they're ready
 
 ---
@@ -99,7 +99,7 @@ Quick question before I share anything — what's going on right now with your t
 
 **Positioning templates by offer:**
 
-### 6Fix
+### 6FIX
 ```
 Sounds like a good fit for our 6-week foundation program — that's exactly what it's built for. Six weeks of structured training, nutrition guidance, and weekly check-ins to build the foundation before you add intensity. A lot of people start here because it removes the guesswork from day one.
 
@@ -154,7 +154,7 @@ Here's the link: [insert booking link]
 No pressure — it's just a conversation. If it's not the right fit after talking, I'll tell you. I'd rather spend 20 minutes making sure than have you start something that doesn't work for you.
 ```
 
-### Path B — Direct enrollment (6Fix only)
+### Path B — Direct enrollment (6FIX only)
 Use when: the person is clearly a beginner or returning client, the conversation has been warm, and they're ready to move.
 
 ```

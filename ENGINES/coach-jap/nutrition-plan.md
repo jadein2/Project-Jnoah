@@ -404,7 +404,7 @@ Header format:
 ```
 Logo top-left.
 Title text on the right.
-6Fix Program - Restart Fitness PH
+6FIX Program - Restart Fitness PH
 by Coach Japhet Felipe
 ```
 

@@ -15,6 +15,32 @@ Format:
 
 ---
 
+> Log restarted forward 2026-06-04 (sync). Entries 05-28 → 06-04 had drifted; consolidated below. Full operational history lives in /MEMORY/decisions-log.md.
+
+## 2026-06-04 — URBN Athletics — June Rebrand Launch content batch
+- Type: campaign copy + program cards
+- Output file: /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch/ (program-cards.md, pricing-plan.md, services-overview.md, soft-opening-caption.md, tarpaulin-soft-opening-captions.md, creative-handoff.md)
+- Channel: IG / FB / Stories
+- CTA: per asset (Message FIT45 / Book Free Assessment / Ask Pioneer / Message PFT)
+- Notes: drafted across this chat + URBN Main. 6 program 3-slide cards + soft-opening/tarpaulin captions + pricing/services. Copy ready; Canva visuals pending the temp brand kit. Rebrand positioning shifting "better, not same."
+- Performance: TBD
+
+## 2026-05-29 — Restart Fitness PH — Pinned posts + Aileen client story
+- Type: carousel + caption
+- Output file: /OUTPUTS/campaigns/2026-06-social-growth-pipeline-restart-ph/copy/pinned-post-captions.md · /OUTPUTS/client-stories/aileen/aileen.md
+- Channel: IG (pinned)
+- CTA: DM "RESTART"
+- Notes: Pin 1 (Why You Stop) + Pin 2 (The Restart Fitness System, 7 slides) + Aileen proof-of-practice carousel.
+- Performance: TBD
+
+## 2026-05-28 - Restart Fitness PH - Week 1 Social Pipeline Asset Pack
+- Type: campaign asset pack
+- Output file: /OUTPUTS/campaigns/2026-06-social-growth-pipeline-restart-ph/
+- Channel: IG / FB / Stories / Reels / DM
+- CTA: DM "RESTART"
+- Notes: Week 1 pack created for Campaign 001: feed posts, Story scripts, Reel script, Facebook adaptations, manual DM flow, design briefs, and partial Canva builds. Wednesday and Saturday carousels copied and edited in Canva. Monday cover generation failed in Canva and remains manual.
+- Performance: TBD
+
 ## 2026-05-18 — Restart Fitness PH — Conversion Post Ideas (4 concepts)
 - Type: social post concepts
 - Output file: not yet filed — produced in session, not yet developed into full posts

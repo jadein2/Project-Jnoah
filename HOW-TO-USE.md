@@ -4,23 +4,42 @@ Version 1.0 — May 2026
 
 ---
 
+## Current Platform Note
+
+Project Jnoah now runs on two surfaces:
+
+| Surface | Authority file | Skills folder |
+|---|---|---|
+| Codex | `AGENTS.md` | `/.agents/skills/` |
+| Claude / Cowork | `CLAUDE.md` | `/.claude/skills/` |
+
+Both control files are kept content-synced, but the file matching your current platform wins. `STATE.md` is the live "what's now" board. `PROGRESS.md` is build history.
+
+URBN Athletics has replaced the old Urban Strong public identity. The URBN brand file is **LIVE** — `/BRANDS/URBN-athletics.md` (canonical brain: `/Raw-Files/URBN Athletics/Main-Brand-Brain.md`). Still pending: final visual identity + public domain. `/BRANDS/urban-strong.md` is legacy reference only. New OS commands since v1.0: `sync jnoah` (reconcile — see SYNC.md), and the Jnoah Cockpit dashboard (Artifacts/).
+
+---
+
 ## 1. What This System Is
 
-Project Jnoah is a modular AI operating system built inside a folder. It gives Claude persistent context about two businesses — Urban Strong Fitness and Restart Fitness PH — so you never have to re-explain brand voice, design rules, programming format, or client history from scratch.
+Project Jnoah is a modular AI operating system built inside a folder. It gives the assistant persistent context about Restart Fitness PH, URBN Athletics, client work, campaigns, goals, programming, nutrition, and operating state — so you never have to re-explain the system from scratch.
 
 **Three layers:**
 
 | Layer | Location | What it does |
 |---|---|---|
-| Context | CLAUDE.md, ROUTER.md, /BRANDS/, /ENGINES/ | Who you are, what the brands stand for, how the work gets done |
-| Skills | /.claude/skills/ | Craft expertise that auto-fires when relevant |
+| Context | AGENTS.md / CLAUDE.md, ROUTER.md, STATE.md, /BRANDS/, /ENGINES/ | Who you are, what the brands stand for, how the work gets done |
+| Skills | /.agents/skills/ or /.claude/skills/ | Craft expertise that auto-fires when relevant |
 | Memory | /MEMORY/ | Decisions, content history, client records — grows over time |
 
-Every time you open a session in this folder, Claude reads the context layer automatically. You start with a task — not an introduction.
+Every time you open a session in this folder, the assistant reads the context layer. You start with a task — not an introduction.
 
 ---
 
 ## 2. The Two Surfaces
+
+### Codex
+
+Codex uses `AGENTS.md` as the authority file and `/.agents/skills/` for skills. Use Codex for system cleanup, local artifacts, diagnostics, file restructuring, and implementation work.
 
 ### Claude Cowork (primary)
 
@@ -37,7 +56,7 @@ Best for: daily content work, brand tasks, programming, nutrition plans, client 
 2. `cd` to the Project Jnoah folder
 3. Run `claude`
 
-Best for: parallel subagents, system builds, file restructuring, scripted batch workflows. Skills and engines work identically on both surfaces. Files edited in one surface are immediately available in the other.
+Best for: parallel subagents, system builds, file restructuring, scripted batch workflows. Skills and engines work on both surfaces when the matching skill folders stay mirrored. Files edited in one surface are immediately available in the other.
 
 ---
 
@@ -45,12 +64,13 @@ Best for: parallel subagents, system builds, file restructuring, scripted batch 
 
 When a task comes in, the system loads in this order — automatically:
 
-1. **CLAUDE.md** — identity, universal rules, banned words
-2. **ROUTER.md** — maps the task to the correct engine and brand
-3. **/BRANDS/** — locked brand identity for the relevant brand
-4. **/ENGINES/** — workflow file for the task type
-5. **/GLOBAL/** — anti-AI output rules
-6. **/.claude/skills/** — craft skills that auto-fire
+1. **AGENTS.md or CLAUDE.md** — platform authority, identity, universal rules, banned words
+2. **STATE.md** — current active work and blocked items
+3. **ROUTER.md** — maps the task to the correct engine and brand
+4. **/BRANDS/** — locked brand identity for the relevant brand
+5. **/ENGINES/** — workflow file for the task type
+6. **/GLOBAL/** — anti-AI output rules
+7. **/.agents/skills/** or **/.claude/skills/** — craft skills that auto-fire
 
 You do not trigger this manually. Opening the folder and stating your task is enough.
 
@@ -58,21 +78,21 @@ You do not trigger this manually. Opening the folder and stating your task is en
 
 ## 4. Brand Work
 
-**Always state the brand first.** Urban Strong and Restart Fitness PH have different voices, design systems, and CTAs. If the brand is unclear, Claude will ask — never assume.
+**Always state the brand first.** Restart Fitness PH and URBN Athletics are separate tracks. If the brand is unclear, the assistant will ask — never assume.
 
 ### Signal reference
 
 | You mention... | Brand loaded |
 |---|---|
 | Online coaching, The Restart Fitness System, 90-Day Coaching System, 6FIX, discovery call, DM "RESTART" | Restart Fitness PH |
-| Olongapo, the gym, 6-Week Reset, Free Assessment, in-person, group class, blog post | Urban Strong Fitness |
+| Olongapo, the gym, in-person, group class, coached by Jap | URBN Athletics — blocked until brand file lands |
 | Internal planning, cross-brand strategy, programming format, client work | Brand-agnostic (no brand file loaded) |
 
 ### To update a brand rule
 
-Edit the brand file directly: `/BRANDS/restart-fitness-ph.md` or `/BRANDS/urban-strong.md`
+Edit the brand file directly. Restart Fitness PH lives at `/BRANDS/restart-fitness-ph.md`. URBN Athletics is pending; `/BRANDS/urban-strong.md` is old reference only.
 
-Never edit CLAUDE.md for brand-specific rules. That file is for universal rules only.
+Never edit `AGENTS.md` or `CLAUDE.md` for brand-specific rules. Those files are for universal rules only.
 
 ---
 
@@ -99,7 +119,7 @@ Output includes: C/C/V classification, content pillar, caption, CTA, platform-sp
 
 **Say:** "Write a blog post about [topic]"
 
-Default brand: Urban Strong Fitness. CTA: `urbanstrongfit.com/book-free-assessment`
+No default brand while URBN is pending. Confirm Restart Fitness PH vs URBN before writing.
 
 Format: Hook → science/evidence → action → close. Under 550 words.
 
@@ -366,7 +386,7 @@ Three skills auto-fire without being called manually. They load based on task ty
 | A project manager | ClickUp |
 | A file storage system for large media | Google Drive · OneDrive |
 
-Project Jnoah is the context layer that makes every Claude conversation smarter, faster, and on-brand. The work still ships through your existing tools.
+Project Jnoah is the context layer that makes every assistant conversation faster and more consistent. The work still ships through your existing tools.
 
 ---
 
@@ -386,7 +406,7 @@ Project Jnoah is the context layer that makes every Claude conversation smarter,
 ### Content
 
 ```
-"Write a social post about [topic] for Restart / Urban Strong"
+"Write a social post about [topic] for Restart / URBN"
 "Give me [X] ideas for [topic] for [brand]"
 "Write a blog post about [topic]"
 "Design a [X]-slide carousel about [topic] for [brand]"
@@ -450,6 +470,7 @@ Project Jnoah is the context layer that makes every Claude conversation smarter,
 ```
 "What's in the system?"         → reads README.md
 "What's been decided?"          → reads decisions-log.md
+"What's now?"                   → reads STATE.md
 "What's next on the build?"     → reads PROGRESS.md
 "What brand are we in?"         → Claude asks if unclear
 ```
@@ -461,7 +482,10 @@ Project Jnoah is the context layer that makes every Claude conversation smarter,
 ```
 Project Jnoah/
 │
-├── CLAUDE.md                         Identity + universal rules (loads every session)
+├── AGENTS.md                         Codex authority file
+├── CLAUDE.md                         Claude/Cowork authority file
+├── STATE.md                          Current-state board
+├── CHATS.md                          Chat model and start/end rituals
 ├── ROUTER.md                         Task routing → engines, brands, skills
 ├── README.md                         System overview
 ├── PROGRESS.md                       Build phase tracker
@@ -470,7 +494,7 @@ Project Jnoah/
 ├── BRANDS/
 │   ├── restart-fitness-ph.md         Locked brand identity — Restart Fitness PH ✅
 │   ├── restart-fitness-ph-design-brief.md  Visual shortcut — colors, type, layout rules ✅
-│   └── urban-strong.md               Brand identity — Urban Strong ⚠️ under rebrand review
+│   └── urban-strong.md               Old Urban Strong reference — URBN pending
 │
 ├── ENGINES/
 │   ├── research/
@@ -544,21 +568,16 @@ Project Jnoah/
 │   │   └── 06_Media/                 Photography + video assets
 │   └── [source documents]            Pricing source of truth, nutrition handoff, etc.
 │
+├── .agents/
+│   └── skills/                       Codex skill mirror
 └── .claude/
-    └── skills/
-        ├── ui-ux-pro-max/            Design intelligence — auto-fires on visual outputs
-        ├── anti-ai-copywriter/       Copy filter — auto-fires on all client-facing text
-        └── coach-jap-programming-format/  Programming grammar — auto-fires on all training outputs
+    └── skills/                       Claude/Cowork skill mirror
 ```
 
 **Legend:** ✅ Live and tested · ⚠️ Active flag / under review · 🔲 Planned (Phase 9)
 
-**Phase 9 planned additions:**
-- `/ENGINES/sales/sales-engine.md` — DM flows, objection handling, offer presentation
-- `/ENGINES/web/wix.md` — Wix site integration engine
-- `/.claude/skills/research-analyst/` — signal weighting and source scoring skill
-- `/MEMORY/campaigns/campaign-performance.md` — closed campaign results tracker
+**Current live additions:** Sales, offer, web/Wix, research, goals, campaign performance, and cockpit systems are now live. Use `STATE.md` for the active board.
 
 ---
 
-*Project Jnoah — built May 2026. Phases 1–8 complete. One folder. One source of truth.*
+*Project Jnoah — built May 2026. Current state lives in STATE.md. One folder. One source of truth.*

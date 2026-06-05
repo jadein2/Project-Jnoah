@@ -12,9 +12,9 @@ Client Since: —
 ## PERSONAL PROFILE
 Full Name: Jozen (last name — confirm)
 Preferred Name / Nickname: Jozen
-Age: —
+Age: 40
 Date of Birth: —
-Sex: —
+Sex: F
 Height: —
 Nationality: —
 Location: —
@@ -26,13 +26,15 @@ Communication Channel: Trainerize
 ---
 
 ## SERVICE PROFILE
-Service Tier: Personal Training
-Program Name: Cycle 3 — Strength + Conditioning
-Session Frequency: —
+Service Tier: Personal Training — Online Program Only
+Program Name: Cycle 4 — Strength + Hypertrophy + Conditioning
+Session Frequency: 3 sessions/week (15-session cycles)
 Session Days: —
-Training Environment: Urban Strong
+Session Duration: 60 minutes
+Training Environment: Hotel Gym
 Equipment Access Flag: Limited Access
-Equipment List: Smith Machine (primary for squats/bench), Barbell, Dumbbells, Jump Rope
+Equipment List: Dumbbells, Kettlebells, Hex Bar, Smith Machine, Cable Machine, Bench, Pec Machine, Leg Extension Machine, EZ Curl Bar, Bands, Jump Rope, Treadmill
+Equipment NOT available: Barbell platform, Olympic lifting equipment, Rower, Bike Erg, Ski Erg, Wall Balls, Pull-up Rig
 Brand: Restart Fitness PH
 
 ---
@@ -41,7 +43,7 @@ Brand: Restart Fitness PH
 Medical Conditions: —
 Medications: —
 Previous Injuries: —
-Movement Limitations: Possibly — uses Smith Machine for primary lifts (confirm if preference or restriction)
+Movement Limitations: Smith Machine as primary squat/bench tool — hotel gym constraint, not a movement restriction per se
 Pain Points (current): —
 Cleared for Training: Yes
 
@@ -109,7 +111,7 @@ Diet Notes: —
 ---
 
 ## GOAL PROFILE
-Primary Goal: General fitness — strength + conditioning
+Primary Goal: Improve work capacity + build muscle (hypertrophy) + increase strength
 Secondary Goal: —
 Motivation (root): —
 Success Marker: —
@@ -118,8 +120,8 @@ Deadline / Event: —
 ---
 
 ## ACTIVE RECORD
-Current Cycle Goal: General fitness — strength + conditioning — Cycle 3
-Current Phase / Week: Cycle 3 (last session on file)
+Current Cycle Goal: Strength + Hypertrophy + Work Capacity — Cycle 4
+Current Phase / Week: Cycle 4 / Week 1 (rebuilding from correct hotel gym spec)
 Current Program File: /OUTPUTS/programs/Jozen/
 Last Session Date: —
 Last Check-In Date: —
@@ -129,4 +131,5 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
-2026-05-19 — Profile migrated to structured schema. Progress photo (IMG_5124.JPG) on file in references/. Confirm full legal name. Confirm Smith Machine use — preference or movement limitation. Three cycles established — long-term client. Fill in contact and personal profile fields at next opportunity.
+2026-05-30 — Profile corrected from handoff file. Age 40, Female, Hotel Gym confirmed by Jap. Equipment list updated from Raw-Files/Jozen_Training_Track_Handoff.md. Cycle 4 started. S1–S3 (previous Jnoah builds) were wrong format and wrong equipment — replaced by Jozen-Cycle4-Week1.md. Smith Machine = hotel gym constraint, not movement restriction.
+2026-05-19 — Profile migrated to structured schema. Progress photo (IMG_5124.JPG) on file in references/. Confirm full legal name. Three cycles established — long-term client.

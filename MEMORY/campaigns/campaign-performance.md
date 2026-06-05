@@ -67,3 +67,9 @@ Each campaign entry follows this structure:
 
 ## Last updated
 2026-05-21 — Phase 10. Initialized. No campaigns logged yet.
+
+## 2026-06 — URBN June Rebrand Launch (URBN Athletics)
+- Folder: /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch
+- Objective: public rebrand + Soft Opening (Jun 11) + lead gen; commercial target 44 → 100 members.
+- Targets to track (plan §12): inquiries, Free Assessment bookings/show-ups, On-Ramp sign-ups, Pioneer sales, PFT bookings, new memberships, member assessments, churn-risk flags, best post/CTA.
+- Status: DRAFT (plan + creative ready). Actuals: TBD — log weekly Jun 1–7 / 8–14 / 15–21 / 22–30.

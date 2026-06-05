@@ -3,8 +3,11 @@
 The weekly and bi-weekly feedback system for active clients.
 
 Source: Coach Jap system design session — 2026-05-19
+Updated: 2026-05-28 — ADHERE Tool 3 check-in script added for 90-Day Coaching System clients.
 
 Load this for any check-in task. Read alongside client-onboarding.md.
+
+**For 90-Day Coaching System clients:** use the ADHERE check-in script (Tool 3) below instead of the standard 5-field form. The structure is different and the reasoning matters — consistency of format builds trust over 90 days. Full framework context in adhere-compliance.md.
 
 ---
 
@@ -18,6 +21,7 @@ The check-in is how coaching happens between sessions. It is not a courtesy mess
 
 | Service Tier | Format | Cadence | Channel |
 |---|---|---|---|
+| 90-Day Coaching System | ADHERE Tool 3 — 4-step check-in script (Wins → Challenges → Adjustments → Next Steps) | Weekly from Week 2 onward | Call or Trainerize message |
 | Personal Training | Weekly 5-field form | Every Sunday (or agreed day) | Trainerize |
 | Online Program Only | Weekly 5-field form + bi-weekly assessment | Weekly form on Sunday; assessment call/message on alternating weeks | Trainerize |
 | Group Class | No individual check-in — session log only | N/A | Trainerize |
@@ -118,6 +122,49 @@ Do not chase. One prompt. Then move forward.
 
 ---
 
+## 90-Day Coaching System check-ins (ADHERE Tool 3)
+
+Use this script for all 90-Day Coaching System clients from Week 2 onward. Do not use the 5-field form for these clients — the four-step structure is the check-in. Run every week. 10–15 minutes total. Same four steps every time. Consistency of structure builds trust over 90 days.
+
+Full framework context in adhere-compliance.md Tool 3.
+
+**Step 1 — Wins (3 minutes)**
+
+Ask: "What went well this week? What did you do that you're proud of?"
+
+Reinforce the behavior, not the outcome. "You showed up Tuesday when you didn't feel like it" — not "you're crushing it." Do not rush to challenges. Give this step its full three minutes.
+
+**Step 2 — Challenges (4 minutes)**
+
+Ask: "What felt hard? Where did you fall short of what you wanted?"
+
+Listen without judgment. Do not problem-solve in this step. Reflect back what you heard before moving on.
+
+**Step 3 — Adjustments (5 minutes)**
+
+Ask: "What's one thing we could change to make next week easier?"
+
+Co-create the solution. The client speaks first. Pick one adjustment, not three. If they cannot identify one, you propose one and ask if it fits.
+
+**Step 4 — Next steps (2 minutes)**
+
+State: "So next week, your focus is ___. Yes?"
+
+Confirm verbally. Send the same line in writing within 1 hour. Schedule the next check-in before ending the call.
+
+**After the check-in:**
+
+Log to `/MEMORY/clients/[name]/check-ins/YYYY-MM-DD-week-X-checkin.md` using the standard log format. Apply one of the four decision tags (CONTINUE / ADJUST / SWAP / ESCALATE). The decision tag and coach note are the same regardless of whether it's a 5-field or ADHERE check-in — the log format does not change.
+
+**End of Week 2 decision point (from adhere-compliance.md Tool 2):**
+
+After the first full two weeks, run this check-in and assess:
+- Hit 5–6 of 6 sessions → escalate. Move into Build prep. Add second nutrition habit.
+- Hit 3–4 of 6 sessions → hold steady. Repeat Week 2 protocol for one more week.
+- Hit 0–2 of 6 sessions → return to onboarding. Re-run the intake. Identify what broke.
+
+---
+
 ## Program Only — bi-weekly assessment add-on
 
 Program Only clients do not have live coached sessions, so they need a more structured feedback loop every two weeks.
@@ -155,4 +202,5 @@ Next check-in: [date]
 ---
 
 ## Last updated
+2026-05-28 — ADHERE Tool 3 check-in script added for 90-Day Coaching System clients. Format table updated to include 90-Day row. ADHERE check-in section added with four-step script, log instructions, and Week 2 decision point.
 2026-05-19 — built from Coach Jap system design session.

@@ -2,7 +2,7 @@
 
 Switchboard. Maps incoming tasks to the right engine, brand, and skill.
 
-Always read CLAUDE.md before consulting this file.
+Always read the platform control file first — `CLAUDE.md` in Claude/Cowork, `AGENTS.md` in Codex — before consulting this file.
 
 ---
 
@@ -11,7 +11,7 @@ Always read CLAUDE.md before consulting this file.
 When Jap sends a request:
 
 1. **Identify the task type** — design, copy, program, nutrition, blog, carousel, web, planning, client work, etc.
-2. **Identify the brand** — Urban Strong, Restart Fitness PH, both, or brand-agnostic (internal/strategic work)
+2. **Identify the brand** — URBN Athletics, Restart Fitness PH, both, or brand-agnostic (internal/strategic work)
 3. **Load the matching engine file** — see table below
 4. **Load the matching brand file** if brand-specific
 5. **Note which skills should auto-fire** — see Skills column
@@ -32,9 +32,9 @@ If brand is ambiguous, ask. Don't guess.
 | "make the brief" / "clean copy for [topic]" / "ready to route [topic]" | /ENGINES/research/research-engine.md → Brief generation | brand-agnostic | anti-ai-copywriter |
 | "use [topic] for [output]" / "use the [topic] research for [engine]" / "take [finding] and build a [type]" | Load /RESEARCH/[topic-slug]/SELECTION.md if it exists, else ask Jap which findings to use → identify target engine → surface pre-execution plan → wait for Gate 2 confirmation before executing | brand-specific | engine-dependent |
 | "design brief — [brand] — [asset]" / "visual concept" / "AI image prompt" | /ENGINES/design/design-brief.md | brand-specific | ui-ux-pro-max, anti-ai-copywriter |
-| "design a carousel" / "create a post graphic" | /ENGINES/design/carousel.md + /ENGINES/design/design-brief.md | brand-specific | ui-ux-pro-max, anti-ai-copywriter |
+| "design a carousel" / "create a post graphic" | /ENGINES/design/carousel.md + /ENGINES/design/design-brief.md (+ /ENGINES/design/design-engine.md for Restart Canva template IDs) | brand-specific | ui-ux-pro-max, anti-ai-copywriter |
 | "design a poster / flyer / promo" | /ENGINES/design/design-brief.md | brand-specific | ui-ux-pro-max |
-| "write a blog post" / "blog about X" | /ENGINES/content/blog-post.md | Urban Strong (default for blogs) | anti-ai-copywriter |
+| "write a blog post" / "blog about X" | /ENGINES/content/blog-post.md | URBN Athletics (blog default; was Urban Strong) | anti-ai-copywriter |
 | "write a social post" / "Threads / IG caption" | /ENGINES/content/social-post.md | brand-specific | anti-ai-copywriter |
 | "build a program" / "training plan for [client]" | /ENGINES/coach-jap/training-program.md | brand-agnostic (coaching format) | coach-jap-programming-format |
 | "nutrition plan for [client]" / "7-day meal plan" | /ENGINES/coach-jap/nutrition-plan.md | brand-agnostic | — |
@@ -55,14 +55,16 @@ If brand is ambiguous, ask. Don't guess.
 | "morning briefing" | /ENGINES/marketing/campaign.md — NOTE: use "morning brief" for the full daily brief including goals | brand-agnostic | — |
 | "close campaign" / "archive [campaign name]" | /ENGINES/marketing/campaign.md | brand-agnostic | — |
 | "pricing" / "offer structure" / "which offer" / "what program fits" | /ENGINES/sales/offer-engine.md | brand-specific | — |
-| "write website copy" / "homepage copy" / "write the [page] page" / "web copy for [page]" / "copy for the site" | /ENGINES/content/web-copy.md | Restart Fitness PH | anti-ai-copywriter |
 | "update the site" / "edit the website" / "publish blog to site" / "fix the CTA on" / "landing page for" | /ENGINES/web/wix.md | Restart Fitness PH | anti-ai-copywriter |
 | "client profile" / "update client" | /MEMORY/clients/[name]/[name].md | brand-agnostic | — |
 | "onboard client" / "new client pipeline" / "send agreement" | /ENGINES/client/client-onboarding.md | brand-agnostic | — |
 | "add new client" / "create client profile" / "new client [name]" | /ENGINES/client/client-profile.md | brand-agnostic | — |
+| **PASSIVE TRIGGER** — A person's name + transformation story / results / coaching outcome / "client" appears in ANY context (content, campaign, design, social media) → STOP and ask: "Is [name] an existing client? Should I create a client file?" → If yes: /ENGINES/client/client-profile.md. Do not proceed with the original task until this is resolved or explicitly waived. | /ENGINES/client/client-profile.md | brand-agnostic | — |
 | "update client profile" / "log assessment" / "update metrics" | /ENGINES/client/client-profile.md | brand-agnostic | — |
 | "discovery call" / "run a call" / "qualify [name]" | /ENGINES/client/discovery-call.md | brand-agnostic | — |
 | "check-in for [client]" / "weekly feedback" / "bi-weekly assessment" | /ENGINES/client/check-in.md | brand-agnostic | — |
+| "90-day check-in" / "ADHERE check-in" / "week [N] check-in for [90-day client]" | /ENGINES/client/check-in.md + /ENGINES/client/adhere-compliance.md | brand-agnostic | — |
+| "ADHERE intake" / "ADHERE onboarding" / "compliance system" / "week 1–2 protocol" / "friction audit" | /ENGINES/client/adhere-compliance.md + /ENGINES/client/client-onboarding.md | brand-agnostic | — |
 | "client agreement" / "send the agreement" | /ENGINES/client/client-agreement.md | brand-agnostic | anti-ai-copywriter |
 | "program only" / "program only flow" / "trainerize review" | /ENGINES/client/program-only-flow.md | brand-agnostic | — |
 | "new intake for [name]" / "log check-in for [name]" / "log session data for [name]" | /ENGINES/client/handoff-trainerize.md | brand-agnostic | — |
@@ -72,18 +74,18 @@ If brand is ambiguous, ask. Don't guess.
 ## Brand routing cues
 
 **Restart Fitness PH** signals:
-- Mentions of "Restart Method," "6-FIX," "Restart Method 90," "DM RESTART"
+- Mentions of "The Restart Fitness System," "The Restart System," "6FIX," "90-Day Coaching System," "DM RESTART"
 - Online coaching, 90-day program, metabolic, transformation language
 - Threads, IG, FB content for the online brand
 - Editorial/cinematic design direction
+- Standalone business — independent of URBN, never described as part of it
 - → Load /BRANDS/restart-fitness-ph.md
 
-**Urban Strong** signals:
-- Mentions of "Olongapo," "the gym," "6-Week Reset," "Free Assessment"
-- In-person training, group classes, semi-private, ON-RAMP
-- Blog posts (default home for blogs)
-- urbanstrongfit.com references
-- → Load /BRANDS/urban-strong.md
+**URBN Athletics** signals (rebrand of Urban Strong — LIVE brand file):
+- Mentions of "Olongapo," "the gym," in-person training, FIT45, On-Ramp, URBN FIT, URBN HYBRID/PFT, group/semi-private
+- Busy adults (28–55), beginners, coached gym, "Built to Move Better"
+- A standalone track — NOT under Restart, and Restart is NOT under it
+- → Load /BRANDS/URBN-athletics.md (canonical source: /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Visual identity + public domain still pending — flag before producing final visual assets. /BRANDS/urban-strong.md is legacy reference only.
 
 **Brand-agnostic** (no brand file needed):
 - Internal planning, decisions about either business
@@ -95,10 +97,16 @@ If brand is ambiguous, ask. Don't guess.
 
 ## Skills auto-fire conditions
 
-Skills load when their `description` field matches the task. The Skills in /.claude/skills/ are:
+Skills load when their `description` field matches the task.
+
+Platform folders:
+- Codex uses `/.agents/skills/`
+- Claude / Cowork uses `/.claude/skills/`
+
+Skill names should stay mirrored across both folders:
 
 - **ui-ux-pro-max** — any design output (carousel, poster, web layout, slide deck)
-- **anti-ai-copywriter** — any client-facing copy (captions, blogs, DMs, web copy)
+- **anti-ai-copywriter** — any client-facing copy (captions, blogs, DMs, web copy). AUTHORITY on voice QA, runs first. Follow with `marketing:brand-review` / brand-voice as a second polish pass; on conflict, anti-ai-copywriter wins.
 - **coach-jap-programming-format** — any training program, WOD, warm-up, or workout written out
 - **research-analyst** — any research task; auto-applies T1/T2/T3 credibility scoring and signal weighting
 - **goals** — any morning brief, goal check, or daily orientation request; produces the structured daily work order
@@ -149,6 +157,11 @@ Never invent a new engine on the fly. If a task type recurs and has no home, fla
 ---
 
 ## Last updated
+2026-05-30 — URBN Athletics brand file went LIVE (/BRANDS/URBN-athletics.md, canonical /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Hold lifted. Blog default → URBN. Removed Restart's line "Stop guessing. Follow a system." from URBN (decoupling). Visual identity + domain still pending.
+2026-05-30 — Platform wording cleanup. Skills section now states both platform folders: Codex uses /.agents/skills/ and Claude/Cowork uses /.claude/skills/. Names should stay mirrored.
+2026-05-29 — Governance pass. Brand cues updated for URBN Athletics rebrand (decoupled from Restart; URBN brand file pending, urban-strong.md reference-only). Blog default suspended → ASK. Voice QA layered (anti-ai-copywriter authority + brand-review). Control-file read note updated for platform check.
+2026-05-29 — Passive client trigger added. Any mention of a person's name + transformation/results/coaching outcome in any context now fires a stop-and-ask before proceeding.
+2026-05-28 — ADHERE routing rows added (2 rows). Brand routing cues corrected — "Restart Method" and "Restart Method 90" replaced with canonical names.
 2026-05-21 — Phase 12. Goals system wired in. Morning brief trigger routes to goals skill. Campaign status row narrowed. Goals engine trigger rows added (7 rows). Goals skill added to Skills section.
 2026-05-21 — Phase 11. Research → production handoff row added. Pre-execution gate added. Research is now an independent engine; never auto-fires before content tasks.
 2026-05-21 — Phase 10. Wix engine row added (restartfitnessph.com). research-analyst skill added to Skills section.

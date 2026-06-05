@@ -4,15 +4,25 @@ Master operating file for Coach Jap's business system.
 
 ---
 
+## Platform check (read first)
+
+This system runs on two surfaces, one control file each:
+- **Claude / Cowork** → `CLAUDE.md` (this file) is authority. Skills + agents live in `.claude/`.
+- **Codex** → `AGENTS.md` is authority. Skills + agents live in `.agents/`.
+
+Both files are kept content-synced — identity, universal rules, and load order are identical. If they ever disagree, the file matching your current platform wins; mirror the fix back to the other.
+
+---
+
 ## Identity
 
-You are working with Japhet "Jap" Felipe — CEO and head coach of Urban Strong Fitness Gym in Olongapo, Philippines, and founder of Restart Fitness PH (online coaching). Two brands. One operator. Treat him as a peer who runs a coaching business — not as a client being walked through fitness 101, and not as a beginner being explained the basics of marketing or design.
+You are working with Japhet "Jap" Felipe — CEO and head coach in Olongapo, Philippines, and founder of Restart Fitness PH (online coaching). Treat him as a peer who runs a coaching business — not as a client being walked through fitness 101, and not as a beginner being explained the basics of marketing or design.
 
 ## Businesses at a glance
 
-**Urban Strong Fitness** — 140 sqm gym in Olongapo. Group classes, personal training, semi-private training, nutrition coaching. Frontend offer: Urban Strong 6-Week Reset. Target: busy adults 28–45 looking for a coached fitness solution. Website: urbanstrongfit.com. Blog CTA: urbanstrongfit.com/book-free-assessment. ⚠️ Brand under review for rebrand or deletion — do not invest further in Urban Strong brand file until Jap confirms direction.
+**URBN Athletics** (rebrand of Urban Strong Fitness — name-change rebrand, LIVE) — the in-person coached fitness gym in Olongapo for busy adults (28–55). Offers: FIT45, On-Ramp/Foundation, URBN FIT, URBN HYBRID/PFT, PT, small-group. Core line: "Built to Move Better." A *separate, standalone* track from Restart Fitness PH — neither is described publicly as part of the other; Jap is the only bridge (URBN can feed credibility/proof into Restart). Brand identity, voice, messaging, offers: /BRANDS/URBN-athletics.md (canonical: /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Still pending: final visual identity (logo, palette, type) + public domain. Legacy reference: /BRANDS/urban-strong.md.
 
-**Restart Fitness PH** — Online coaching brand built around The Restart Fitness System (casual: The Restart System). Flagship: 90-Day Coaching System (internal: Restart Fitness System 90). Beginner program: 6FIX. Brand line: "Stop guessing. Follow a system." Primary website CTA: Book a Discovery Call. Primary social CTA: DM "RESTART". Audience word: people (never "busy adults"). Urban Strong Fitness is positioned publicly as the local in-person coaching facility under Restart Fitness PH. Locked brand identity — see /BRANDS/restart-fitness-ph.md.
+**Restart Fitness PH** — Standalone online coaching business built around The Restart Fitness System (casual: The Restart System). Flagship: 90-Day Coaching System (internal: Restart Fitness System 90). Beginner program: 6FIX. Brand line: "Stop guessing. Follow a system." Primary domain: restartfitnessph.com (planned — not live yet). Primary website CTA: Book a Discovery Call. Primary social CTA: DM "RESTART". Audience word: people (never "busy adults"). A complete standalone entity — runs as its own brand independent of URBN. Locked brand identity — see /BRANDS/restart-fitness-ph.md.
 
 ---
 
@@ -26,6 +36,7 @@ These apply to every response, every brand, every engine. No exceptions.
 - Casual-but-professional peer tone. Response length matches the subject — short questions get short answers.
 - Present multiple options with rationale before finalizing. Confer before committing to a direction on anything substantive.
 - Read the relevant brand file before any brand-specific work. Never improvise brand voice or design.
+- Voice QA on client-facing copy runs two checkers, layered: `anti-ai-copywriter` first (hard banned-word + brand-line enforcement, this is the authority), then `marketing:brand-review` / brand-voice as a second polish pass. Both clear before copy ships; on conflict, anti-ai-copywriter wins.
 - For Restart Fitness PH:
   - Use "The Restart Fitness System" — never "The Restart Method"
   - Never use "restart" as a verb in public copy ("restart your journey" → banned)
@@ -54,7 +65,18 @@ This folder is a modular business operating system. It loads context in layers, 
 
 When you get a task: read this file → consult ROUTER.md → load relevant brand file → load engine file → apply any matching skill → produce output → log it to /MEMORY/.
 
-**Engine files that exist:** design-brief.md, carousel.md, blog-post.md, social-post.md, post-routing.md, training-program.md, nutrition-plan.md · client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md · campaign.md (/ENGINES/marketing/) · offer-engine.md, sales-engine.md (/ENGINES/sales/) · wix.md (/ENGINES/web/) · research-engine.md (/ENGINES/research/) · goals-engine.md (/ENGINES/goals/). **Not yet built:** poster.md. If routed to a missing engine, say so rather than improvising.
+**Engine files that exist:**
+- `/ENGINES/content/` — carousel.md, blog-post.md, social-post.md, post-routing.md
+- `/ENGINES/design/` — design-brief.md, design-engine.md, carousel.md
+- `/ENGINES/coach-jap/` — training-program.md, nutrition-plan.md, wod-brain.md, program-state-template.md
+- `/ENGINES/client/` — client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md, adhere-compliance.md
+- `/ENGINES/marketing/` — campaign.md
+- `/ENGINES/sales/` — offer-engine.md, sales-engine.md
+- `/ENGINES/web/` — wix.md
+- `/ENGINES/research/` — research-engine.md
+- `/ENGINES/goals/` — goals-engine.md
+
+**Not yet built:** poster.md. If routed to a missing engine, say so rather than improvising.
 
 **Ignore `/files/`** — legacy backup copies of brand and memory files. Not canonical. Always read from the actual paths (/BRANDS/, /MEMORY/, etc.).
 
@@ -82,6 +104,11 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 
 ## Quick command reference
 
+- `load jnoah` → read this control file + ROUTER.md + STATE.md (chat START ritual — see CHATS.md)
+- `log + update state` → append /MEMORY/decisions-log.md + update STATE.md (chat END ritual)
+- `sync jnoah` → reconcile registry/STATE/cockpit from the vault + flag unlogged outputs (see SYNC.md). Run after heavy side-chat work or weekly.
+- "what's now?" / "where did I leave off?" → read STATE.md (the current-state board)
+- "how do I run chats?" → CHATS.md (chat model: Command + Project + Worker)
 - "What's in the system?" → read README.md
 - "What's been decided?" → check /MEMORY/decisions-log.md
 - "What's next on the build?" → check PROGRESS.md
@@ -93,6 +120,7 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 ---
 
 ## Last updated
-2026-05-21 — Phase 12 complete — Goals system built. Goals engine, Goals skill, /GOALS/ folder, posting log bridge to campaign engine. Morning brief is now the daily entry point.
-2026-05-21 — Phase 11 complete — staged decision pipeline wired in. Research rule rewritten (independent, manual-only). Pre-execution gate added to ROUTER.md. Selection and project pipeline templates created.
-2026-05-21 — Phase 10 complete — research-analyst skill added, research rule added to load order, engine list updated (offer-engine, sales-engine, wix, research-engine all live)
+2026-06-01 — Engine list corrected: categorized by folder, 3 missing engines added (adhere-compliance.md, design-engine.md, program-state-template.md). Emoji removed from URBN blurb.
+2026-05-30 — URBN Athletics brand file LIVE. Visual identity + domain still pending. Restart domain locked: restartfitnessph.com (planned).
+
+Full history: /MEMORY/decisions-log.md

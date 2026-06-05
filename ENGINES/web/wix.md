@@ -100,7 +100,7 @@ Before touching the Wix site, confirm:
 6. Submit as draft for Jap review before publishing
 
 **Program names on site (use these exactly):**
-- 6Fix (entry), Restart-P (flagship), Restart-90 (90-Day Coaching System in public copy), Restart-Base, Restart-Perform
+- 6FIX (entry), Restart-P (flagship), Restart-90 (90-Day Coaching System in public copy), Restart-Base, Restart-Perform
 
 ---
 

@@ -3,8 +3,11 @@
 Full pipeline from first DM to first session. Every stage, every tool, every handoff.
 
 Source: Coach Jap system design session — 2026-05-19
+Updated: 2026-05-28 — ADHERE Compliance System wired in for 90-Day Coaching System clients.
 
 Load this for any onboarding task. Read alongside discovery-call.md and client-agreement.md.
+
+**For 90-Day Coaching System clients:** also load adhere-compliance.md. The ADHERE framework replaces the generic intake flow at Stage 5 and governs all of Week 1–2. It is not optional.
 
 ---
 
@@ -108,23 +111,44 @@ Once payment is confirmed, send three things in one message:
 
 1. **Client Agreement** — one-page document (from `client-agreement.md`). Ask them to read and confirm they understand before the onboarding call.
 
-2. **Trainerize registration link** — their email goes here. Once registered, the intake form inside Trainerize is their first task.
+2. **Intake form** — see intake type below. Set a 48-hour completion deadline.
 
 3. **Onboarding call booking** — offer two slots, same process as discovery call booking.
 
-Message template:
+**Intake form by offer type:**
+
+| Offer | Intake Form |
+|---|---|
+| 90-Day Coaching System | ADHERE Tool 1 (Google Form / Typeform) — full ADHERE intake. This is the required form. See adhere-compliance.md. |
+| Restart-P / Restart-Base / Restart-Perform | Trainerize built-in intake form |
+| 6FIX | Trainerize built-in intake form (simplified) |
+| Restart 1-on-1 | ADHERE Tool 1 recommended — or Trainerize intake at minimum |
+
+**90-Day Coaching System clients — additional pre-onboarding step (ADHERE Day -7 to 0):**
+
+After sending the ADHERE intake form, send a Welcome Kit once it is completed:
+- Training schedule for Days 1–14
+- One nutrition habit (from their intake answers)
+- One sleep habit (from their intake answers)
+- Link to their tracker (whichever format they chose in the form)
+- Confirm Day 1 in writing
+
+This is the ADHERE Day -7 to 0 protocol. Do not skip it. Full detail in adhere-compliance.md Tool 2.
+
+Message template (all offers):
 > "Welcome. Before our onboarding call, please do three things:
 > 1. Read the attached program overview and reply to confirm you've read it.
-> 2. Register on Trainerize using this link: [link]. Complete the intake form inside.
+> 2. Complete the intake form here: [link]. Please do this within 48 hours.
 > 3. Book your onboarding call: [two time options].
 > Once those are done, we're ready to start."
 
 **Do not proceed to the onboarding call until:**
 - Agreement acknowledged
-- Trainerize intake form completed
+- Intake form completed
 - Onboarding call time confirmed
+- (90-Day clients) Welcome Kit sent and Day 1 confirmed
 
-**Tool:** Trainerize for registration and intake. DM for coordination.
+**Tool:** Google Form / Typeform for 90-Day clients. Trainerize for all others. DM for coordination.
 
 ---
 
@@ -196,6 +220,9 @@ First session is the handoff from onboarding to ongoing coaching.
 - Log to `/MEMORY/clients/[name]/check-ins/`
 - Start the weekly check-in cycle (see `check-in.md`)
 
+**For 90-Day Coaching System clients:**
+The Week 1–2 ADHERE protocol (Tool 2) is now running. During Days 1–7, the only goal is 3 sessions. No nutrition tracking, no metrics, no weigh-ins. Daily 30-second check-in from client only. Coach responds with one line — presence, not advice. Full protocol in adhere-compliance.md Tool 2.
+
 From this point forward, the client is in the active coaching loop.
 
 ---
@@ -249,4 +276,5 @@ All twelve must be checked before the first session runs.
 ---
 
 ## Last updated
+2026-05-28 — ADHERE Compliance System wired in. Stage 5 intake split by offer type. 90-Day Coaching System now uses ADHERE Tool 1 (full intake form) and ADHERE Tool 2 Day -7 to 0 protocol. Stage 8 updated with Week 1–2 ADHERE protocol note.
 2026-05-19 — built from Coach Jap system design session.

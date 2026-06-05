@@ -25,6 +25,42 @@ If any of these is missing — ask before generating. Do not invent a baseline o
 
 ---
 
+## Output file format rule (updated 2026-05-30)
+
+**One file per week. No individual daily files.**
+
+For any client with 3 or more sessions per week, all sessions go into a single weekly .md file — never individual daily files. This applies regardless of session type mix (coached vs. program only).
+
+**File naming:**
+`[ClientName]-[CycleLabel]-Week[N].md`
+Examples: `Aira-Cycle3-Week1.md` · `Yury-Cycle13-Week1.md` · `Em-Tan-W6-heavy-peak.md`
+
+**File structure inside the weekly file:**
+```
+# [CLIENT] — [CYCLE] / WEEK [N]
+[brief cycle context + session key]
+
+---
+
+## Week [N]
+
+---
+
+### Day 1 — [Type] | [Focus]
+[full session content]
+
+---
+
+### Day 2 — [Type] | [Focus]
+[full session content]
+```
+
+Program-only sessions inside the weekly file still carry the `— complete independently —` header under their Day label.
+
+If a client has only 1–2 sessions per week (rare), individual session files are acceptable.
+
+---
+
 ## Post-output: mandatory close-out steps (every programming session)
 
 Run these after every session or batch — no exceptions:

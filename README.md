@@ -1,8 +1,12 @@
 # Project Jnoah
 
-Modular AI operating system for Restart Fitness PH.
+Modular AI operating system for Restart Fitness PH and URBN Athletics.
 
-Built to run in Claude Cowork (and Claude Code when needed). One folder, one source of truth.
+Built to run on two surfaces:
+- **Codex** → `AGENTS.md` is authority, skills live in `.agents/`
+- **Claude / Cowork** → `CLAUDE.md` is authority, skills live in `.claude/`
+
+One folder, one source of truth. `STATE.md` is the live "what's now" board.
 
 ---
 
@@ -12,12 +16,12 @@ Built to run in Claude Cowork (and Claude Code when needed). One folder, one sou
 
 ## What this is
 
-A structured set of markdown files that gives Claude persistent context about your two businesses — brand voice, design rules, programming format, content patterns, client history — so you stop re-explaining every chat.
+A structured set of markdown files that gives the assistant persistent context about your business system — brand voice, design rules, programming format, content patterns, client history, campaigns, goals, and operating state — so you stop re-explaining every chat.
 
 Three layers:
 
 1. **Context** (this folder) — who you are, what your brands stand for, how you do the work
-2. **Skills** (`.claude/skills/`) — craft expertise that auto-fires when relevant
+2. **Skills** (`.agents/skills/` for Codex, `.claude/skills/` for Claude/Cowork) — craft expertise that auto-fires when relevant
 3. **Memory** (`/MEMORY/`) — decisions, client files, content log; grows over time
 
 ---
@@ -26,30 +30,36 @@ Three layers:
 
 ```
 C:\Jnoah\vault\               (canonical — formerly ~/Documents/ProjectJnoah, now legacy)
-├── CLAUDE.md                  Identity + universal rules (read first, every session)
+├── AGENTS.md                  Codex authority file
+├── CLAUDE.md                  Claude/Cowork authority file
+├── STATE.md                   Current-state board — read first for what's active now
+├── CHATS.md                   Chat model and start/end rituals
+├── SYNC.md                    Vault reconcile routine (`sync jnoah`)
 ├── ROUTER.md                  Maps tasks → engines, brands, skills
 ├── README.md                  This file
 ├── PROGRESS.md                Build status — what's done, what's next
 │
 ├── BRANDS/                    Locked brand identity per brand
 │   ├── restart-fitness-ph.md
-│   └── urban-strong.md
+│   ├── URBN-athletics.md       URBN Athletics (LIVE) — canonical brain in /Raw-Files/URBN Athletics/
+│   └── urban-strong.md         Legacy reference only (pre-rebrand)
 │
 ├── ENGINES/                   Workflow files — how to produce each output type
 │   ├── coach-jap/             Training programs, nutrition plans, WODs
+│   ├── client/                Client onboarding, profiles, check-ins, Trainerize handoff
 │   ├── design/                Carousels, posters, web layouts
-│   ├── content/               Blog posts, social posts, DMs
-│   ├── client/                Onboarding, discovery call, check-ins, Trainerize handoff
-│   ├── marketing/             Campaigns, content calendars
-│   ├── sales/                 DM scripts, objection handling, offer/pricing
-│   ├── web/                   Wix site build + edits
-│   ├── research/              Research engine (independent, manual-only)
-│   └── goals/                 Goal setup, tracking, milestones → tasks
+│   ├── content/               Blog posts, social posts
+│   ├── marketing/             Campaign planning and execution
+│   ├── sales/                 Offers, DM flows, objection handling
+│   ├── research/              Research engine and topic repository
+│   ├── web/                   Wix workflow
+│   └── goals/                 Goal setting and daily work order
 │
 ├── MEMORY/                    Persistent history
 │   ├── decisions-log.md       One line per decision/output
 │   ├── content-log.md         Content shipped + how it performed
-│   └── clients/               One file per active client
+│   ├── campaigns/             Campaign performance log
+│   └── clients/               One folder per client
 │
 ├── GLOBAL/                    Cross-cutting rules
 │   └── anti-ai-output-rules.md
@@ -62,20 +72,24 @@ C:\Jnoah\vault\               (canonical — formerly ~/Documents/ProjectJnoah, 
 │   ├── nutrition/
 │   └── web/
 │
-├── GOALS/                     Active goals + posting log (drives the morning brief)
-├── RESEARCH/                  Research topics — raw findings, briefs, selections
-│
-└── .claude/
-    ├── skills/                Craft expertise (auto-loaded by Claude)
-    │   ├── ui-ux-pro-max/
-    │   ├── anti-ai-copywriter/
-    │   ├── coach-jap-programming-format/
-    │   ├── research-analyst/
-    │   └── goals/
-    └── agents/                Subagents (Claude Code only)
+├── Artifacts/                  Jnoah Cockpit dashboard (HTML)
+├── .agents/                   Codex skills and agents
+└── .claude/                   Claude/Cowork skills and agents
 ```
 
 ---
+
+## How to use it in Codex
+
+Open this folder in Codex. Codex reads `AGENTS.md`, then `ROUTER.md`, then the needed brand, engine, memory, and skill files.
+
+Use Codex for:
+
+- System builds and cleanup
+- File restructuring
+- Local artifacts
+- Multi-file diagnostics
+- Implementation work
 
 ## How to use it in Cowork
 
@@ -86,13 +100,13 @@ C:\Jnoah\vault\               (canonical — formerly ~/Documents/ProjectJnoah, 
 
 Example prompts:
 
-> "Write a blog post about why crash diets fail. Audience: Urban Strong cold traffic."
+> "Write a blog post about why crash diets fail. Brand: Restart Fitness PH."
 
 > "Design a 7-slide Restart Fitness PH carousel about starting over after a setback."
 
 > "Build a 4-week program for Aira. Goal: kipping pull-ups, RPE-based, knee-safe."
 
-Claude reads CLAUDE.md → ROUTER.md → relevant brand + engine → applies skills → produces the work → saves to /OUTPUTS/ → logs to /MEMORY/.
+Claude reads `CLAUDE.md` → `ROUTER.md` → relevant brand + engine → applies skills → produces the work → saves to `/OUTPUTS/` → logs to `/MEMORY/`.
 
 ---
 
@@ -110,19 +124,19 @@ Files are interchangeable. Edit anywhere; the other surface sees it next session
 
 ## Editing the system
 
-- Add a new client → create `/MEMORY/clients/[name]/[name].md` (folder per client; say "new client [name]" to run the client-profile engine)
+- Add a new client → create `/MEMORY/clients/[name]/[name].md` plus `references/` and `check-ins/` (or say "new client [name]" to run the client-profile engine)
 - Add a new brand → create `/BRANDS/[brand-name].md`, update ROUTER.md
-- Add a new skill → create folder under `.claude/skills/` with `SKILL.md`
-- Change a universal rule → edit CLAUDE.md
-- Change a brand rule → edit the brand file (not CLAUDE.md, not the engine)
+- Add a new skill → create matching folders under `.agents/skills/` and `.claude/skills/` with `SKILL.md`
+- Change a universal rule → edit the active platform file first (`AGENTS.md` in Codex, `CLAUDE.md` in Claude), then mirror the change to the other
+- Change a brand rule → edit the brand file (not AGENTS.md, not CLAUDE.md, not the engine)
 
-Keep CLAUDE.md under 200 lines. Keep each brand file under 300. Extract heavy sections to dedicated files when they outgrow their home.
+Keep `AGENTS.md` and `CLAUDE.md` under 200 lines. Keep each brand file under 300. Extract heavy sections to dedicated files when they outgrow their home.
 
 ---
 
 ## What this is not
 
-- Not a CRM (use Google Sheets for lead tracking)
+- Not a full CRM (use ClickUp, Wix CMS, or a dedicated CRM for lead tracking)
 - Not a content scheduler (use Meta Business Suite, Buffer, etc.)
 - Not a replacement for client management software (use ClickUp)
 - Not a project management tool (use ClickUp)
@@ -133,4 +147,4 @@ It's the context layer that makes every Claude chat smarter, faster, and more on
 
 ## Status
 
-See PROGRESS.md for current build phase and what's pending.
+Read `STATE.md` first for the current active state. Use `PROGRESS.md` for build history.
