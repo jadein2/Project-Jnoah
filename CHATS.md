@@ -43,10 +43,11 @@ One test: **will I come back to this thread in 3+ days?**
 This is what makes the model work. Two shorthands:
 
 - **`load jnoah`** (start of any chat) → read the platform control file (CLAUDE.md / AGENTS.md) + ROUTER.md + **STATE.md**, so the chat instantly knows what's in flight and what's next. In the Command chat, use `morning brief` instead — it does this plus the daily work order.
-- **`log + update state`** (end of any chat) → three steps, every time:
+- **`log + update state`** (end of any chat) → four steps, every time:
   1. Append one line to /MEMORY/decisions-log.md
   2. Update the relevant row(s) in STATE.md
   3. **Lessons check** — did Jap correct anything this session? If yes → extract the rule, append /MEMORY/lessons-learned.md, route the rule to its canonical file (see Self-learning loop in the control file)
+  4. **Commit** — `git add -A && git commit` on vault (and the app if touched). Push vault to GitHub. A session without a commit is work on one disk only.
 
 If you forget the end ritual, the next chat won't know what happened — and corrections die in the chat instead of becoming rules. The rituals are the glue.
 
@@ -61,5 +62,6 @@ If you forget the end ritual, the next chat won't know what happened — and cor
 ---
 
 ## Last updated
+2026-06-11 — END ritual gains step 4: commit vault + app every session close. From P1-2 post-mortem fix.
 2026-06-10 — END ritual extended with lessons check (step 3) — corrections become rules via /MEMORY/lessons-learned.md.
 2026-05-30 — Created. Chat model implemented (Command + Project + Worker), naming convention, where-does-this-go rule, load-jnoah / log-update-state rituals.

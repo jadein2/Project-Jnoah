@@ -4,6 +4,8 @@ One line per decision or significant output. Newest at the top.
 
 Format: `YYYY-MM-DD â€” [TYPE] short description`
 
+2026-06-11 — [OPS] P1-2 resolved: vault (99 changes) + app (full Phase 1–3 build, 56 files) committed and pushed to GitHub. Vault: commit 3108d4e → ee46bde. App: commit f5bf127.
+2026-06-11 — [OPS] P2-1 resolved: AGENTS.md parity pass complete. Engine list updated to categorized-by-folder format, /ENGINES/6fix/ added (11 files), 3 missing engines added, stray emoji removed. CHATS.md END ritual gains step 4 (commit per session close).
 2026-06-10 — [PROGRAM] Aira Quito — Cycle 3 Week 2 built (5 sessions, Format B Simple). RPE/auto-regulation progression from W1 (Power Clean 4→5 sets, several skill-block reps +1). Resolved D-21/D-22 abductor duplication flag — Day 2 now uses Banded Side Steps. Hip pool fully rotated (4 new adduction/abduction items, first posterior chain anchor added). program-state.md updated to W2.
 2026-06-09 — [FIX] 6FIX engine relocated — moved from OUTPUTS/programs/6FIX/ to /ENGINES/6fix/ (11 files). Product/system engines do not belong in the client-session output folder. ROUTER.md: 10 routing rows added + output destinations note updated. CLAUDE.md engine list updated.
 2026-06-08 — [CLIENT] Fame Florendo — starting weight corrected to 192 lbs (was 183). Phase 1 total lost: 14.6 lbs. Results card PDF needs reprint.
