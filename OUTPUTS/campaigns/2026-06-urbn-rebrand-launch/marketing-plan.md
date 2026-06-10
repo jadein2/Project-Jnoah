@@ -218,7 +218,7 @@ Suggested post rhythm:
 | Day | Post Type | Topic | CTA |
 |---|---|---|---|
 | Mon, Jun 1 | Announcement | URBN Athletics launch week and FIT45 waitlist opens | Join the FIT45 waitlist |
-| Tue, Jun 2 | Soft Opening | Soft Opening is June 11 | Reserve a Free Trial |
+| Tue, Jun 2 | Soft Opening | Soft Opening is June 8 | Reserve a Free Trial |
 | Wed, Jun 3 | FIT45 intro | New to fitness? Start with FIT45 | Message "FIT45" |
 | Thu, Jun 4 | FIT45 benefits | Low-impact, scalable daily movement | Join the FIT45 waitlist |
 | Fri, Jun 5 | Free Trial | 2-session Free Trial for FIT45 or URBN HYBRID only | Reserve a Free Trial |
@@ -234,7 +234,7 @@ Suggested post rhythm:
 
 Key messages:
 
-- Soft Opening is June 11.
+- Soft Opening is June 8.
 - Current members are invited to experience and support the next chapter.
 - Old members can come back through Pioneer Price.
 - On-Ramp is the Foundation Course before URBN FIT or URBN HYBRID.
@@ -255,13 +255,13 @@ Suggested post rhythm:
 
 | Day | Post Type | Topic | CTA |
 |---|---|---|---|
-| Mon, Jun 8 | Education | What is On-Ramp / Foundation Course? | Book a Free Assessment |
-| Tue, Jun 9 | Invitation | Soft Opening is June 11 | Reserve a Free Trial |
+| Mon, Jun 8 | Soft Opening | Welcome to the next chapter of URBN Athletics | Message us to start |
+| Tue, Jun 9 | Education | What is On-Ramp / Foundation Course? | Book a Free Assessment |
 | Wed, Jun 10 | Comeback | Old members can return with Pioneer Price | Ask about Pioneer Price |
-| Thu, Jun 11 | Soft Opening | Welcome to the next chapter of URBN Athletics | Message us to start |
-| Fri, Jun 12 | Pathway post | FIT45 -> On-Ramp -> URBN FIT | Join the FIT45 waitlist |
-| Sat, Jun 13 | On-Ramp schedule | Group On-Ramp: Tue 6 PM, Thu 6 PM, Sat 10 AM | Start Foundation Course |
-| Sun, Jun 14 | FAQ | FIT45, On-Ramp, URBN FIT, and HYBRID explained | Message us to start |
+| Thu, Jun 11 | Pathway post | FIT45 -> On-Ramp -> URBN FIT | Join the FIT45 waitlist |
+| Fri, Jun 12 | On-Ramp schedule | Group On-Ramp: Tue 6 PM, Thu 6 PM, Sat 10 AM | Start Foundation Course |
+| Sat, Jun 13 | FAQ | FIT45, On-Ramp, URBN FIT, and HYBRID explained | Message us to start |
+| Sun, Jun 14 | Pioneer reminder | 15 Pioneer seats lock at Grand Opening | Ask about Pioneer Price |
 
 Operational caution:
 

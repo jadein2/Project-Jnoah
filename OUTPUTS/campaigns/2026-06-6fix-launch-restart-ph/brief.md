@@ -29,11 +29,12 @@
 | DM deadline | June 17, 2026 (last day to DM "6FIX" and secure onboarding spot) |
 | Enrollment close | June 21, 2026 |
 | Duration | June 1 – June 25, 2026 (25 days) |
-| Success metric — primary | 8 confirmed enrollments by June 21 → Cohort 1 full → training begins June 22 |
+| Success metric — primary | 10 confirmed enrollments by June 21 → Cohort 1 full → training begins June 22 |
 | Success metric — secondary | 3+ new cold-audience followers engaging with problem-led content (seeds Cohort 2) |
 | Primary CTA | DM "6FIX" |
 | Secondary CTA (warm list) | Tag or bring someone who needs this |
 | Budget | Organic-first. Optional ₱500–1,000 paid boost on best-performing Reel (Week 2) |
+| Cohort 1 spots | 10 (updated 2026-06-08) |
 | Program | 6FIX — Phase 1 (₱3,000 launch price, Cohort 1 only) |
 | Phase 2 hook | Weeks 7–12 continuation available to Phase 1 completers |
 | Research source | /RESEARCH/6fix-system-integration/RAW/6fix-system-integration-research.md |

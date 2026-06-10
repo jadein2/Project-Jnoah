@@ -3,7 +3,7 @@
 **Slug:** 2026-06-urbn-rebrand-launch
 **Brand:** URBN Athletics
 **Month:** June 2026
-**Status:** DRAFT — plan + creative handoff ready; assets not yet produced/pushed
+**Status:** PRODUCTION — Week 1 assets done; Soft Opening Jun 8; assets in market
 **Core line:** Built to Move Better
 
 ---
@@ -31,7 +31,7 @@ Public rebrand + soft-opening + lead-generation month. Make the market understan
 | 3 | Jun 15–21 | URBN HYBRID + PFT | Try URBN HYBRID |
 | 4 | Jun 22–30 | Retention + Proof | Book a Free Assessment |
 
-Key dates: **Soft Opening June 11** · **Grand Opening (tentative) July 11**.
+Key dates: **Soft Opening June 8** · **Grand Opening (tentative) July 11**.
 
 ## Hard constraints (must respect in production)
 

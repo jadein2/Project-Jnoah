@@ -63,11 +63,20 @@ If a client has only 1–2 sessions per week (rare), individual session files ar
 
 ## Post-output: mandatory close-out steps (every programming session)
 
-Run these after every session or batch — no exceptions:
+Run these after every session or batch — no exceptions. Do not log to decisions-log.md until program-state.md is updated. These two steps are locked together.
 
-1. Update `/MEMORY/clients/[name]/program-state.md` — cycle position, pool log entries (exercise + session + date), any load baselines confirmed this session.
-2. Log one line to `/MEMORY/decisions-log.md` — output type + short description.
+1. **UPDATE program-state.md FIRST** — `/MEMORY/clients/[name]/program-state.md` — cycle name, current week/phase, last-updated date, pool log entries (exercise + session + date), any load baselines confirmed this session. This is the source of truth for the dashboard and for cycle overview reads. If it is not updated, the system has stale data.
+2. Log one line to `/MEMORY/decisions-log.md` — output type + short description. Only after Step 1 is done.
 3. Run the 7–10 day rotation checklist from wod-brain.md Quick Reference before finalising any session in a batch.
+
+**State file format — required fields every update:**
+```
+Cycle name: [current cycle label]
+Cycle week: [W1 / W2 / Phase 2 D5–D8 / etc.]
+Current program file: /OUTPUTS/programs/[client]/[filename].md
+Sessions pending: [next build or "pending feedback"]
+Last updated: [YYYY-MM-DD]
+```
 
 ---
 

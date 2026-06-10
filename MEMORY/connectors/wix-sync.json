@@ -1,0 +1,44 @@
+{
+  "syncedAt": "2026-06-06T00:00:00+08:00",
+  "sites": [
+    {
+      "id": "baaf6114-4d53-4863-acf1-4f83b1cd812c",
+      "name": "Restart Fitness Ph",
+      "brand": "Restart",
+      "status": "planned",
+      "note": "Primary Restart Fitness PH site — restartfitnessph.com (domain not live yet)"
+    },
+    {
+      "id": "9149f9ac-549f-4648-88d0-279f5cce1c03",
+      "name": "Urban Strong Fitness",
+      "brand": "URBN",
+      "status": "legacy",
+      "note": "Legacy URBN site — pre-rebrand"
+    },
+    {
+      "id": "8bb60d14-b7b4-4fde-b578-40b92cacad63",
+      "name": "Urban Strong 2024",
+      "brand": "URBN",
+      "status": "legacy",
+      "note": "Legacy URBN site 2024 version"
+    },
+    {
+      "id": "e6fc8c7b-3dab-4679-a7c5-994444e9f35b",
+      "name": "My Site",
+      "brand": "Unknown",
+      "status": "other"
+    },
+    {
+      "id": "eead8ca8-1e12-4239-a1bc-ab0e10edecd5",
+      "name": "Fitness Studio",
+      "brand": "Unknown",
+      "status": "other"
+    },
+    {
+      "id": "46eaa6e3-14d7-49f0-b3f7-d0daf7558054",
+      "name": "Test Site",
+      "brand": "Unknown",
+      "status": "test"
+    }
+  ]
+}

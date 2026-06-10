@@ -10,16 +10,16 @@ Client Since: —
 ---
 
 ## PERSONAL PROFILE
-Full Name: Karen Carandang (registry previously listed as "Katrina Carandang" — confirm legal name)
+Full Name: Katrina Mae S. Carandang (legal name confirmed from form — "Karen" is preferred name)
 Preferred Name / Nickname: Karen
-Age: —
+Age: 30
 Date of Birth: —
 Sex: —
-Height: —
+Height: 5'2"
 Nationality: —
 Location: —
-Email: —
-Contact Number: —
+Email: katrinamaesc@gmail.com
+Contact Number: 09054433190
 Emergency Contact: —
 Communication Channel: — (confirm: Trainerize / DM / other)
 
@@ -70,9 +70,10 @@ New to system — 6FIX intake pending. No baseline on file yet.
 ---
 
 ## BODY METRICS (tracked over time)
-| Date | Weight (kg) | Body Fat % | Waist (cm) | Hips (cm) | Notes |
-|---|---|---|---|---|---|
-| — | — | — | — | — | Starting point |
+| Date | Weight (lbs) | Body Fat % | Muscle Mass (lbs) | Notes |
+|---|---|---|---|---|
+| 2026-04-24 | 167.6 | 42.1% | 91.2 | Starting point |
+| 2026-05-25 | 151.6 | 38.8% | 89.4 | 16 lbs down in ~4 weeks |
 
 ---
 
@@ -115,4 +116,5 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
-2026-05-25 — Profile created. 6FIX Phase 1 client. Name: registry had "Katrina Carandang" — Jap confirmed "Karen." Verify full legal name. Full intake pending.
+2026-06-08 — Body metrics updated from Urban Strong Fitness Goal Review Form. Starting point 4/24 at 167.6 lbs, 42.1% BF, 91.2 MM. Check-in 5/25 at 151.6 lbs, 38.8% BF, 89.4 MM — 16 lbs down in ~4 weeks. Age 30, height 5'2", email and contact confirmed. Legal name confirmed from form: Katrina Mae S. Carandang. "Karen" is preferred name. Update all formal documents to use Katrina Mae S. Carandang.
+2026-05-25 — Profile created. Registry had "Katrina Carandang" — Jap confirmed preferred name is "Karen." Full intake pending.

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restart Fitness PH — Brand Design System v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --rf-black:#111110;
+  --rf-charcoal:#1A1A18;
+  --rf-dark:#242420;
+  --rf-mid:#3A3A36;
+  --rf-muted:#6B6B64;
+  --rf-soft:#A8A89E;
+  --rf-light:#E8E8E0;
+  --rf-white:#F5F5F0;
+  --rf-orange:#E06D22;
+  --rf-orange-dark:#B8541A;
+  --rf-orange-light:#F08040;
+  --rf-gold:#C9A84C;
+  --rf-gold-light:#E8C870;
+  --rf-gold-muted:#8A7034;
+  --font-display:'Cormorant Garamond',Georgia,serif;
+  --font-body:'DM Sans',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:#F5F5F0;color:#111;min-height:100vh}
+
+.site-header{background:var(--rf-charcoal);padding:16px 32px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.site-logo{font-family:var(--font-display);font-size:18px;font-style:italic;font-weight:300;color:var(--rf-white);letter-spacing:.02em}
+.site-logo span{color:var(--rf-orange)}
+.site-version{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body)}
+
+.ds-wrap{max-width:960px;margin:0 auto;padding:0 24px 80px}
+
+.nav-tabs{display:flex;gap:0;border-bottom:1px solid #e0e0d8;margin-bottom:0;overflow-x:auto;scrollbar-width:none;background:#fff;position:sticky;top:57px;z-index:90}
+.nav-tabs::-webkit-scrollbar{display:none}
+.nav-tab{padding:14px 20px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-family:var(--font-body);font-weight:500;cursor:pointer;color:var(--rf-muted);border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;background:none;border-top:none;border-left:none;border-right:none}
+.nav-tab:hover{color:var(--rf-mid)}
+.nav-tab.on{color:var(--rf-orange);border-bottom-color:var(--rf-orange)}
+
+.panel{display:none;padding:48px 0}.panel.on{display:block}
+
+.sec-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-family:var(--font-body);font-weight:500;color:var(--rf-muted);margin-bottom:16px}
+.sec-title{font-family:var(--font-display);font-size:clamp(32px,5vw,48px);font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.05;margin-bottom:10px}
+.sec-sub{font-size:14px;color:var(--rf-muted);line-height:1.7;margin-bottom:40px;font-family:var(--font-body);max-width:600px}
+
+.divider{height:1px;background:#e8e8e0;margin:40px 0}
+
+.row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:24px}
+@media(max-width:680px){.row,.row3{grid-template-columns:1fr}.mock-bottom{grid-template-columns:repeat(2,1fr)}}
+
+.card{border:0.5px solid #e0e0d8;padding:20px;border-radius:4px;background:#fff}
+.card-dark{border:0.5px solid #2a2a26;padding:20px;border-radius:4px;background:var(--rf-charcoal);color:var(--rf-white)}
+
+.token-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-bottom:6px}
+.token-value{font-size:13px;font-family:var(--font-body);color:var(--rf-mid)}
+.token-code{font-family:monospace;font-size:11px;color:var(--rf-muted);background:#f4f4f0;padding:2px 6px;border-radius:2px}
+
+.swatch-row{display:flex;gap:0;border-radius:4px;overflow:hidden;margin-bottom:8px}
+.swatch{flex:1;display:flex;align-items:flex-end;padding:4px 6px;font-size:9px;font-family:monospace}
+
+.type-row{padding:14px 0;border-bottom:0.5px solid #eee;display:flex;align-items:baseline;gap:16px}
+.type-meta{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--rf-muted);min-width:140px;font-family:var(--font-body)}
+
+.phi-tag{display:inline-block;font-size:10px;background:#f0ede6;color:var(--rf-mid);padding:2px 8px;border-radius:2px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--font-body);margin-bottom:6px}
+
+.comp-block{border:0.5px solid #e0e0d8;border-radius:4px;padding:24px;margin-bottom:16px}
+.comp-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body);margin-bottom:14px}
+
+.btn-primary{background:var(--rf-orange);color:#fff;padding:13px 32px;border:none;font-family:var(--font-body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:2px;transition:background .2s}
+.btn-primary:hover{background:var(--rf-orange-dark)}
+.btn-ghost{background:transparent;color:var(--rf-charcoal);padding:12px 31px;border:1px solid var(--rf-charcoal);font-family:var(--font-body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:2px;transition:all .2s}
+.btn-ghost:hover{background:var(--rf-charcoal);color:#fff}
+.btn-ghost-light{background:transparent;color:var(--rf-white);padding:12px 31px;border:1px solid rgba(245,245,240,.4);font-family:var(--font-body);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;cursor:pointer;border-radius:2px;transition:border-color .2s}
+.btn-ghost-light:hover{border-color:rgba(245,245,240,.8)}
+
+.tag-pill{display:inline-block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;font-family:var(--font-body);font-weight:500;margin:3px}
+.tag-orange{background:#fdf0e8;color:var(--rf-orange-dark)}
+.tag-gold{background:#fdf8ec;color:var(--rf-gold-muted)}
+.tag-dark{background:var(--rf-mid);color:var(--rf-white)}
+.tag-light{background:#f0ede6;color:var(--rf-muted)}
+
+.rule-row{display:flex;gap:12px;padding:11px 0;border-bottom:0.5px solid #f0ede6;font-size:13px;align-items:flex-start}
+.rule-icon{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;margin-top:1px;font-weight:600}
+.rule-yes{background:#edf7f0;color:#2a7a4a}
+.rule-no{background:#fdf0ee;color:#b84040}
+.rule-text{color:var(--rf-mid);line-height:1.5;font-family:var(--font-body)}
+
+.canva-block{background:var(--rf-charcoal);border-radius:4px;padding:22px;margin-bottom:12px}
+.canva-title{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body);margin-bottom:12px}
+.canva-spec{font-size:13px;color:var(--rf-light);font-family:var(--font-body);line-height:1.9}
+.canva-spec strong{color:var(--rf-orange);font-weight:500}
+
+.mock-card{background:var(--rf-charcoal);border-radius:4px;overflow:hidden;margin-bottom:24px}
+.mock-top{padding:48px 40px;background:var(--rf-charcoal)}
+.mock-brand{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body);margin-bottom:20px}
+.mock-h{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);font-style:italic;font-weight:300;color:var(--rf-white);line-height:1.05;margin-bottom:10px}
+.mock-h span{color:var(--rf-orange)}
+.mock-sub{font-size:14px;color:var(--rf-soft);font-family:var(--font-body);line-height:1.7;margin-bottom:28px;max-width:400px}
+.mock-btns{display:flex;gap:12px;flex-wrap:wrap}
+.mock-bottom{background:#f5f5f0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background-color:#e0e0d8}
+.mock-stat{background:#f5f5f0;padding:20px;text-align:center}
+.mock-stat-n{font-family:var(--font-display);font-size:32px;font-weight:300;color:var(--rf-charcoal)}
+.mock-stat-l{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-top:4px}
+.mock-accent-bar{width:32px;height:2px;background:var(--rf-orange);margin:0 auto 8px}
+
+.phi-row{display:flex;gap:0;align-items:center;padding:13px 16px;border-bottom:0.5px solid #eee}
+.phi-sz{font-family:var(--font-display);color:var(--rf-charcoal);font-style:italic;font-weight:300;min-width:100px;font-size:15px}
+.phi-px{font-family:monospace;font-size:11px;color:var(--rf-muted);min-width:50px}
+.phi-use{font-size:12px;color:var(--rf-soft);font-family:var(--font-body);min-width:180px}
+.phi-bar{height:2px;background:var(--rf-orange);border-radius:1px;min-width:2px}
+.gp-num{font-family:var(--font-display);font-size:26px;font-style:italic;color:var(--rf-charcoal);font-weight:300;margin-bottom:4px}
+
+.ig-post-wrap{max-width:300px}
+.ig-dark-post{background:var(--rf-charcoal);padding:28px;border-radius:4px;aspect-ratio:1;display:flex;flex-direction:column;justify-content:space-between}
+.ig-light-post{background:#f5f5f0;padding:28px;border-radius:4px;aspect-ratio:1;display:flex;flex-direction:column;justify-content:space-between}
+.ig-portrait-post{background:var(--rf-charcoal);padding:28px;border-radius:4px;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;max-width:240px}
+.post-meta{font-size:10px;color:var(--rf-soft);font-family:var(--font-body);margin-top:8px;padding:0 2px}
+
+.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px}
+@media(max-width:580px){.social-grid{grid-template-columns:1fr}}
+
+.formula-row{padding:14px 16px;border-bottom:0.5px solid #eee;display:flex;gap:14px;align-items:center}
+.formula-num{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;font-weight:500;flex-shrink:0;font-family:var(--font-body)}
+
+.cta-row{padding:16px;border-bottom:0.5px solid #eee;display:flex;gap:14px;align-items:center}
+.cta-badge{font-size:10px;padding:3px 10px;border-radius:2px;font-family:var(--font-body);letter-spacing:.06em;text-transform:uppercase;flex-shrink:0;white-space:nowrap}
+
+footer{background:var(--rf-charcoal);padding:32px;text-align:center;margin-top:80px}
+footer p{font-size:11px;color:var(--rf-soft);font-family:var(--font-body);letter-spacing:.08em;line-height:1.8}
+footer span{color:var(--rf-orange)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-logo">Restart Fitness <span>PH</span></div>
+  <div class="site-version">Brand Design System · v1.0</div>
+</header>
+
+<div class="ds-wrap">
+
+<div class="nav-tabs" id="nav">
+  <button class="nav-tab on" onclick="sw(0)">Overview</button>
+  <button class="nav-tab" onclick="sw(1)">Color</button>
+  <button class="nav-tab" onclick="sw(2)">Typography</button>
+  <button class="nav-tab" onclick="sw(3)">Spacing & Grid</button>
+  <button class="nav-tab" onclick="sw(4)">Components</button>
+  <button class="nav-tab" onclick="sw(5)">Social Templates</button>
+  <button class="nav-tab" onclick="sw(6)">Canva / Wix Specs</button>
+  <button class="nav-tab" onclick="sw(7)">Copy Rules</button>
+</div>
+
+<!-- PANEL 0: OVERVIEW -->
+<div class="panel on" id="p0">
+  <div class="sec-label">Restart Fitness PH — Brand Design System v1.0</div>
+  <div class="sec-title">One system.<br>Every surface.</div>
+  <div class="sec-sub">Applies to: Canva social posts · Wix website · Google Slides decks · Google Stitch · Email · Print. Use this document as the single source of truth for all visual and copy decisions.</div>
+
+  <div class="mock-card">
+    <div class="mock-top">
+      <div class="mock-brand">Restart Fitness PH · Urban Strong Fitness</div>
+      <div class="mock-h">Stop <span>guessing.</span><br>Follow a system.</div>
+      <div class="mock-sub">Structured coaching for busy adults who want real progress through structure, practical guidance, and accountability.</div>
+      <div class="mock-btns">
+        <button class="btn-primary">Book a Discovery Call</button>
+        <button class="btn-ghost-light">Learn the System</button>
+      </div>
+    </div>
+    <div class="mock-bottom">
+      <div class="mock-stat"><div class="mock-accent-bar"></div><div class="mock-stat-n">10+</div><div class="mock-stat-l">Years coaching</div></div>
+      <div class="mock-stat"><div class="mock-accent-bar"></div><div class="mock-stat-n">4</div><div class="mock-stat-l">System pillars</div></div>
+      <div class="mock-stat"><div class="mock-accent-bar"></div><div class="mock-stat-n">3</div><div class="mock-stat-l">Coaching formats</div></div>
+      <div class="mock-stat"><div class="mock-accent-bar"></div><div class="mock-stat-n">1</div><div class="mock-stat-l">Clear process</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Core brand tokens</div>
+  <div class="row3">
+    <div class="card"><div class="token-label">Display font</div><div style="font-family:var(--font-display);font-size:28px;font-style:italic;font-weight:300;color:var(--rf-charcoal);margin-bottom:6px">Cormorant</div><div class="token-code">Cormorant Garamond Italic</div></div>
+    <div class="card"><div class="token-label">Body font</div><div style="font-family:var(--font-body);font-size:22px;font-weight:300;color:var(--rf-charcoal);margin-bottom:6px">DM Sans</div><div class="token-code">DM Sans 300 / 400 / 500</div></div>
+    <div class="card"><div class="token-label">Primary accent</div><div style="width:48px;height:48px;background:#E06D22;border-radius:2px;margin-bottom:8px"></div><div class="token-code">#E06D22 — Burnt Orange</div></div>
+  </div>
+  <div class="row3">
+    <div class="card"><div class="token-label">Base grid unit</div><div class="gp-num">8px</div><div class="token-value" style="font-size:12px">All spacing in multiples of 8</div></div>
+    <div class="card"><div class="token-label">Golden ratio</div><div class="gp-num">1 : 1.618</div><div class="token-value" style="font-size:12px">Applied to type scale &amp; layout</div></div>
+    <div class="card"><div class="token-label">Design style</div><div class="gp-num" style="font-size:18px;margin-top:6px">Minimalist editorial</div><div class="token-value" style="font-size:12px">No-line rule · High contrast</div></div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Brand mission</div>
+  <div style="border-left:2px solid var(--rf-orange);padding-left:20px;margin-bottom:32px">
+    <div style="font-family:var(--font-display);font-size:22px;font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.4;margin-bottom:8px">"The Restart Method is a coaching system that helps busy adults turn effort into real progress through structure, practical guidance, and accountability."</div>
+    <div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body)">Official sub-header — use verbatim</div>
+  </div>
+</div>
+
+<!-- PANEL 1: COLOR -->
+<div class="panel" id="p1">
+  <div class="sec-label">Color system</div>
+  <div class="sec-title">Dark foundation.<br>Orange precision.</div>
+  <div class="sec-sub">High contrast is the primary design tool. Orange appears only where action is required. Gold signals authority and proof. Never use both orange and gold in the same visual element.</div>
+
+  <div class="sec-label">Dark neutral scale — backgrounds & structure</div>
+  <div class="swatch-row" style="height:72px">
+    <div class="swatch" style="background:#111110;flex:2"><span style="color:#333;font-size:9px">#111110</span></div>
+    <div class="swatch" style="background:#1A1A18;flex:2"><span style="color:#444;font-size:9px">#1A1A18<br>Charcoal</span></div>
+    <div class="swatch" style="background:#242420;flex:1"><span style="color:#555;font-size:9px">#242420</span></div>
+    <div class="swatch" style="background:#3A3A36;flex:1"><span style="color:#666;font-size:9px">#3A3A36</span></div>
+    <div class="swatch" style="background:#6B6B64;flex:1"><span style="color:#ddd;font-size:9px">#6B6B64</span></div>
+    <div class="swatch" style="background:#A8A89E;flex:1"><span style="color:#444;font-size:9px">#A8A89E</span></div>
+    <div class="swatch" style="background:#E8E8E0;flex:1"><span style="color:#888;font-size:9px">#E8E8E0</span></div>
+    <div class="swatch" style="background:#F5F5F0;flex:1"><span style="color:#999;font-size:9px">#F5F5F0<br>Off-white</span></div>
+  </div>
+
+  <div style="margin-bottom:32px">
+    <div class="sec-label" style="margin-top:24px">Accent scale — orange (CTA) &amp; gold (authority)</div>
+    <div class="swatch-row" style="height:56px">
+      <div class="swatch" style="background:#B8541A"><span style="color:rgba(255,255,255,.5);font-size:9px">#B8541A<br>Orange dark</span></div>
+      <div class="swatch" style="background:#E06D22;flex:2"><span style="color:rgba(255,255,255,.8);font-size:9px">#E06D22<br>Primary orange</span></div>
+      <div class="swatch" style="background:#F08040"><span style="color:rgba(255,255,255,.6);font-size:9px">#F08040<br>Light</span></div>
+      <div class="swatch" style="background:#8A7034"><span style="color:rgba(255,255,255,.5);font-size:9px">#8A7034<br>Gold dark</span></div>
+      <div class="swatch" style="background:#C9A84C;flex:2"><span style="color:rgba(255,255,255,.7);font-size:9px">#C9A84C<br>Primary gold</span></div>
+      <div class="swatch" style="background:#E8C870"><span style="color:rgba(255,255,255,.5);font-size:9px">#E8C870<br>Gold light</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Approved color combinations</div>
+  <div class="row3">
+    <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden">
+      <div style="background:var(--rf-charcoal);padding:28px;text-align:center">
+        <div style="font-family:var(--font-display);font-size:22px;font-style:italic;color:var(--rf-white);margin-bottom:6px">Primary</div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-orange);font-family:var(--font-body)">Orange on charcoal</div>
+      </div>
+      <div style="padding:12px 16px;font-size:11px;font-family:var(--font-body);color:var(--rf-muted)">Hero · Dark sections · Social posts</div>
+    </div>
+    <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden">
+      <div style="background:var(--rf-charcoal);padding:28px;text-align:center">
+        <div style="font-family:var(--font-display);font-size:22px;font-style:italic;color:var(--rf-white);margin-bottom:6px">Authority</div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-gold);font-family:var(--font-body)">Gold on charcoal</div>
+      </div>
+      <div style="padding:12px 16px;font-size:11px;font-family:var(--font-body);color:var(--rf-muted)">Results · Proof · Premium callouts</div>
+    </div>
+    <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden">
+      <div style="background:var(--rf-white);padding:28px;text-align:center;border-bottom:0.5px solid #e0e0d8">
+        <div style="font-family:var(--font-display);font-size:22px;font-style:italic;color:var(--rf-charcoal);margin-bottom:6px">Editorial</div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body)">Charcoal on off-white</div>
+      </div>
+      <div style="padding:12px 16px;font-size:11px;font-family:var(--font-body);color:var(--rf-muted)">Light pages · Body sections · Cards</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Usage rules</div>
+  <div class="row">
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text"><strong>Orange</strong> — primary CTA buttons only · key word emphasis in headlines · section accent marks</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text"><strong>Gold</strong> — client results highlights · authority proof points · "PH" in wordmark · premium tier signals</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text"><strong>Charcoal</strong> — hero backgrounds · dark section backgrounds · any surface behind white text</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text"><strong>Off-white</strong> — light section backgrounds · body text on dark · card surfaces</div></div>
+    </div>
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use orange and gold together on the same element</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use pure white (#FFFFFF) or pure black (#000000)</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use orange as a background for large areas</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use more than 2 colors in a single visual asset</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never add gradients — flat color only throughout</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PANEL 2: TYPOGRAPHY -->
+<div class="panel" id="p2">
+  <div class="sec-label">Typography system — Golden Ratio Scale</div>
+  <div class="sec-title">Type is the structure.</div>
+  <div class="sec-sub">Base unit: 16px. Each step multiplied by φ = 1.618. Cormorant Garamond Italic for all display/headline text. DM Sans for all body, UI, and structural copy. Never swap these roles.</div>
+
+  <div class="sec-label">Golden ratio type scale (φ = 1.618)</div>
+  <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden;margin-bottom:32px">
+    <div class="phi-row" style="background:#fafaf8">
+      <span class="type-meta" style="font-weight:500">Scale step</span>
+      <span class="phi-px" style="color:var(--rf-mid);font-size:10px">Size</span>
+      <span class="phi-use" style="color:var(--rf-mid)">Role</span>
+      <span style="font-size:10px;color:var(--rf-muted);font-family:var(--font-body)">Bar</span>
+    </div>
+    <div class="phi-row">
+      <span class="type-meta">φ⁴ — Display</span>
+      <span class="phi-px">68px</span>
+      <span class="phi-use">Campaign hero text</span>
+      <div class="phi-bar" style="width:200px"></div>
+    </div>
+    <div class="phi-row">
+      <span class="type-meta">φ³ — Headline</span>
+      <span class="phi-px">42px</span>
+      <span class="phi-use">Page H1, section hero</span>
+      <div class="phi-bar" style="width:124px"></div>
+    </div>
+    <div class="phi-row">
+      <span class="type-meta">φ² — Title</span>
+      <span class="phi-px">26px</span>
+      <span class="phi-use">Section titles, H2</span>
+      <div class="phi-bar" style="width:76px"></div>
+    </div>
+    <div class="phi-row">
+      <span class="type-meta">φ¹ — Subhead</span>
+      <span class="phi-px">20px</span>
+      <span class="phi-use">Sub-sections, intro text</span>
+      <div class="phi-bar" style="width:48px"></div>
+    </div>
+    <div class="phi-row">
+      <span class="type-meta">φ⁰ — Body</span>
+      <span class="phi-px">16px</span>
+      <span class="phi-use">All body copy</span>
+      <div class="phi-bar" style="width:28px"></div>
+    </div>
+    <div class="phi-row" style="border-bottom:none">
+      <span class="type-meta">φ⁻¹ — Label</span>
+      <span class="phi-px">10px</span>
+      <span class="phi-use">Overlines, tags, captions</span>
+      <div class="phi-bar" style="width:16px"></div>
+    </div>
+  </div>
+
+  <div class="sec-label">Display usage — Cormorant Garamond Italic</div>
+  <div class="comp-block" style="background:var(--rf-charcoal)">
+    <div class="comp-label">68px · Campaign display · dark background</div>
+    <div style="font-family:var(--font-display);font-size:clamp(36px,6vw,68px);font-style:italic;font-weight:300;color:var(--rf-white);line-height:1">Stop <span style="color:var(--rf-orange)">guessing.</span></div>
+  </div>
+  <div class="comp-block">
+    <div class="comp-label">42px · Page headline · light background</div>
+    <div style="font-family:var(--font-display);font-size:clamp(28px,4.5vw,42px);font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.1">The Restart Fitness System</div>
+  </div>
+  <div class="comp-block">
+    <div class="comp-label">26px · Section title</div>
+    <div style="font-family:var(--font-display);font-size:26px;font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.2">Built within a coaching system</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Body & UI usage — DM Sans</div>
+  <div class="comp-block">
+    <div class="comp-label">Overline · 10px · tracking .15em · uppercase · DM Sans 500</div>
+    <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--rf-muted)">Coaching system · Olongapo City, Philippines</div>
+  </div>
+  <div class="comp-block">
+    <div class="comp-label">Body · 16px · DM Sans 300 · line-height 1.7</div>
+    <div style="font-family:var(--font-body);font-size:16px;font-weight:300;color:var(--rf-mid);line-height:1.7;max-width:540px">The Restart Method is a coaching system that helps busy adults turn effort into real progress through structure, practical guidance, and accountability.</div>
+  </div>
+  <div class="comp-block">
+    <div class="comp-label">UI label · 12px · DM Sans 500 · tracking .1em</div>
+    <div style="font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:.1em;color:var(--rf-mid)">Training · Nutrition · Habits · Accountability</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Font pairing rules</div>
+  <div class="row">
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Cormorant Italic for all headline emphasis — campaign words, section titles, pull quotes</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">DM Sans 300 for body paragraphs · DM Sans 500 for UI elements and overline labels</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Mix both in one headline: Cormorant italic for key word + DM Sans for supporting line</div></div>
+    </div>
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use Cormorant upright — the italic IS the identity</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use DM Sans for display headlines — it loses the editorial premium feel</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use more than 2 font weights in a single layout</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PANEL 3: SPACING & GRID -->
+<div class="panel" id="p3">
+  <div class="sec-label">Spacing & layout system</div>
+  <div class="sec-title">Structure is the design.</div>
+  <div class="sec-sub">All spacing is based on an 8px base unit. Layout proportions use the golden ratio (1 : 1.618) for column splits and content hierarchy. The "No-Line Rule" — use space, not borders, to separate sections.</div>
+
+  <div class="sec-label">8px base spacing scale</div>
+  <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:32px;border:0.5px solid #e0e0d8;border-radius:4px;padding:24px;background:#fafaf8;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:8px;background:var(--rf-muted);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">8</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:16px;background:var(--rf-muted);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">16</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:24px;background:var(--rf-muted);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">24</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:32px;background:var(--rf-soft);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">32</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:48px;background:var(--rf-soft);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">48</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:64px;background:var(--rf-mid);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">64</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:96px;background:var(--rf-mid);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">96</div></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:4px"><div style="width:10px;height:128px;background:var(--rf-charcoal);border-radius:1px"></div><div style="font-size:9px;font-family:monospace;color:var(--rf-muted)">128</div></div>
+    <div style="margin-left:16px;align-self:center">
+      <div style="font-size:12px;font-family:var(--font-body);color:var(--rf-muted);line-height:2">
+        Section vertical padding: <strong style="color:var(--rf-mid)">96–128px</strong><br>
+        Component gap: <strong style="color:var(--rf-mid)">24–48px</strong><br>
+        Element gap: <strong style="color:var(--rf-mid)">8–16px</strong><br>
+        Inline gap: <strong style="color:var(--rf-mid)">8px</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label">Golden ratio column layouts</div>
+  <div style="margin-bottom:16px">
+    <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-bottom:8px">1 : 1.618 — Content + detail (about page, coach profile)</div>
+    <div style="display:grid;grid-template-columns:1fr 1.618fr;gap:3px;height:60px">
+      <div style="background:var(--rf-mid);border-radius:2px 0 0 2px;display:flex;align-items:center;justify-content:center"><span style="font-size:11px;font-family:monospace;color:#fff">38.2%</span></div>
+      <div style="background:var(--rf-muted);border-radius:0 2px 2px 0;display:flex;align-items:center;justify-content:center"><span style="font-size:11px;font-family:monospace;color:#fff">61.8%</span></div>
+    </div>
+  </div>
+  <div style="margin-bottom:32px">
+    <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-bottom:8px">Equal 3-column — pillars, features, service cards</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;height:44px">
+      <div style="background:#e0e0d8;border-radius:2px 0 0 2px"></div>
+      <div style="background:#d0d0c8"></div>
+      <div style="background:#e0e0d8;border-radius:0 2px 2px 0"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">The no-line rule in practice</div>
+  <div class="row">
+    <div class="card" style="background:#fafaf8">
+      <div class="comp-label" style="color:#2a7a4a">Correct — space as separator</div>
+      <div style="background:var(--rf-charcoal);padding:16px;border-radius:2px">
+        <div style="font-family:var(--font-display);font-size:16px;font-style:italic;color:var(--rf-white)">Dark section</div>
+      </div>
+      <div style="height:28px;background:#f5f5f0"></div>
+      <div style="background:#f5f5f0;padding:16px;border-radius:2px">
+        <div style="font-family:var(--font-display);font-size:16px;font-style:italic;color:var(--rf-charcoal)">Light section</div>
+      </div>
+      <div style="font-size:11px;color:#2a7a4a;font-family:var(--font-body);margin-top:10px">Space creates the visual break — no line needed</div>
+    </div>
+    <div class="card" style="background:#fafaf8">
+      <div class="comp-label" style="color:#b84040">Incorrect — line divider</div>
+      <div style="background:var(--rf-charcoal);padding:16px;border-radius:2px">
+        <div style="font-family:var(--font-display);font-size:16px;font-style:italic;color:var(--rf-white)">Dark section</div>
+      </div>
+      <div style="border-top:1px solid #888;background:#f5f5f0;padding:16px;border-radius:0 0 2px 2px">
+        <div style="font-family:var(--font-display);font-size:16px;font-style:italic;color:var(--rf-charcoal)">Light section</div>
+      </div>
+      <div style="font-size:11px;color:#b84040;font-family:var(--font-body);margin-top:10px">Line dividers violate the no-line rule — remove them</div>
+    </div>
+  </div>
+</div>
+
+<!-- PANEL 4: COMPONENTS -->
+<div class="panel" id="p4">
+  <div class="sec-label">UI components & patterns</div>
+  <div class="sec-title">Reusable across<br>every platform.</div>
+  <div class="sec-sub">These components are the building blocks. Use them consistently across Canva, Wix, and Google Slides. Never modify the proportions or color logic independently.</div>
+
+  <div class="sec-label">Buttons</div>
+  <div class="comp-block">
+    <div class="comp-label">Primary CTA — orange · reserved for main conversion actions only</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn-primary">Book a Discovery Call</button>
+      <button class="btn-primary" style="background:var(--rf-orange-dark)">DM "RESTART"</button>
+    </div>
+  </div>
+  <div class="comp-block" style="background:var(--rf-charcoal)">
+    <div class="comp-label">Ghost CTA — for dark backgrounds · secondary actions</div>
+    <button class="btn-ghost-light">Learn the System</button>
+  </div>
+  <div class="comp-block">
+    <div class="comp-label">Ghost CTA — for light backgrounds · navigation actions</div>
+    <button class="btn-ghost">Explore Urban Strong</button>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Tags & labels</div>
+  <div class="comp-block">
+    <div class="comp-label">Content classification tags</div>
+    <span class="tag-pill tag-orange">Coaching</span>
+    <span class="tag-pill tag-gold">Results</span>
+    <span class="tag-pill tag-dark">System</span>
+    <span class="tag-pill tag-light">Nutrition</span>
+    <span class="tag-pill tag-light">Accountability</span>
+    <span class="tag-pill tag-orange">Discovery Call</span>
+    <span class="tag-pill tag-dark">Urban Strong</span>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Client proof / quote block</div>
+  <div class="comp-block" style="background:var(--rf-charcoal)">
+    <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rf-gold);font-family:var(--font-body);margin-bottom:14px">Client result</div>
+    <div style="font-family:var(--font-display);font-size:24px;font-style:italic;font-weight:300;color:var(--rf-white);line-height:1.35;margin-bottom:14px">"I wanted to enjoy life. Now I actually do."</div>
+    <div style="font-size:11px;color:var(--rf-soft);font-family:var(--font-body);letter-spacing:.08em;text-transform:uppercase">Urban Strong Fitness client</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Stat / proof strip</div>
+  <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden;margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#e0e0d8">
+      <div style="background:#f5f5f0;padding:20px;text-align:center"><div style="font-family:var(--font-display);font-size:36px;font-style:italic;font-weight:300;color:var(--rf-charcoal)">10+</div><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-top:4px">Years coaching</div></div>
+      <div style="background:#f5f5f0;padding:20px;text-align:center"><div style="font-family:var(--font-display);font-size:36px;font-style:italic;font-weight:300;color:var(--rf-charcoal)">4</div><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-top:4px">Pillars</div></div>
+      <div style="background:#f5f5f0;padding:20px;text-align:center"><div style="font-family:var(--font-display);font-size:36px;font-style:italic;font-weight:300;color:var(--rf-orange)">1</div><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-top:4px">Clear system</div></div>
+      <div style="background:#f5f5f0;padding:20px;text-align:center"><div style="font-family:var(--font-display);font-size:36px;font-style:italic;font-weight:300;color:var(--rf-charcoal)">0</div><div style="font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-top:4px">Random WODs</div></div>
+    </div>
+  </div>
+
+  <div class="sec-label">Section header pattern</div>
+  <div class="comp-block">
+    <div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-family:var(--font-body);font-weight:500;color:var(--rf-muted);margin-bottom:10px">The Restart System</div>
+    <div style="font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.1;margin-bottom:10px">No guessing.<br>No randomness.</div>
+    <div style="font-size:15px;font-weight:300;color:var(--rf-muted);font-family:var(--font-body);max-width:440px;line-height:1.7">A structured process: Clarity → Structure → Coaching → Accountability.</div>
+  </div>
+</div>
+
+<!-- PANEL 5: SOCIAL TEMPLATES -->
+<div class="panel" id="p5">
+  <div class="sec-label">Social media templates</div>
+  <div class="sec-title">Consistent across<br>every post.</div>
+  <div class="sec-sub">All social posts follow one of three layout templates. Brand mark appears top-center on dark posts, top-left on light posts. Orange used for one emphasis word or phrase only per post. Never two emphasis words.</div>
+
+  <div class="social-grid">
+    <div>
+      <div class="sec-label">Template A — Dark hero (1080 × 1080)</div>
+      <div class="ig-dark-post">
+        <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body)">RF RESTART FITNESS PH</div>
+        <div>
+          <div style="font-family:var(--font-body);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rf-orange);margin-bottom:12px">Coaching system</div>
+          <div style="font-family:var(--font-display);font-size:clamp(24px,5vw,40px);font-style:italic;font-weight:300;color:var(--rf-white);line-height:1.05;margin-bottom:14px">Built within a<br><span style="color:var(--rf-orange)">coaching</span><br>system.</div>
+          <div style="font-size:12px;font-weight:300;color:var(--rf-soft);font-family:var(--font-body);line-height:1.6;margin-bottom:18px">This is not theory. This is a proven coaching process.</div>
+          <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body)">DM <span style="color:var(--rf-orange)">"RESTART"</span> to begin</div>
+        </div>
+      </div>
+      <div class="post-meta">Template A · Brand mark top · CTA bottom</div>
+    </div>
+
+    <div>
+      <div class="sec-label">Template B — Light editorial (1080 × 1080)</div>
+      <div class="ig-light-post">
+        <div>
+          <div style="font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body);margin-bottom:20px">Restart Fitness PH</div>
+          <div style="width:24px;height:2px;background:var(--rf-orange);margin-bottom:16px"></div>
+          <div style="font-family:var(--font-display);font-size:clamp(22px,4.5vw,38px);font-style:italic;font-weight:300;color:var(--rf-charcoal);line-height:1.1;margin-bottom:12px">Health is<br><span style="color:var(--rf-orange)">non-negotiable.</span></div>
+          <div style="font-size:12px;font-weight:300;color:var(--rf-muted);font-family:var(--font-body);line-height:1.6">Fitness protects your quality of life. We train to keep you capable for the long term.</div>
+        </div>
+        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rf-muted);font-family:var(--font-body)">#RestartFitnessPH</div>
+      </div>
+      <div class="post-meta">Template B · Light bg · Orange accent line · Dark overline</div>
+    </div>
+  </div>
+
+  <div style="max-width:280px;margin-bottom:32px">
+    <div class="sec-label">Template C — Result portrait (1080 × 1350)</div>
+    <div class="ig-portrait-post">
+      <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--rf-soft);font-family:var(--font-body);text-align:center">RF RESTART FITNESS PH</div>
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--rf-gold);font-family:var(--font-body);margin-bottom:10px">Client result</div>
+        <div style="font-family:var(--font-display);font-size:clamp(20px,4vw,30px);font-style:italic;font-weight:300;color:var(--rf-white);line-height:1.1;margin-bottom:12px">Results that go <span style="color:var(--rf-gold)">beyond</span> aesthetics.</div>
+        <div style="font-size:11px;font-weight:300;color:var(--rf-soft);font-family:var(--font-body);line-height:1.6;margin-bottom:16px">Movement, performance, and daily living — so you feel stronger, healthier, and more capable.</div>
+        <button class="btn-primary" style="width:100%;font-size:10px;padding:10px 16px">Book a Discovery Call</button>
+      </div>
+    </div>
+    <div class="post-meta">Template C · Portrait 4:5 · Gold for results · Full-width CTA</div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Social post formula — 3-part structure</div>
+  <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden">
+    <div class="formula-row"><div class="formula-num" style="background:var(--rf-orange)">1</div><div><div style="font-size:13px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">Bold claim headline</div><div style="font-size:11px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">Cormorant Italic · one orange emphasis word · max 8 words</div></div></div>
+    <div class="formula-row"><div class="formula-num" style="background:var(--rf-mid)">2</div><div><div style="font-size:13px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">2–3 line supporting statement</div><div style="font-size:11px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">DM Sans 300 · factual, no hype · direct and grounded</div></div></div>
+    <div class="formula-row" style="border-bottom:none"><div class="formula-num" style="background:var(--rf-muted)">3</div><div><div style="font-size:13px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">One clear CTA</div><div style="font-size:11px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">DM Sans 500 uppercase · DM "RESTART" or Book a Discovery Call</div></div></div>
+  </div>
+</div>
+
+<!-- PANEL 6: CANVA / WIX SPECS -->
+<div class="panel" id="p6">
+  <div class="sec-label">Platform setup specifications</div>
+  <div class="sec-title">Exact values for<br>every tool.</div>
+  <div class="sec-sub">Use these exact settings in Canva, Wix Studio, and Google Slides / Stitch. Do not approximate — these values are locked to the brand system and must be applied consistently.</div>
+
+  <div class="sec-label">Canva brand kit settings</div>
+  <div class="canva-block">
+    <div class="canva-title">Fonts — Canva Brand Kit &gt; Fonts</div>
+    <div class="canva-spec">
+      Heading font: <strong>Cormorant Garamond</strong> · Style: Italic · Weight: Light (300)<br>
+      Subheading font: <strong>DM Sans</strong> · Style: Regular · Weight: Medium (500)<br>
+      Body font: <strong>DM Sans</strong> · Style: Regular · Weight: Light (300)
+    </div>
+  </div>
+  <div class="canva-block">
+    <div class="canva-title">Colors — Canva Brand Kit &gt; Colors</div>
+    <div class="canva-spec">
+      Primary: <strong>#1A1A18</strong> — Charcoal (backgrounds, dark sections)<br>
+      Accent 1: <strong>#E06D22</strong> — Burnt Orange (CTA, emphasis only)<br>
+      Accent 2: <strong>#C9A84C</strong> — Gold (results, authority, "PH" wordmark)<br>
+      Light: <strong>#F5F5F0</strong> — Off-white (light backgrounds, light sections)<br>
+      Muted: <strong>#6B6B64</strong> — Gray (body text on light backgrounds)
+    </div>
+  </div>
+  <div class="canva-block">
+    <div class="canva-title">Canvas sizes — save as named templates</div>
+    <div class="canva-spec">
+      Instagram Post (square): <strong>1080 × 1080 px</strong><br>
+      Instagram Portrait (4:5): <strong>1080 × 1350 px</strong><br>
+      Instagram Story / Reel cover: <strong>1080 × 1920 px</strong><br>
+      Facebook Post: <strong>1200 × 630 px</strong><br>
+      Presentation / Google Stitch: <strong>1920 × 1080 px</strong><br>
+      Email header: <strong>600 × 200 px</strong>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Wix Studio design panel settings</div>
+  <div class="canva-block">
+    <div class="canva-title">Site theme — Wix Design &gt; Theme Manager</div>
+    <div class="canva-spec">
+      Site background: <strong>#F5F5F0</strong> (off-white — default light bg)<br>
+      Text primary: <strong>#1A1A18</strong><br>
+      Text secondary: <strong>#6B6B64</strong><br>
+      Button fill (accent): <strong>#E06D22</strong><br>
+      Button hover: <strong>#B8541A</strong><br>
+      Border radius: <strong>2px</strong> (near-square, never pill shape)<br>
+      Section padding: <strong>96px vertical · 40px horizontal</strong><br>
+      Mobile section padding: <strong>48px vertical · 20px horizontal</strong>
+    </div>
+  </div>
+  <div class="canva-block">
+    <div class="canva-title">Wix text styles — Design &gt; Text Styles</div>
+    <div class="canva-spec">
+      Heading 1: <strong>Cormorant Garamond · Italic · 42px · #1A1A18</strong><br>
+      Heading 2: <strong>Cormorant Garamond · Italic · 26px · #1A1A18</strong><br>
+      Heading 3: <strong>DM Sans · Medium 500 · 20px · #1A1A18</strong><br>
+      Paragraph 1: <strong>DM Sans · Light 300 · 16px · #6B6B64 · line-height 1.7</strong><br>
+      Paragraph 2: <strong>DM Sans · Light 300 · 14px · #6B6B64</strong><br>
+      Label/Overline: <strong>DM Sans · Medium 500 · 10px · #6B6B64 · tracking 0.15em · uppercase</strong>
+    </div>
+  </div>
+  <div class="canva-block">
+    <div class="canva-title">Google Slides / Google Stitch</div>
+    <div class="canva-spec">
+      Slide size: <strong>1920 × 1080 px (16:9 widescreen)</strong><br>
+      Title font: <strong>Cormorant Garamond Italic</strong> (add via Slides font picker — search "Cormorant")<br>
+      Body font: <strong>DM Sans</strong> (add via Slides font picker — search "DM Sans")<br>
+      Background options: <strong>#1A1A18 (dark slides) · #F5F5F0 (light slides)</strong><br>
+      Accent element: <strong>2px orange (#E06D22) horizontal rule above slide titles</strong><br>
+      Safe margin: <strong>80px from all edges on 1920px wide slide</strong>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Golden ratio spacing reference for Canva</div>
+  <div style="border:0.5px solid #2a2a26;border-radius:4px;overflow:hidden">
+    <div style="padding:12px 16px;background:var(--rf-charcoal);display:flex;justify-content:space-between"><span style="font-size:10px;font-family:var(--font-body);color:var(--rf-soft);letter-spacing:.1em;text-transform:uppercase">Element</span><span style="font-size:10px;font-family:monospace;color:var(--rf-soft)">Value</span></div>
+    <div style="background:#242420;padding:11px 16px;display:flex;justify-content:space-between;border-bottom:0.5px solid #2a2a26"><span style="font-size:13px;font-family:var(--font-body);color:#ccc">Margin from edge (1080px canvas)</span><span style="font-size:13px;font-family:monospace;color:var(--rf-orange)">64px</span></div>
+    <div style="background:#1e1e1c;padding:11px 16px;display:flex;justify-content:space-between;border-bottom:0.5px solid #2a2a26"><span style="font-size:13px;font-family:var(--font-body);color:#ccc">Overline to headline gap</span><span style="font-size:13px;font-family:monospace;color:var(--rf-orange)">16px</span></div>
+    <div style="background:#242420;padding:11px 16px;display:flex;justify-content:space-between;border-bottom:0.5px solid #2a2a26"><span style="font-size:13px;font-family:var(--font-body);color:#ccc">Headline to body gap</span><span style="font-size:13px;font-family:monospace;color:var(--rf-orange)">24px</span></div>
+    <div style="background:#1e1e1c;padding:11px 16px;display:flex;justify-content:space-between;border-bottom:0.5px solid #2a2a26"><span style="font-size:13px;font-family:var(--font-body);color:#ccc">Body to CTA gap</span><span style="font-size:13px;font-family:monospace;color:var(--rf-orange)">32px</span></div>
+    <div style="background:#242420;padding:11px 16px;display:flex;justify-content:space-between"><span style="font-size:13px;font-family:var(--font-body);color:#ccc">Logo mark height (1080px canvas)</span><span style="font-size:13px;font-family:monospace;color:var(--rf-orange)">48px</span></div>
+  </div>
+</div>
+
+<!-- PANEL 7: COPY RULES -->
+<div class="panel" id="p7">
+  <div class="sec-label">Copy & communication rules</div>
+  <div class="sec-title">Direct. Professional.<br>Uncompromising.</div>
+  <div class="sec-sub">Every word must pass this filter: Does it sound like a serious coach who respects their client's intelligence — or does it sound like a hype reel? If it sounds like hype, rewrite it.</div>
+
+  <div class="sec-label">Approved copy lines — use verbatim, do not rewrite</div>
+  <div style="border-left:2px solid var(--rf-orange);padding:4px 0 4px 20px;margin-bottom:32px">
+    <div style="font-family:var(--font-display);font-size:clamp(16px,2.5vw,22px);font-style:italic;color:var(--rf-charcoal);line-height:2">"Stop guessing. Follow a system."<br>"No hype. No shortcuts. Just a system that gets results."<br>"No random WODs. No FADs."<br>"We coach people who commit."<br>"Consistency is coached through accountability."<br>"The goal is not just results. The goal is results you can keep."</div>
+  </div>
+
+  <div class="sec-label">Tone guidelines</div>
+  <div class="row">
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Direct — "Here's the process. Let's execute."</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Confident — state facts, not motivational filler</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Empathetic — acknowledge the struggle without shame</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Clear — one idea per sentence, one CTA per post</div></div>
+      <div class="rule-row"><div class="rule-icon rule-yes">Y</div><div class="rule-text">Selective — "This is not for everyone" is a feature</div></div>
+    </div>
+    <div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use "the last first step" — permanently banned phrase</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never focus messaging on "weight loss" as the primary goal</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use "restart" as a verb in any sentence</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use shame-based, macho, or intimidation language</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use "tailored" — use "structured" or "built for"</div></div>
+      <div class="rule-row"><div class="rule-icon rule-no">N</div><div class="rule-text">Never use fake urgency without substance behind it</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="sec-label">Emphasis keywords — use repeatedly across all platforms</div>
+  <div style="margin-bottom:32px">
+    <span class="tag-pill tag-dark">Structure</span>
+    <span class="tag-pill tag-dark">System</span>
+    <span class="tag-pill tag-dark">Coaching</span>
+    <span class="tag-pill tag-dark">Accountability</span>
+    <span class="tag-pill tag-dark">Consistency</span>
+    <span class="tag-pill tag-dark">Clarity</span>
+    <span class="tag-pill tag-dark">Fundamentals</span>
+    <span class="tag-pill tag-dark">Real-life fitness</span>
+    <span class="tag-pill tag-dark">Measurable progress</span>
+    <span class="tag-pill tag-dark">Guidance</span>
+    <span class="tag-pill tag-dark">Results that stick</span>
+    <span class="tag-pill tag-dark">Practical nutrition</span>
+    <span class="tag-pill tag-dark">Long-term</span>
+  </div>
+
+  <div class="sec-label">CTA hierarchy — use in this order of priority</div>
+  <div style="border:0.5px solid #e0e0d8;border-radius:4px;overflow:hidden">
+    <div class="cta-row"><span class="cta-badge" style="background:var(--rf-orange);color:#fff">Primary</span><div><div style="font-size:14px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">Book a Discovery Call</div><div style="font-size:12px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">For website buttons — primary conversion action throughout all web pages</div></div></div>
+    <div class="cta-row"><span class="cta-badge" style="background:var(--rf-mid);color:#fff">Social</span><div><div style="font-size:14px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">DM "RESTART"</div><div style="font-size:12px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">For Instagram and Facebook captions — keyword trigger for DM funnel</div></div></div>
+    <div class="cta-row" style="border-bottom:none"><span class="cta-badge" style="background:#e8e8e0;color:var(--rf-mid)">Secondary</span><div><div style="font-size:14px;font-weight:500;font-family:var(--font-body);color:var(--rf-mid)">Learn the System · Explore Urban Strong</div><div style="font-size:12px;color:var(--rf-muted);font-family:var(--font-body);margin-top:2px">Ghost buttons — navigation and secondary exploration actions only</div></div></div>
+  </div>
+</div>
+
+</div><!-- end ds-wrap -->
+
+<footer>
+  <p>Restart Fitness PH — Brand Design System <span>v1.0</span><br>
+  Applies to: Canva · Wix Studio · Google Slides · Google Stitch · Social Media · Email · Print<br>
+  Urban Strong Fitness is a business unit under Restart Fitness PH<br>
+  <span>Do not distribute outside the brand team</span></p>
+</footer>
+
+<script>
+const panels=document.querySelectorAll('.panel');
+const tabs=document.querySelectorAll('.nav-tab');
+function sw(i){
+  panels.forEach(p=>p.classList.remove('on'));
+  tabs.forEach(t=>t.classList.remove('on'));
+  panels[i].classList.add('on');
+  tabs[i].classList.add('on');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>

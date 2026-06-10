@@ -1,7 +1,7 @@
 # Social Media Pipeline — Restart Fitness PH
 **Type:** calendar + metric
 **Priority:** 2
-**Status:** PENDING
+**Status:** AT RISK
 **Baseline:** ~100 followers · 4 online clients · DM volume: unknown · posting: inconsistent
 **Target:** 300 followers · 7 online clients · posting 5x/week IG + Threads · 3x/week Facebook · DM → Trainerize funnel active
 **Deadline:** 2026-06-25
@@ -29,7 +29,7 @@
 | 2 | Create first 10 posts (mix of pillars — IG + Threads format) | route-to-claude | 1 | PENDING | 2026-05-28 | — |
 | 3 | Write DM flow scripts — cold intro, qualify, close, Trainerize handoff | route-to-claude | 2 | PENDING | 2026-05-29 | — |
 | 4 | Build 4-week posting calendar in ClickUp | route-to-claude | 2 | PENDING | 2026-05-31 | — |
-| 5 | Execute Week 1 posting (5x IG, 5x Threads, 3x FB) | action | 3 | PENDING | 2026-06-06 | — |
+| 5 | Execute Week 1 posting (5x IG, 5x Threads, 3x FB) | action | 3 | DONE | 2026-06-06 | 2026-06-05 |
 | 6 | Execute Week 2 posting | action | 3 | PENDING | 2026-06-10 | — |
 | 7 | Log follower count + DM volume + client count | action | 4 | PENDING | 2026-06-12 | — |
 | 8 | Mid-point review — what content type is driving DMs? | route-to-claude | 4 | PENDING | 2026-06-12 | — |

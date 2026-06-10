@@ -41,6 +41,7 @@ Next.js (App Router) + TypeScript · Tailwind + shadcn/ui · gray-matter + remar
 | To-do list | goal task tables + ClickUp + Google Calendar |
 | Goals | /GOALS/*.md |
 | Clients | /MEMORY/clients/[name]/[name].md |
+| Client Cycle Board | /MEMORY/clients/[name]/program-state.md — display: cycle name, current week/phase, last-updated date, next build status. One row per active client. This is the primary cycle tracking view — not the registry, not the profile. Only shows active clients (exclude inactive + test). |
 | Programs | /OUTPUTS/programs/[client]/ |
 | Engines | /ENGINES/** + ROUTER.md (+ launcher in Phase 3) |
 | Research | /RESEARCH/INDEX.md + topic folders |

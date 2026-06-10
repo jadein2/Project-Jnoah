@@ -65,9 +65,20 @@ If brand is ambiguous, ask. Don't guess.
 | "check-in for [client]" / "weekly feedback" / "bi-weekly assessment" | /ENGINES/client/check-in.md | brand-agnostic | — |
 | "90-day check-in" / "ADHERE check-in" / "week [N] check-in for [90-day client]" | /ENGINES/client/check-in.md + /ENGINES/client/adhere-compliance.md | brand-agnostic | — |
 | "ADHERE intake" / "ADHERE onboarding" / "compliance system" / "week 1–2 protocol" / "friction audit" | /ENGINES/client/adhere-compliance.md + /ENGINES/client/client-onboarding.md | brand-agnostic | — |
+| "6FIX" / "6fix" / "6-week program" / "beginner program" / "6fix onboarding" / "6fix delivery" | /ENGINES/6fix/6fix-master-index.md → route to specific file per task (see index) | Restart Fitness PH | anti-ai-copywriter |
+| "6fix training session" / "6fix phase 2 program" / "build 6fix session" | /ENGINES/6fix/6fix-phase2-program.md | Restart Fitness PH | coach-jap-programming-format |
+| "6fix upgrade" / "upgrade pitch 6fix" / "move client from 6fix to 90-day" | /ENGINES/6fix/6fix-upgrade-sequence.md + /ENGINES/sales/sales-engine.md | Restart Fitness PH | anti-ai-copywriter |
+| "6fix campaign" / "6fix content" / "6fix marketing" / "6fix launch" | /ENGINES/6fix/6fix-marketing-strategy.md + /ENGINES/marketing/campaign.md | Restart Fitness PH | anti-ai-copywriter |
+| "6fix compliance" / "6fix check-in" / "6fix cohort review" | /ENGINES/6fix/6fix-compliance-dashboard.md + /ENGINES/client/adhere-compliance.md | Restart Fitness PH | — |
+| "6fix wix page" / "6fix enrollment page" / "6fix email sequence" | /ENGINES/6fix/6fix-wix-email-automation.md + /ENGINES/web/wix.md | Restart Fitness PH | anti-ai-copywriter |
+| "6fix design" / "6fix assets" / "6fix canva" | /ENGINES/6fix/6fix-design-system.md + /ENGINES/design/design-brief.md | Restart Fitness PH | ui-ux-pro-max |
+| "6fix onboarding for [client]" / "6fix intake [client]" | /ENGINES/6fix/6fix-onboarding-system.md + /ENGINES/client/client-onboarding.md | Restart Fitness PH | — |
+| "6fix trainerize messages" / "6fix auto-messages" | /ENGINES/6fix/6fix-trainerize-auto-messages.md + /ENGINES/client/handoff-trainerize.md | Restart Fitness PH | — |
 | "client agreement" / "send the agreement" | /ENGINES/client/client-agreement.md | brand-agnostic | anti-ai-copywriter |
 | "program only" / "program only flow" / "trainerize review" | /ENGINES/client/program-only-flow.md | brand-agnostic | — |
 | "new intake for [name]" / "log check-in for [name]" / "log session data for [name]" | /ENGINES/client/handoff-trainerize.md | brand-agnostic | — |
+| "premortem [scope]" / "pre-mortem [scope]" / "pre-mortem audit" / "what could go wrong with [X]" / "stress-test [X] before we ship" | mortem skill (PRE mode) → writes /MEMORY/pre-mortem-[slug].md | brand-agnostic | mortem |
+| "postmortem [scope]" / "post-mortem [scope]" / "post-mortem audit" / "retro on [X]" / "what worked and what didn't on [X]" | mortem skill (POST mode) → writes /MEMORY/post-mortem-[slug].md | brand-agnostic | mortem |
 
 ---
 
@@ -110,6 +121,7 @@ Skill names should stay mirrored across both folders:
 - **coach-jap-programming-format** — any training program, WOD, warm-up, or workout written out
 - **research-analyst** — any research task; auto-applies T1/T2/T3 credibility scoring and signal weighting
 - **goals** — any morning brief, goal check, or daily orientation request; produces the structured daily work order
+- **mortem** — pre-mortem (before ship) or post-mortem (after close) audits; two-mode skill, picks PRE or POST from the trigger phrase; writes to /MEMORY/
 
 Skills run on top of brand files. Brand files win on conflict.
 
@@ -122,7 +134,7 @@ Everything Jap should be able to find later goes in /OUTPUTS/. Folder per type:
 - Blogs → /OUTPUTS/blog/YYYY-MM-DD-slug.md
 - Carousels → /OUTPUTS/carousel/YYYY-MM-DD-brand-topic.md (copy + slide notes)
 - Designs (HTML/SVG/specs) → /OUTPUTS/design/YYYY-MM-DD-brand-topic/
-- Programs → /OUTPUTS/programs/[client-name]/YYYY-MM-DD-program-name.md
+- Programs → /OUTPUTS/programs/[client-name]/YYYY-MM-DD-program-name.md (client session files only — product/system engines go in /ENGINES/, not here)
 - Nutrition → /OUTPUTS/nutrition/[client-name]/YYYY-MM-DD-plan.md
 - Web copy → /OUTPUTS/web/page-name.md
 
@@ -157,6 +169,8 @@ Never invent a new engine on the fly. If a task type recurs and has no home, fla
 ---
 
 ## Last updated
+2026-06-09 — 6FIX engine moved from OUTPUTS/programs/ to /ENGINES/6fix/. 10 routing rows added. Output destinations note updated (client sessions only in /OUTPUTS/programs/).
+2026-06-05 — Added `mortem` skill (two-mode: PRE/POST). Two routing rows added. Mirrored to /.claude/skills/mortem/ and /.agents/skills/mortem/.
 2026-05-30 — URBN Athletics brand file went LIVE (/BRANDS/URBN-athletics.md, canonical /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Hold lifted. Blog default → URBN. Removed Restart's line "Stop guessing. Follow a system." from URBN (decoupling). Visual identity + domain still pending.
 2026-05-30 — Platform wording cleanup. Skills section now states both platform folders: Codex uses /.agents/skills/ and Claude/Cowork uses /.claude/skills/. Names should stay mirrored.
 2026-05-29 — Governance pass. Brand cues updated for URBN Athletics rebrand (decoupled from Restart; URBN brand file pending, urban-strong.md reference-only). Blog default suspended → ASK. Voice QA layered (anti-ai-copywriter authority + brand-review). Control-file read note updated for platform check.

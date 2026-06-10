@@ -9,7 +9,7 @@ Consolidated posting schedule. Asset numbers map to `creative-handoff.md`. Full 
 | Day | Post type | Topic | CTA | Asset |
 |---|---|---|---|---|
 | Mon Jun 1 | Announcement | Launch week + FIT45 waitlist opens | Join the FIT45 waitlist | A1 Rebrand Announcement |
-| Tue Jun 2 | Soft Opening | Soft Opening is June 11 | Reserve a Free Trial | A4 Soft Opening |
+| Tue Jun 2 | Soft Opening | Soft Opening is June 8 | Reserve a Free Trial | A4 Soft Opening |
 | Wed Jun 3 | FIT45 intro | New to fitness? Start with FIT45 | Message "FIT45" | A2 FIT45 Introduction |
 | Thu Jun 4 | FIT45 benefits | Low-impact, scalable daily movement | Join the FIT45 waitlist | A3 FIT45 Waitlist |
 | Fri Jun 5 | Free Trial | 2-session trial, FIT45 / URBN HYBRID only | Reserve a Free Trial | A5 Free Trial Rules |
@@ -20,13 +20,13 @@ Consolidated posting schedule. Asset numbers map to `creative-handoff.md`. Full 
 
 | Day | Post type | Topic | CTA | Asset |
 |---|---|---|---|---|
-| Mon Jun 8 | Education | What is On-Ramp / Foundation Course? | Book a Free Assessment | A6 On-Ramp Explanation |
-| Tue Jun 9 | Invitation | Soft Opening is June 11 | Reserve a Free Trial | A4 variant |
+| Mon Jun 8 | Soft Opening | Welcome to the next chapter | Message us to start | A4 / event |
+| Tue Jun 9 | Education | What is On-Ramp / Foundation Course? | Book a Free Assessment | A6 On-Ramp Explanation |
 | Wed Jun 10 | Comeback | Old members return with Pioneer Price | Ask about Pioneer Price | A9 Old Member Comeback |
-| Thu Jun 11 | Soft Opening | Welcome to the next chapter | Message us to start | A4 / event |
-| Fri Jun 12 | Pathway | FIT45 → On-Ramp → URBN FIT | Join the FIT45 waitlist | A7 Beginner Pathway |
-| Sat Jun 13 | On-Ramp schedule | Group On-Ramp: Tue/Thu 6 PM, Sat 10 AM | Start Foundation Course | A6 variant |
-| Sun Jun 14 | FAQ | FIT45, On-Ramp, URBN FIT, HYBRID explained | Message us to start | A7 variant |
+| Thu Jun 11 | Pathway | FIT45 → On-Ramp → URBN FIT | Join the FIT45 waitlist | A7 Beginner Pathway |
+| Fri Jun 12 | On-Ramp schedule | Group On-Ramp: Tue/Thu 6 PM, Sat 10 AM | Start Foundation Course | A6 variant |
+| Sat Jun 13 | FAQ | FIT45, On-Ramp, URBN FIT, HYBRID explained | Message us to start | A7 variant |
+| Sun Jun 14 | Pioneer reminder | 15 Pioneer seats lock at Grand Opening | Ask about Pioneer Price | A8 Pioneer |
 
 ## Week 3 — Jun 15–21 · URBN HYBRID + PFT
 

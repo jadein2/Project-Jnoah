@@ -1,0 +1,66 @@
+{
+  "syncedAt": "2026-06-06T00:00:00+08:00",
+  "timezone": "Asia/Manila",
+  "calendars": [
+    { "id": "japhetfelipe@gmail.com", "summary": "Personal", "primary": true },
+    { "id": "dpiiduh6jb1iomk5ob8nh86lp8@group.calendar.google.com", "summary": "Appointments", "primary": false },
+    { "id": "en.philippines#holiday@group.v.calendar.google.com", "summary": "Holidays in Philippines", "primary": false }
+  ],
+  "events": [
+    {
+      "id": "p6kh61f544v7hnt6t77dbd9pu8_20260608",
+      "summary": "Allowance",
+      "start": "2026-06-08",
+      "end": "2026-06-09",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    },
+    {
+      "id": "p6kh61f544v7hnt6t77dbd9pu8_20260615",
+      "summary": "Allowance",
+      "start": "2026-06-15",
+      "end": "2026-06-16",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    },
+    {
+      "id": "p6kh61f544v7hnt6t77dbd9pu8_20260622",
+      "summary": "Allowance",
+      "start": "2026-06-22",
+      "end": "2026-06-23",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    },
+    {
+      "id": "b0idjpnn3bhcmonln38uhhjdlo_20260623",
+      "summary": "Meralco billing statement",
+      "start": "2026-06-23",
+      "end": "2026-06-24",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    },
+    {
+      "id": "mfailm4k8me3l2t62mtvc65vb0_20260626",
+      "summary": "PLDT due",
+      "start": "2026-06-26",
+      "end": "2026-06-27",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    },
+    {
+      "id": "p6kh61f544v7hnt6t77dbd9pu8_20260629",
+      "summary": "Allowance",
+      "start": "2026-06-29",
+      "end": "2026-06-30",
+      "allDay": true,
+      "calendar": "Personal",
+      "recurring": true
+    }
+  ],
+  "note": "Coaching sessions not yet in GCal. Appointments calendar is empty. Add sessions to Appointments calendar to surface them here."
+}

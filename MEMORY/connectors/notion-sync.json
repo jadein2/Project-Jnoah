@@ -1,0 +1,122 @@
+{
+  "syncedAt": "2026-06-06T00:00:00+08:00",
+  "workspaceUrl": "https://app.notion.com/p/376bfca80baf81e282caf7d4ded79e37",
+  "databases": [
+    {
+      "id": "bc0e0f9a1a1a43aa8985812d74a33218",
+      "name": "Goals",
+      "url": "https://app.notion.com/p/bc0e0f9a1a1a43aa8985812d74a33218",
+      "collectionId": "collection://31eb3c8c-b35d-4ffe-8581-e1906b63db6a"
+    },
+    {
+      "id": "3a0e7a37b40547f3b272b8659d7a5872",
+      "name": "Goal Tasks",
+      "url": "https://app.notion.com/p/3a0e7a37b40547f3b272b8659d7a5872",
+      "collectionId": "collection://3ed757a0-300c-4ee3-bd51-f8a89d65e2ce"
+    },
+    {
+      "id": "3c221d1ab0cf4f159095c2093c812186",
+      "name": "Campaigns",
+      "url": "https://app.notion.com/p/3c221d1ab0cf4f159095c2093c812186"
+    },
+    {
+      "id": "afe7dcef84d14fb1ad82600138bb380f",
+      "name": "Campaign Tasks",
+      "url": "https://app.notion.com/p/afe7dcef84d14fb1ad82600138bb380f"
+    },
+    {
+      "id": "af3696de3f03424e92a1e93fe9d28a9e",
+      "name": "Posting Log",
+      "url": "https://app.notion.com/p/af3696de3f03424e92a1e93fe9d28a9e"
+    },
+    {
+      "id": "29c8fbdf892f49a78694c5602997369d",
+      "name": "Client Registry",
+      "url": "https://app.notion.com/p/29c8fbdf892f49a78694c5602997369d"
+    },
+    {
+      "id": "b88eede58d9e47f4b67031a31631954c",
+      "name": "Decisions Log",
+      "url": "https://app.notion.com/p/b88eede58d9e47f4b67031a31631954c"
+    }
+  ],
+  "goalsSnapshot": [
+    {
+      "name": "Website Launch",
+      "priority": 1,
+      "status": "PENDING",
+      "flag": "6 copy tasks OVERDUE. Task 7 due Jun 7.",
+      "deadline": "2026-06-25"
+    },
+    {
+      "name": "Social Media Pipeline",
+      "priority": 2,
+      "status": "PENDING",
+      "flag": "Week 1 done. Week 2 starts Jun 10. Posting log empty.",
+      "deadline": "2026-06-25"
+    },
+    {
+      "name": "Marketing & Sales Active",
+      "priority": 2,
+      "status": "PENDING",
+      "flag": "Tasks 1–7 overdue. First DM conversation due Jun 7.",
+      "deadline": "2026-06-25"
+    },
+    {
+      "name": "Jnoah OS Final",
+      "priority": 3,
+      "status": "PENDING",
+      "flag": "Background. Poster.md decision due Jun 8.",
+      "deadline": "2026-06-25"
+    }
+  ],
+  "activeCampaigns": [
+    {
+      "name": "URBN June Rebrand Launch",
+      "brand": "URBN Athletics",
+      "status": "PRODUCTION — Soft Opening Jun 8"
+    },
+    {
+      "name": "Social Growth Pipeline Wk1",
+      "brand": "Restart PH",
+      "status": "ACTIVE — monitoring"
+    },
+    {
+      "name": "Story-Driven Lead Gen",
+      "brand": "Restart PH",
+      "status": "DRAFT"
+    },
+    {
+      "name": "6FIX Launch",
+      "brand": "Restart PH",
+      "status": "DRAFT"
+    }
+  ],
+  "clientFlags": [
+    { "client": "Lenny", "flag": "Active status unconfirmed" },
+    { "client": "Lily", "flag": "No program on file" },
+    { "client": "Anthony", "flag": "Athlete vs team type unconfirmed" },
+    { "client": "Aileen", "flag": "Post-program — check if continuing" }
+  ],
+  "quickFire": [
+    {
+      "phrase": "design brief — Restart Fitness PH — website UI/UX",
+      "note": "due Jun 7, P1 Goal Task 7"
+    },
+    {
+      "phrase": "finalize copy — Home",
+      "note": "most overdue copy task, P1 unblocked after decisions"
+    },
+    {
+      "phrase": "write DM cold intro script — Restart Fitness PH",
+      "note": "unlocks the entire sales funnel"
+    }
+  ],
+  "blocked": [
+    "URBN visual identity + public domain — pending final logo/palette/type",
+    "restartfitnessph.com — domain not live yet (planned)",
+    "Story-Driven + 6FIX campaigns — DRAFT, not yet activated"
+  ],
+  "deadlineDays": 19,
+  "deadlineDate": "2026-06-25"
+}

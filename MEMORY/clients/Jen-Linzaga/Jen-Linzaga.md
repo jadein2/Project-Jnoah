@@ -10,13 +10,13 @@ Client Since: —
 ---
 
 ## PERSONAL PROFILE
-Full Name: Jen Linzaga
+Full Name: Jenevine Mae Linzaga
 Preferred Name / Nickname: Jen
-Age: 31
+Age: 39
 Date of Birth: —
 Sex: F
-Height: 5'2"
-Weight: 173 lb
+Height: 5'1"
+Weight: 153.96 lb (as of 5/15/26 — see body metrics)
 Nationality: Filipino
 Location: —
 Email: —
@@ -68,9 +68,11 @@ Nutrition-only client on record. No training program on file.
 ---
 
 ## BODY METRICS (tracked over time)
-| Date | Weight (kg) | Body Fat % | Waist (cm) | Hips (cm) | Notes |
-|---|---|---|---|---|---|
-| — | 78.5 kg (173 lb) | — | — | — | Starting point — from 6Fix meal prep profile |
+| Date | Weight (lbs) | Body Fat % | Muscle Mass (lbs) | Notes |
+|---|---|---|---|---|
+| 2026-03-30 | 162 | — | — | Starting weight (form note) |
+| 2026-04-15 | 159.4 | 41.6% | 87.4 | Check-in 1 |
+| 2026-05-15 | 153.96 | 40.0% | 86.0 | 9 lbs weight loss @ 6 weeks |
 
 ---
 
@@ -120,4 +122,5 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
-2026-05-19 — Profile created from 6Fix_Program_Restart_Fitness_PH_Jen-Linzaga.pdf. Nutrition-only client — no training program on file. Age 31, female, 5'2", 173 lb, light active (office). Target 1,900 kcal, P160/C190/F55. File is on Desktop — move to references/ when ready. Confirm communication channel and whether training is planned alongside the nutrition plan.
+2026-06-08 — Body metrics updated from Urban Strong Fitness Goal Review Form. Starting weight 162 lbs (3/30/26). Two check-ins: 4/15 (159.4 lbs, 41.6% BF, 87.4 MM) and 5/15 (153.96 lbs, 40% BF, 86 MM). 9 lbs lost at 6-week mark. Age corrected to 39 (was 31 in old profile). Height corrected to 5'1" (was 5'2"). Previous starting weight on file (173 lb from nutrition plan) does not match form — form (162 lbs, 3/30/26) is now the reference. Full name confirmed: Jenevine Mae Linzaga.
+2026-05-19 — Profile created from 6Fix_Program_Restart_Fitness_PH_Jen-Linzaga.pdf. Nutrition-only client. Target 1,900 kcal, P160/C190/F55.

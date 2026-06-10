@@ -13,7 +13,7 @@
 
 | # | Milestone | Status | Due | Completed |
 |---|---|---|---|---|
-| 1 | Urban Strong brand direction decided — rebrand or delete | PENDING | 2026-06-01 | — |
+| 1 | Urban Strong brand direction decided — rebrand or delete | COMPLETE | 2026-06-01 | 2026-05-30 |
 | 2 | poster.md built (if US kept) or formally marked N/A | PENDING | 2026-06-08 | — |
 | 3 | /design-reference-raw/ populated with actual reference images | PENDING | 2026-06-15 | — |
 | 4 | Final system audit + HOW-TO-USE.md fully updated | PENDING | 2026-06-22 | — |
@@ -24,7 +24,7 @@
 
 | # | Task | Type | Milestone # | Status | Due | Done |
 |---|---|---|---|---|---|---|
-| 1 | Decide: rebrand Urban Strong or delete it | decision | 1 | PENDING | 2026-06-01 | — |
+| 1 | Decide: rebrand Urban Strong or delete it | decision | 1 | DONE | 2026-06-01 | 2026-05-30 |
 | 2 | If rebrand: update /BRANDS/urban-strong.md with new direction | route-to-claude | 1 | PENDING | 2026-06-01 | — |
 | 3 | If delete: remove Urban Strong brand file + update all references in CLAUDE.md + ROUTER.md | route-to-claude | 1 | PENDING | 2026-06-01 | — |
 | 4 | Build poster.md engine OR formally mark as N/A in PROGRESS.md | route-to-claude | 2 | PENDING | 2026-06-08 | — |

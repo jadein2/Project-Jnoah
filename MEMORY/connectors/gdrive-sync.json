@@ -1,0 +1,91 @@
+{
+  "syncedAt": "2026-06-06T00:00:00+08:00",
+  "keyFiles": [
+    {
+      "id": "1rbkgVLdQ-Zf_2ezOVX5gC1zLe6sepv1vW79bcngcYQ4",
+      "title": "DASHBOARD 2026",
+      "mimeType": "spreadsheet",
+      "owner": "urbanstrongathletics@gmail.com",
+      "modifiedTime": "2026-06-02T08:06:09Z",
+      "viewUrl": "https://docs.google.com/spreadsheets/d/1rbkgVLdQ-Zf_2ezOVX5gC1zLe6sepv1vW79bcngcYQ4/edit",
+      "category": "operations"
+    },
+    {
+      "id": "1HrUl8eBAl11Bw_u6Y0iz5NInIOE2NOrAKX4GsSMHbKk",
+      "title": "MEMBERS BODY COMPOSITION FILE",
+      "mimeType": "spreadsheet",
+      "owner": "urbanstrongathletics@gmail.com",
+      "modifiedTime": "2026-06-02T05:22:43Z",
+      "viewUrl": "https://docs.google.com/spreadsheets/d/1HrUl8eBAl11Bw_u6Y0iz5NInIOE2NOrAKX4GsSMHbKk/edit",
+      "category": "clients"
+    },
+    {
+      "id": "1CjkD54MjthCNWRfMFpXfhwI6HkAp06HLmivL5KaADzU",
+      "title": "Leads Dashboard",
+      "mimeType": "spreadsheet",
+      "owner": "urbanstrongathletics@gmail.com",
+      "modifiedTime": "2026-06-02T01:09:59Z",
+      "viewUrl": "https://docs.google.com/spreadsheets/d/1CjkD54MjthCNWRfMFpXfhwI6HkAp06HLmivL5KaADzU/edit",
+      "category": "sales"
+    },
+    {
+      "id": "15wUz4W2xp3lmd2KHJjNUyGiLuErdqt-hgC4gpwC7NVU",
+      "title": "AIRA_Training_Dashboard_W1-W2",
+      "mimeType": "spreadsheet",
+      "owner": "japhetfelipe@gmail.com",
+      "modifiedTime": "2026-05-09T03:22:58Z",
+      "viewUrl": "https://docs.google.com/spreadsheets/d/15wUz4W2xp3lmd2KHJjNUyGiLuErdqt-hgC4gpwC7NVU/edit",
+      "category": "clients"
+    },
+    {
+      "id": "1vJZsrVaULbG3M5lZj-w38wu_9cwDhcBV",
+      "title": "URBN-Athletics-Program-and-Offer.pdf",
+      "mimeType": "pdf",
+      "owner": "japhetfelipe@gmail.com",
+      "modifiedTime": "2026-05-31T21:46:42Z",
+      "viewUrl": "https://drive.google.com/file/d/1vJZsrVaULbG3M5lZj-w38wu_9cwDhcBV/view",
+      "category": "urbn"
+    },
+    {
+      "id": "177RMxJNJEYpcivETjOntzlw0gJy9jqr6",
+      "title": "URBN-Athletics-June-Marketing-Plan-Stakeholder-Presentation.pdf",
+      "mimeType": "pdf",
+      "owner": "japhetfelipe@gmail.com",
+      "modifiedTime": "2026-05-30T07:41:39Z",
+      "viewUrl": "https://drive.google.com/file/d/177RMxJNJEYpcivETjOntzlw0gJy9jqr6/view",
+      "category": "urbn"
+    },
+    {
+      "id": "1G1wGl_q3cqPP2NHhH1sVTkbAW7i9QOd-",
+      "title": "URBN-Athletics-June-2026-Creative-Team-Handoff.pdf",
+      "mimeType": "pdf",
+      "owner": "japhetfelipe@gmail.com",
+      "modifiedTime": "2026-05-30T07:24:32Z",
+      "viewUrl": "https://drive.google.com/file/d/1G1wGl_q3cqPP2NHhH1sVTkbAW7i9QOd-/view",
+      "category": "urbn"
+    },
+    {
+      "id": "1vuh_gidqfvEMgEa82qDPw4bt3zQA7kYz",
+      "title": "RESTART-FITNESS-PH-SOURCE-OF-TRUTH.md",
+      "mimeType": "markdown",
+      "owner": "japhetfelipe@gmail.com",
+      "modifiedTime": "2026-05-06T21:40:33Z",
+      "viewUrl": "https://drive.google.com/file/d/1vuh_gidqfvEMgEa82qDPw4bt3zQA7kYz/view",
+      "category": "restart"
+    }
+  ],
+  "folders": [
+    {
+      "id": "1D6K-pi3TpAGHUdHdSROg_h8MjV6p4Ge5",
+      "title": "URBN Athetics",
+      "viewUrl": "https://drive.google.com/drive/folders/1D6K-pi3TpAGHUdHdSROg_h8MjV6p4Ge5",
+      "category": "urbn"
+    },
+    {
+      "id": "1NRqFTX0IdInzaWhxoIeo53XPuLUrq7Hb",
+      "title": "Logo",
+      "viewUrl": "https://drive.google.com/drive/folders/1NRqFTX0IdInzaWhxoIeo53XPuLUrq7Hb",
+      "category": "urbn"
+    }
+  ]
+}

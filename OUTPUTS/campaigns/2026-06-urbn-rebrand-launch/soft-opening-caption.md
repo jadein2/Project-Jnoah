@@ -1,7 +1,7 @@
 # Soft Opening — Post Captions (IG + FB)
 
 **Brand:** URBN Athletics · **Core line:** Built to Move Better
-**Post:** Soft Opening announcement · **Event:** June 11
+**Post:** Soft Opening announcement · **Event:** June 8
 **Pairs with asset:** A4 Soft Opening · **CTA:** Reserve a Free Trial
 **Rules honored:** Free Trial = FIT45 + URBN HYBRID only · no prices · no banned words · peer tone.
 
@@ -9,7 +9,7 @@
 
 ## Instagram
 
-The doors open June 11. URBN Athletics Soft Opening.
+The doors open June 8. URBN Athletics Soft Opening.
 
 Urban Strong Fitness is now URBN Athletics — the gym you trust, now better. Better coaching and experience, a positive community, a high standard, and a better space to train in.
 
@@ -29,7 +29,7 @@ Message us to reserve your Free Trial.
 
 ## Facebook
 
-We're opening the doors — URBN Athletics Soft Opening is June 11.
+We're opening the doors — URBN Athletics Soft Opening is June 8.
 
 Urban Strong Fitness has become URBN Athletics — the gym you trust, now better: better coaching and client experience, a positive community, a high standard, and a better space to train in. A clearer path for wherever you're starting from.
 
@@ -42,11 +42,11 @@ Free Trial is open for FIT45 and URBN HYBRID only — 2 sessions, booked in adva
 
 Built to Move Better.
 
-Send us a message to reserve your Free Trial before June 11.
+Send us a message to reserve your Free Trial for June 8.
 
 ---
 
 ## Optional add-ons
 
 - **Pioneer teaser** (if you want a sign-up nudge): add a line — "Sign up during Soft Opening to lock Pioneer pricing — 15 seats only."
-- **Story version:** "Soft Opening June 11 · Reserve a Free Trial" + sticker → reply with a keyword.
+- **Story version:** "Soft Opening June 8 · Reserve a Free Trial" + sticker → reply with a keyword.

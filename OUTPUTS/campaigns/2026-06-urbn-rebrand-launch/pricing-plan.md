@@ -2,7 +2,7 @@
 
 **Brand:** URBN Athletics · **Core line:** Built to Move Better
 **Created:** 2026-06-03 · **Status:** v1 — locked structure, 2 confirm-items flagged
-**Anchors:** Soft Opening **Jun 11** · Grand Opening (tentative) **Jul 11**
+**Anchors:** Soft Opening **Jun 8** · Grand Opening (tentative) **Jul 11**
 **Source of truth for base prices:** `/Raw-Files/URBN Athletics/Program-Architecture-and-Offer-Ladder.md`
 
 This file governs all June pricing in copy, sales, and creative. Public assets carry **no price** — pricing lives in DM / Free Assessment / discovery. This doc is the internal/sales reference.
@@ -14,7 +14,7 @@ This file governs all June pricing in copy, sales, and creative. Public assets c
 | Tier | What it is | Discount | Who qualifies | When |
 |---|---|---|---|---|
 | **Free Trial** | Try-before-you-buy | Free (2 sessions) | New leads | Now → ongoing |
-| **Soft Opening Promo** | Early-bird sign-up rate | **20% off list** | Anyone who signs up in the soft-opening window | **Jun 11 – Jul 10** |
+| **Soft Opening Promo** | Early-bird sign-up rate | **20% off list** | Anyone who signs up in the soft-opening window | **Jun 8 – Jul 10** |
 | **Grand Opening Pioneer** | Locked loyalty rate | **30% off list** | First **15** Soft Opening signees · + legacy Urban Strong members | Locks **Jul 11** |
 
 The lever: **sign up during Soft Opening at 20% → be one of the first 15 → lock the 30% Pioneer rate for as long as you stay a member.** Scarcity (15 seats) + a deadline (Grand Opening) drive June sign-ups.

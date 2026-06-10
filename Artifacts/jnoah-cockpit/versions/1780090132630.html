@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Jnoah Cockpit",
+  "schemaVersion": 1,
+  "description": "Jnoah Cockpit v1 — mission-control dashboard over the Project Jnoah vault. Sections: active goals + blocked, where-I-left-off (editable), clients with current week + view/build-program buttons, marketing campaigns (researched/ongoing/draft) with folder+log links, design & social deliverables, design-brief quick start + future backlog (editable), researched topics. Buttons fire prompts into chat via sendPrompt. Data is a 2026-05-30 snapshot baked from the vault."
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JNOAH · Cockpit v1</title>
+<style>
+:root{ color-scheme: light; --bg:#f6f5f2; --card:#ffffff; --ink:#1f2421; --muted:#6b6f6c; --line:#e6e3dd; --accent:#e1641f; --accent-soft:#fbe9dd; --green:#2e7d52; --amber:#b7791f; --red:#b03a2e; --blue:#2c5d8a; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.45;font-size:14px}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 18px 80px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:6px}
+.brandmark{font-weight:800;letter-spacing:.5px;font-size:22px}
+.brandmark .dot{color:var(--accent)}
+.sub{color:var(--muted);font-size:12.5px;margin-top:2px}
+.synced{font-size:11.5px;color:var(--muted);text-align:right}
+nav.jump{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;flex-wrap:wrap;gap:6px;padding:10px 0;border-bottom:1px solid var(--line);margin-bottom:18px}
+nav.jump a{font-size:12px;color:var(--muted);padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:#fff}
+nav.jump a:hover{border-color:var(--accent);color:var(--accent)}
+section{margin:0 0 26px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.7px;margin:0 0 4px;display:flex;align-items:center;gap:8px}
+h2 .count{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:0;text-transform:none}
+.sec-note{color:var(--muted);font-size:12px;margin:0 0 12px}
+.grid{display:grid;gap:12px}
+.cards{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.card h3{margin:0 0 6px;font-size:13.5px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:18px}
+.kpi .card{text-align:center}
+.kpi .big{font-size:26px;font-weight:800;line-height:1}
+.kpi .lbl{font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+button.act{font:inherit;font-size:12px;font-weight:600;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:8px;padding:6px 11px;transition:.12s}
+button.act:hover{border-color:var(--accent);color:var(--accent)}
+button.act.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+button.act.primary:hover{background:#c8551a;color:#fff}
+button.act.mini{padding:4px 8px;font-size:11px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top;font-size:12.5px}
+th{background:#faf9f6;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+tr:last-child td{border-bottom:none}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:999px;letter-spacing:.3px}
+.pill.active{background:#e3f1e9;color:var(--green)}
+.pill.draft{background:#fdeecf;color:var(--amber)}
+.pill.done{background:#e7eef5;color:var(--blue)}
+.pill.flag{background:#fbe2de;color:var(--red)}
+.pill.hold{background:#eee;color:#555}
+.tag{font-size:10.5px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-right:4px;display:inline-block}
+.path{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--muted);word-break:break-all}
+ul.clean{margin:6px 0 0;padding-left:18px}
+ul.clean li{margin-bottom:6px}
+.resume li{margin-bottom:9px}
+.empty{color:var(--muted);font-style:italic;font-size:12px}
+.addrow{display:flex;gap:6px;margin-top:10px}
+.addrow input{flex:1;font:inherit;font-size:12px;padding:6px 9px;border:1px solid var(--line);border-radius:8px}
+.foot{border-top:1px solid var(--line);margin-top:30px;padding-top:14px;color:var(--muted);font-size:11.5px}
+.x{cursor:pointer;color:var(--muted);margin-left:6px;font-weight:700}
+.x:hover{color:var(--red)}
+.small{font-size:11.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <div class="brandmark">JNOAH <span class="dot">·</span> COCKPIT <span class="small">v1</span></div>
+      <div class="sub">Mission control over the Project Jnoah vault — URBN Athletics &amp; Restart Fitness PH</div>
+    </div>
+    <div class="synced">
+      Data synced: <strong>2026-05-30</strong><br>
+      <span class="small">Snapshot from vault — press Refresh to update</span>
+    </div>
+  </header>
+
+  <div class="btnrow">
+    <button class="act primary" onclick="sp('morning brief')">☀️ Morning brief</button>
+    <button class="act primary" onclick="sp('Start a new design brief. Ask me the brand, asset type, and objective, then route to the design engine (design-brief.md).')">🎨 New design brief</button>
+    <button class="act" onclick="sp('Refresh the Jnoah cockpit with the latest data from the vault and update the artifact.')">⟳ Refresh cockpit</button>
+    <button class="act" onclick="sp('Open the design engine — read ENGINES/design/design-brief.md and summarize how to run a design brief.')">design-brief.md</button>
+  </div>
+
+  <nav class="jump">
+    <a href="#focus">Focus</a>
+    <a href="#resume">Where I left off</a>
+    <a href="#clients">Clients</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#social">Design &amp; Social</a>
+    <a href="#briefs">Design briefs</a>
+    <a href="#research">Research</a>
+  </nav>
+
+  <!-- KPIs -->
+  <div class="kpi" id="kpi"></div>
+
+  <!-- FOCUS -->
+  <section id="focus">
+    <h2>This week's focus <span class="count">goals &amp; what's blocked</span></h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>🎯 Active goals — due 2026-06-25</h3>
+        <div id="goals"></div>
+      </div>
+      <div class="card">
+        <h3>🔴 Waiting on / blocked</h3>
+        <ul class="clean" id="blocked"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <h2>Where I left off <span class="count">pick up here</span></h2>
+    <p class="sec-note">Seeded from your content log, campaign status, and goals. Add your own resume notes — they're saved in this browser.</p>
+    <ul class="clean resume" id="resumeList"></ul>
+    <div class="addrow">
+      <input id="resumeInput" placeholder="Add a 'left off here' note…" onkeydown="if(event.key==='Enter')addResume()">
+      <button class="act" onclick="addResume()">Add</button>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section id="clients">
+    <h2>Clients <span class="count" id="clientCount"></span></h2>
+    <p class="sec-note">Current cycle / week from the registry. <strong>View week</strong> opens their program; <strong>Build week</strong> starts this week's program in chat.</p>
+    <table>
+      <thead><tr><th>Client</th><th>Service</th><th>Cycle / Week</th><th>Programs</th><th>Actions</th></tr></thead>
+      <tbody id="clientRows"></tbody>
+    </table>
+    <p class="small" style="margin-top:8px">Flags: Lenny (confirm active), Lily (no program on file), Anthony (athlete vs team). Test clients (Dummy-1/2, Mark-1, Tesla-3) hidden.</p>
+  </section>
+
+  <!-- MARKETING -->
+  <section id="marketing">
+    <h2>Marketing <span class="count">campaigns + pipeline</span></h2>
+    <p class="sec-note">Researched, on-going, and finished campaigns. Open the folder or the log for any one.</p>
+    <table>
+      <thead><tr><th>Campaign</th><th>Status</th><th>Brand</th><th>Folder</th><th></th></tr></thead>
+      <tbody id="campaignRows"></tbody>
+    </table>
+    <div class="card" style="margin-top:12px">
+      <h3>📈 Social Media Pipeline goal</h3>
+      <div class="small">Baseline 100 followers · 4 online clients → Target 300 · 7 clients · 5x/wk IG+Threads · 3x/wk FB · deadline 2026-06-25. Status: <span class="pill draft">PENDING</span></div>
+      <div class="btnrow" style="margin-bottom:0">
+        <button class="act mini" onclick="sp('Show the social media pipeline goal status — read GOALS/social-media-pipeline.md and give me milestones, tasks, and what is next.')">Pipeline status</button>
+        <button class="act mini" onclick="sp('Open the marketing performance / campaign log — read MEMORY/campaigns/campaign-performance.md.')">Campaign log</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN & SOCIAL -->
+  <section id="social">
+    <h2>Design &amp; social deliverables <span class="count">in flight</span></h2>
+    <p class="sec-note">Current design and social assets — produced, in progress, or pending.</p>
+    <table>
+      <thead><tr><th>Deliverable</th><th>Type</th><th>Status</th><th>Where</th><th></th></tr></thead>
+      <tbody id="deliverableRows"></tbody>
+    </table>
+  </section>
+
+  <!-- DESIGN BRIEFS -->
+  <section id="briefs">
+    <h2>Design briefs <span class="count">quick start + backlog</span></h2>
+    <div class="btnrow">
+      <button class="act primary" onclick="sp('Start a new design brief. Ask me the brand, asset type, and objective, then route to the design engine (design-brief.md).')">＋ New design brief</button>
+      <button class="act" onclick="sp('Open the design engine — read ENGINES/design/design-brief.md.')">design-brief.md</button>
+      <button class="act" onclick="sp('Read ENGINES/design/carousel.md and walk me through the carousel build flow.')">carousel.md</button>
+    </div>
+    <div class="card">
+      <h3>🗂️ Future design projects</h3>
+      <ul class="clean" id="briefBacklog"></ul>
+      <div class="addrow">
+        <input id="briefInput" placeholder="Add a future design project…" onkeydown="if(event.key==='Enter')addBrief()">
+        <button class="act" onclick="addBrief()">Add</button>
+      </div>
+      <p class="small" style="margin-top:8px">Saved in this browser. Click a project to start its brief in chat.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Researched topics <span class="count" id="researchCount"></span></h2>
+    <p class="sec-note">From RESEARCH/INDEX.md. Open any topic to use its findings in an engine.</p>
+    <table>
+      <thead><tr><th>Topic</th><th>Status</th><th>Depth</th><th>Last run</th><th></th></tr></thead>
+      <tbody id="researchRows"></tbody>
+    </table>
+  </section>
+
+  <div class="foot">
+    <strong>How this works:</strong> this is a point-in-time snapshot baked from your markdown vault on 2026-05-30. Buttons send a prompt into this chat (they don't edit files directly). Your resume notes and design backlog are saved in this browser only. To update the data, click <em>Refresh cockpit</em>. The full live cockpit (auto-reading the vault, connector data, run-engine buttons) is the paused Next.js build in <span class="path">MEMORY/projects/jnoah-os-interface.md</span> — this v1 bridges until then.
+  </div>
+
+</div>
+
+<script>
+function sp(t){ try{ if(typeof sendPrompt==='function'){ sendPrompt(t); } else { alert('Open this in Cowork to use the action buttons.'); } }catch(e){ console.error(e);} }
+
+/* ---------- DATA (from vault, 2026-05-30) ---------- */
+const goals = [
+  {g:"restartfitnessph.com Website Launch", p:1, s:"PENDING"},
+  {g:"Social Media Pipeline (100→300 followers, 4→7 clients)", p:2, s:"PENDING"},
+  {g:"Marketing & Sales System Active (Campaign 001 → 002)", p:2, s:"PENDING"},
+  {g:"Jnoah OS Final Completion", p:3, s:"PENDING"}
+];
+const blocked = [
+  "URBN Athletics details — blocks brand file + governance Wave 2",
+  "restartfitnessph.com — domain not live yet",
+  "Story-Driven + 6FIX Launch campaigns — DRAFT, not pushed to ClickUp",
+  "Week 1 Monday cover — failed in Canva, still manual"
+];
+const seedResume = [
+  {t:"Develop 4 conversion post concepts into full posts (GLP-1 aftermath, 3-day MED, consistency gap, strength for fat loss)", a:"Develop the 4 conversion post concepts from the content log into full posts — Restart Fitness PH, social-post engine."},
+  {t:"Develop 3 value post concepts (soreness as feedback, week-1 burnout, training without nutrition)", a:"Develop the 3 value post concepts from the content log into full posts — Restart Fitness PH."},
+  {t:"Finish Week 1 social pack — Monday cover still manual in Canva", a:"Help me finish the Week 1 social pipeline pack — the Monday cover that failed in Canva."},
+  {t:"Push Story-Driven + 6FIX Launch campaigns to ClickUp", a:"Push the Story-Driven Lead Gen and 6FIX Launch campaign assets to ClickUp."},
+  {t:"Lock content pillars + first 10 posts (Social Pipeline goal, task 1–2)", a:"Lock content pillars for Restart Fitness PH and create the first 10 posts."},
+  {t:"Jnoah OS governance Wave 2 — HELD for URBN details", a:"Resume Jnoah OS governance Wave 2 — I have the URBN Athletics details now."}
+];
+const clients = [
+  {n:"Enosh", svc:"Online (Coached + Program Only)", cyc:"Basketball S&C + Physique — Cycle 1 · W1", prog:9},
+  {n:"Aira Quito", svc:"PT + 6FIX Nutrition", cyc:"Body Recomp + Fat Loss — W1–W2 · Nutrition P1", prog:10},
+  {n:"Em Tan", svc:"Program Only (Olympic) + Nutrition", cyc:"Snatch/Clean/Squat — W5–W6", prog:1},
+  {n:"Yury", svc:"Personal Training", cyc:"Cycle 12", prog:8},
+  {n:"Jozen", svc:"Personal Training", cyc:"Cycle 3", prog:3},
+  {n:"Jaedie Padua", svc:"Personal Training", cyc:"Cycle 2 · S12+", prog:0},
+  {n:"Jude Saldua", svc:"Online Program Only", cyc:"Lower Body 3-Day Split", prog:0},
+  {n:"Jen Linzaga", svc:"Nutrition (6FIX)", cyc:"Fat Loss Meal Prep — P1", prog:0},
+  {n:"Joice Maningo", svc:"Nutrition Coaching", cyc:"Fat Loss — P1 · W1", prog:0},
+  {n:"Jerome Foo", svc:"Nutrition Only (Restart PH)", cyc:"Habit Fat Loss — W1", prog:0},
+  {n:"Mach", svc:"Personal Training", cyc:"Cycle 2", prog:0},
+  {n:"Anthony", svc:"Group / Team (Swimming)", cyc:"Cycle 2", prog:0, flag:1},
+  {n:"Aileen", svc:"Online 90-Day (Restart PH)", cyc:"Cycle 1 — complete (post-program)", prog:0, done:1},
+  {n:"Lenny Uy Calamba", svc:"Online PT (remote)", cyc:"Nov–Dec 2023 — confirm active", prog:0, flag:1},
+  {n:"Lily", svc:"Unknown — no program on file", cyc:"Confirm status", prog:0, flag:1}
+];
+const campaigns = [
+  {n:"Story-Driven Lead Gen", s:"DRAFT", brand:"Restart PH", folder:"OUTPUTS/campaigns/2026-05-story-driven-lead-gen-restart-ph", date:"2026-05"},
+  {n:"6FIX Launch", s:"DRAFT", brand:"Restart PH", folder:"OUTPUTS/campaigns/2026-06-6fix-launch-restart-ph", date:"2026-06"},
+  {n:"Social Growth Pipeline (Week 1)", s:"ACTIVE", brand:"Restart PH", folder:"OUTPUTS/campaigns/2026-06-social-growth-pipeline-restart-ph", date:"2026-06"}
+];
+const deliverables = [
+  {n:"Week 1 Social Pipeline Asset Pack", type:"Asset pack", s:"ACTIVE", where:"social-growth campaign", a:"Open the Week 1 social pipeline asset pack folder and show the files."},
+  {n:"Monday cover (Week 1)", type:"Design", s:"DRAFT", where:"Canva — manual", a:"Help me finish the Week 1 Monday cover that failed in Canva."},
+  {n:"Carousel — Why People Quit", type:"Carousel", s:"DONE", where:"OUTPUTS/carousel (2026-05-17)", a:"Open the 'Why People Quit' carousel files."},
+  {n:"Carousel — The Structure Story", type:"Carousel", s:"DONE", where:"OUTPUTS/carousel (2026-05-22) + Canva", a:"Open 'The Structure Story' carousel files."},
+  {n:"Pin 2 — The Restart Fitness System", type:"Carousel (pinned)", s:"DONE", where:"OUTPUTS/carousel — Canva PNGs", a:"Open the 'Pin 2 — The Restart Fitness System' carousel files."},
+  {n:"Banner — Scroll Stopper", type:"Design brief", s:"DRAFT", where:"story-driven campaign", a:"Open the scroll-stopper banner design brief."},
+  {n:"Week 1 Assets brief", type:"Design brief", s:"DRAFT", where:"social-growth campaign", a:"Open the Week 1 assets design brief."}
+];
+const research = [
+  {t:"6FIX System Integration (Trainerize + Social + Wix)", s:"COMPLETE", d:"QUICK", run:"2026-05-21", a:"Open the 6FIX System Integration research and tell me how to use it."},
+  {t:"Social Pipeline System (idea → design → copy → DM → call → onboarding)", s:"COMPLETE", d:"DEEP", run:"2026-05-22", a:"Open the Social Pipeline System research and tell me how to use it."},
+  {t:"Story-Driven Content & DM Strategy", s:"COMPLETE", d:"DEEP", run:"2026-05-22", a:"Open the Story-Driven Content & DM Strategy research and tell me how to use it."}
+];
+const seedBriefs = [
+  {t:"6FIX launch creative set (campaign is DRAFT)", a:"Design brief — Restart Fitness PH — 6FIX launch creative set. Ask me objective and assets."},
+  {t:"Website launch hero + section visuals", a:"Design brief — Restart Fitness PH — website hero and section visuals for the launch."}
+];
+
+/* ---------- localStorage helpers ---------- */
+const LS=(k,d)=>{try{const v=localStorage.getItem('jnoah_'+k);return v?JSON.parse(v):d;}catch(e){return d;}};
+const SS=(k,v)=>{try{localStorage.setItem('jnoah_'+k,JSON.stringify(v));}catch(e){}};
+
+/* ---------- render ---------- */
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function jprompt(s){return esc(s).replace(/'/g,"\\'");}
+
+function pill(s){const m={ACTIVE:'active',DRAFT:'draft',DONE:'done',PENDING:'draft',HELD:'hold'};return '<span class="pill '+(m[s]||'hold')+'">'+esc(s)+'</span>';}
+
+document.getElementById('kpi').innerHTML = [
+  ['big', clients.filter(c=>!c.done&&!c.flag).length, 'Active clients'],
+  ['big', campaigns.filter(c=>c.s==='ACTIVE').length+'/'+campaigns.length, 'Campaigns (active/total)'],
+  ['big', research.length, 'Research topics'],
+  ['big', goals.length, 'Goals open'],
+  ['big', '06-25', 'All goals due']
+].map(k=>'<div class="card"><div class="big">'+k[1]+'</div><div class="lbl">'+k[2]+'</div></div>').join('');
+
+document.getElementById('goals').innerHTML = '<ul class="clean">'+goals.map(g=>'<li>P'+g.p+' · '+esc(g.g)+' '+pill(g.s)+'</li>').join('')+'</ul>';
+document.getElementById('blocked').innerHTML = blocked.map(b=>'<li>'+esc(b)+'</li>').join('');
+
+function renderResume(){
+  const custom = LS('resume',[]);
+  const all = seedResume.map(r=>({...r,seed:1})).concat(custom.map(t=>({t,a:t,seed:0})));
+  document.getElementById('resumeList').innerHTML = all.map((r,i)=>
+    '<li><a href="#" onclick="sp(\''+jprompt(r.a)+'\');return false">'+esc(r.t)+'</a>'+(r.seed?'':' <span class="x" onclick="delResume('+i+');return false">✕</span>')+'</li>'
+  ).join('');
+}
+function addResume(){const el=document.getElementById('resumeInput');const v=el.value.trim();if(!v)return;const c=LS('resume',[]);c.push(v);SS('resume',c);el.value='';renderResume();}
+function delResume(idx){const c=LS('resume',[]);const off=idx-seedResume.length;if(off>=0){c.splice(off,1);SS('resume',c);renderResume();}}
+
+document.getElementById('clientCount').textContent = clients.filter(c=>!c.done&&!c.flag).length+' active · '+clients.length+' total';
+document.getElementById('clientRows').innerHTML = clients.map(c=>{
+  const st = c.flag?'<span class="pill flag">CONFIRM</span>':c.done?'<span class="pill done">COMPLETE</span>':'';
+  const viewBtn = c.prog>0 ? '<button class="act mini" onclick="sp(\'Show '+jprompt(c.n)+'&#39;s current-week program — open their latest program files from OUTPUTS/programs.\')">View week</button>' : '';
+  const buildBtn = '<button class="act mini" onclick="sp(\'Build this week&#39;s training program for '+jprompt(c.n)+'. Load training-program.md and their program-state, continue from their current week, then save to OUTPUTS/programs.\')">Build week</button>';
+  return '<tr><td><strong>'+esc(c.n)+'</strong> '+st+'</td><td>'+esc(c.svc)+'</td><td>'+esc(c.cyc)+'</td><td>'+(c.prog||'—')+'</td><td><div class="btnrow" style="margin:0">'+viewBtn+buildBtn+'</div></td></tr>';
+}).join('');
+
+document.getElementById('campaignRows').innerHTML = campaigns.map(c=>
+  '<tr><td><strong>'+esc(c.n)+'</strong><br><span class="small">'+esc(c.date)+'</span></td><td>'+pill(c.s)+'</td><td>'+esc(c.brand)+'</td><td><span class="path">'+esc(c.folder)+'</span></td><td><div class="btnrow" style="margin:0"><button class="act mini" onclick="sp(\'Open the campaign folder '+jprompt(c.folder)+' and show me the files.\')">Open</button><button class="act mini" onclick="sp(\'Show the brief and status for the '+jprompt(c.n)+' campaign.\')">Brief</button></div></td></tr>'
+).join('');
+
+document.getElementById('deliverableRows').innerHTML = deliverables.map(d=>
+  '<tr><td><strong>'+esc(d.n)+'</strong></td><td>'+esc(d.type)+'</td><td>'+pill(d.s)+'</td><td><span class="small">'+esc(d.where)+'</span></td><td><button class="act mini" onclick="sp(\''+jprompt(d.a)+'\')">Open</button></td></tr>'
+).join('');
+
+document.getElementById('researchCount').textContent = research.length+' topics';
+document.getElementById('researchRows').innerHTML = research.map(r=>
+  '<tr><td><strong>'+esc(r.t)+'</strong></td><td>'+pill(r.s)+'</td><td><span class="tag">'+esc(r.d)+'</span></td><td>'+esc(r.run)+'</td><td><button class="act mini" onclick="sp(\''+jprompt(r.a)+'\')">Use it</button></td></tr>'
+).join('');
+
+function renderBriefs(){
+  const custom = LS('briefs',[]);
+  const all = seedBriefs.map(b=>({...b,seed:1})).concat(custom.map(t=>({t,a:'Design brief — '+t,seed:0})));
+  document.getElementById('briefBacklog').innerHTML = all.length? all.map((b,i)=>
+    '<li><a href="#" onclick="sp(\''+jprompt(b.a)+'\');return false">'+esc(b.t)+'</a>'+(b.seed?'':' <span class="x" onclick="delBrief('+i+');return false">✕</span>')+'</li>'
+  ).join('') : '<li class="empty">No future projects yet.</li>';
+}
+function addBrief(){const el=document.getElementById('briefInput');const v=el.value.trim();if(!v)return;const c=LS('briefs',[]);c.push(v);SS('briefs',c);el.value='';renderBriefs();}
+function delBrief(idx){const c=LS('briefs',[]);const off=idx-seedBriefs.length;if(off>=0){c.splice(off,1);SS('briefs',c);renderBriefs();}}
+
+renderResume(); renderBriefs();
+</script>
+</body>
+</html>

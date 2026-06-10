@@ -1,7 +1,7 @@
 # Website Launch — restartfitness.ph
 **Type:** project
 **Priority:** 1
-**Status:** PENDING
+**Status:** BEHIND
 **Baseline:** Zero — Wix, brand file locked, no pages built
 **Target:** Full website live at restartfitness.ph — all 8 pages, CTAs active, DM funnels connected
 **Deadline:** 2026-06-25

@@ -46,6 +46,18 @@ These apply to every response, every brand, every engine. No exceptions.
 
 ---
 
+## Self-learning loop
+
+When Jap corrects any output — copy, program, design, plan, anything — don't just fix it:
+
+1. Extract the general rule behind the correction.
+2. Propose the rule in one line. On approval, append an entry to /MEMORY/lessons-learned.md **and** write the rule into its canonical home (brand file, engine file, /GLOBAL/, or this file if universal).
+3. A lesson isn't done until it's routed — the log entry records where the rule went.
+
+`lint jnoah` (see LINT.md) is the companion drift check: contradictions between files, stale deadlines, orphan outputs, legacy-path strays. Run weekly or after heavy parallel-chat work. The banned-words list above grew from exactly this loop — now it's systematic instead of accidental.
+
+---
+
 ## How this system works
 
 This folder is a modular business operating system. It loads context in layers, in this order:
@@ -75,6 +87,7 @@ When you get a task: read this file → consult ROUTER.md → load relevant bran
 - `/ENGINES/web/` — wix.md
 - `/ENGINES/research/` — research-engine.md
 - `/ENGINES/goals/` — goals-engine.md
+- `/ENGINES/6fix/` — 6fix-master-index.md, 6fix-onboarding-system.md, 6fix-phase1-delivery.md, 6fix-phase2-program.md, 6fix-upgrade-sequence.md, 6fix-marketing-strategy.md, 6fix-compliance-dashboard.md, 6fix-wix-email-automation.md, 6fix-design-system.md, 6fix-trainerize-auto-messages.md, 6fix-phase2-questionnaire.md
 
 **Not yet built:** poster.md. If routed to a missing engine, say so rather than improvising.
 
@@ -107,6 +120,8 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 - `load jnoah` → read this control file + ROUTER.md + STATE.md (chat START ritual — see CHATS.md)
 - `log + update state` → append /MEMORY/decisions-log.md + update STATE.md (chat END ritual)
 - `sync jnoah` → reconcile registry/STATE/cockpit from the vault + flag unlogged outputs (see SYNC.md). Run after heavy side-chat work or weekly.
+- `log lesson` → a correction happened → extract the rule → append /MEMORY/lessons-learned.md + route the rule to its canonical file (see Self-learning loop above)
+- `lint jnoah` → drift check: contradictions, stale deadlines, orphans, legacy-path strays (see LINT.md)
 - "what's now?" / "where did I leave off?" → read STATE.md (the current-state board)
 - "how do I run chats?" → CHATS.md (chat model: Command + Project + Worker)
 - "What's in the system?" → read README.md
@@ -120,6 +135,8 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 ---
 
 ## Last updated
+2026-06-10 — Self-learning loop added (learn ritual + /MEMORY/lessons-learned.md + LINT.md drift check). Commands: `log lesson`, `lint jnoah`. END ritual in CHATS.md now includes a lessons check.
+2026-06-09 — /ENGINES/6fix/ added to engine list (moved from OUTPUTS/programs/6FIX — product system, not client sessions).
 2026-06-01 — Engine list corrected: categorized by folder, 3 missing engines added (adhere-compliance.md, design-engine.md, program-state-template.md). Emoji removed from URBN blurb.
 2026-05-30 — URBN Athletics brand file LIVE. Visual identity + domain still pending. Restart domain locked: restartfitnessph.com (planned).
 

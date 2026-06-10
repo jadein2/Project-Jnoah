@@ -1,15 +1,16 @@
 # Em Tan — Program State
-Last updated: 2026-05-30
-Updated by: W6 build — 4-day format confirmed
+Last updated: 2026-06-08
+Updated by: state sync — Phase 2 D5–D8 confirmed as current output file
 
 ---
 
 ## Cycle position
 Cycle name: Snatch + Clean & Jerk + Squat + Body Building Cycle
 Program format: 4-day (Day 1 Oly Snatch / Day 2 BB / Day 3 Oly C&J / Day 4 BB) — confirmed from EM TAN AGENT file in Drive
-Sessions built in 4-day format: W3, W4 (deload), W5 (rebuild), W6 (heavy/peak — current)
-Sessions pending: W7 — direction TBD after W6 PR results (new block vs deload)
-Cycle week: W6 (current)
+Current program file: /OUTPUTS/programs/Em-Tan/Em-Tan-Phase2-D5-D8.md
+Sessions built: Phase 1 D1–D4 (peak), Phase 2 D5–D8 (sustain threshold — current)
+Sessions pending: Phase 3 (next build) — pending Phase 2 load logs from Jap
+Cycle week: Phase 2 / D5–D8 (current)
 
 ---
 

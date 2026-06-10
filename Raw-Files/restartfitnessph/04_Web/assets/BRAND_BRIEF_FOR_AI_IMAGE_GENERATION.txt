@@ -1,0 +1,332 @@
+================================================================================
+RESTART FITNESS PH — BRAND BRIEF FOR AI IMAGE GENERATION
+Version 1.0 | Prepared for: Gemini / AI Image Tool Ingestion
+Use this document as the complete visual reference before generating any image.
+================================================================================
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 1 — BRAND IDENTITY
+────────────────────────────────────────────────────────────────────────────────
+
+BRAND NAME:
+Restart Fitness PH
+
+BUSINESS UNIT (current):
+Urban Strong Fitness — a local gym and coaching studio operating under Restart Fitness PH.
+
+BRAND MISSION:
+"The Restart Method is a coaching system that helps busy adults turn effort into real
+progress through structure, practical guidance, and accountability."
+
+BRAND POSITIONING:
+- Structured coaching for busy adults
+- Not a generic gym. Not a hype brand.
+- Professional, direct, empathetic, results-focused
+- Anti-hype, anti-shortcut, anti-random workouts
+- Target audience: busy professionals, working adults aged 25–45, people who have
+  tried before and want a system that sticks
+
+APPROVED HEADLINE COPY (use verbatim as text overlays when needed):
+- "Stop guessing. Follow a system."
+- "No hype. No shortcuts. Just a system that gets results."
+- "No random WODs. No FADs."
+- "We coach people who commit."
+- "Consistency is coached through accountability."
+- "The goal is not just results. The goal is results you can keep."
+
+BRAND KEYWORDS (use to inform visual mood and subject matter):
+Structure, System, Coaching, Accountability, Consistency, Clarity, Fundamentals,
+Real-life fitness, Measurable progress, Guidance, Results that stick,
+Practical nutrition, Long-term
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 2 — COLOR SYSTEM (EXACT VALUES)
+────────────────────────────────────────────────────────────────────────────────
+
+PRIMARY PALETTE:
+
+  Charcoal (primary background — dark sections):    #1A1A18
+  Black (deepest tone — footer, shadows):           #111110
+  Dark (secondary dark surfaces):                   #242420
+  Mid (mid-tone backgrounds, borders):              #3A3A36
+  Muted (secondary text, soft labels):              #6B6B64
+  Soft (tertiary text on dark):                     #A8A89E
+  Light (borders, dividers, subtle bg):             #E8E8E0
+  Off-white (primary light background):             #F5F5F0
+
+ACCENT PALETTE:
+
+  Burnt Orange — Primary CTA / Emphasis:            #E06D22
+  Orange Dark — Button hover:                       #B8541A
+  Orange Light:                                     #F08040
+
+  Gold — Authority / Results / Premium:             #C9A84C
+  Gold Dark:                                        #8A7034
+  Gold Light:                                       #E8C870
+
+COLOR RULES FOR IMAGE GENERATION:
+- Dark backgrounds (#1A1A18 / #242420) are dominant for hero, social, and coaching imagery
+- Orange (#E06D22) appears only on ONE element per image — a word, a line, a shape
+- Gold (#C9A84C) is used for results, testimonials, authority signals — never with orange on same image
+- Off-white (#F5F5F0) is used for light editorial content — soft and clean, not bright white
+- Never use pure white (#FFFFFF) or pure black (#000000)
+- Never use gradients — flat, solid color fields only
+- Never use more than 2 accent colors in a single image
+- No neon, no vibrant rainbow palettes, no fluorescent tones
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 3 — TYPOGRAPHY REFERENCE (FOR TEXT OVERLAY IMAGES)
+────────────────────────────────────────────────────────────────────────────────
+
+DISPLAY / HEADLINE FONT:
+  Name: Cormorant Garamond
+  Style: Italic only (never upright)
+  Weight: Light (300)
+  Role: All headlines, campaign text, pull quotes, section titles
+  Character: Elegant, editorial, premium serif
+
+BODY / UI FONT:
+  Name: DM Sans
+  Weight: Light (300) for body | Medium (500) for labels and overlines
+  Role: All body copy, overlines, button text, captions
+  Character: Clean, modern, minimal sans-serif
+
+PAIRING LOGIC:
+  - Headline in Cormorant Garamond Italic (large, light weight)
+  - Supporting copy in DM Sans Light
+  - Labels/overlines in DM Sans 500, ALL CAPS, wide letter-spacing (0.15em)
+  - One key word in the headline colored orange (#E06D22), rest in off-white or charcoal
+
+TYPE SCALE (golden ratio φ = 1.618 from 16px base):
+  Campaign Display:  68px — Cormorant Italic — hero and campaign images
+  Page Headline:     42px — Cormorant Italic — section headers
+  Section Title:     26px — Cormorant Italic — card titles, sub-sections
+  Subhead:           20px — Cormorant Italic — intro text
+  Body:              16px — DM Sans 300
+  Label/Overline:    10px — DM Sans 500 — uppercase — tracking 0.15em
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 4 — VISUAL STYLE DIRECTION
+────────────────────────────────────────────────────────────────────────────────
+
+OVERALL AESTHETIC:
+  Minimalist editorial fitness — not gym-bro, not luxury spa.
+  High contrast. Dark and purposeful. Clean negative space.
+  Think: editorial magazine meets serious coaching studio.
+
+MOOD WORDS:
+  Disciplined, Grounded, Professional, Clean, Confident, Purposeful,
+  Structured, Real, Modern, Premium without being flashy
+
+WHAT THE IMAGES SHOULD FEEL LIKE:
+  - A serious coaching environment — not flashy, not intimidating
+  - Real people doing real work — not overly staged
+  - Dark, moody lighting with strong contrast
+  - Clean, uncluttered compositions
+  - Purposeful use of space — wide negative space is good
+  - Orange accents used sparingly — one per image maximum
+  - Feels aspirational but accessible — not elite bodybuilding, not beginner spin class
+
+COMPOSITION RULES:
+  - Strong vertical or horizontal grid alignment
+  - Subject centered or following rule of thirds
+  - Leave clear space for text overlays (especially top and bottom thirds)
+  - Avoid center-heavy compositions with no breathing room
+  - Use asymmetry to create editorial tension
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 5 — WHAT TO INCLUDE IN IMAGES
+────────────────────────────────────────────────────────────────────────────────
+
+APPROVED SUBJECT MATTER:
+  - Adults (25–45) doing compound functional movements: squats, deadlifts, presses, rows
+  - Coach-client interaction: coaching form, discussing a program, monitoring a session
+  - Real gym environment: barbells, racks, platforms — clean and functional, not overcrowded
+  - Focused individuals mid-set — concentration, not performance for camera
+  - Group training: structured, disciplined — not chaotic boot camp style
+  - Individual working alone in a well-lit gym space
+  - Simple nutrition context: meal prep, real food — not supplements or diet culture imagery
+  - Movement: walking, stretching post-session, warm-ups — everyday athleticism
+  - Planning or coaching session: clipboard, whiteboard, conversation between coach and client
+  - Dark studio atmosphere: spotlit subjects against dark backgrounds
+  - Overhead or clean flat-lay: training equipment on neutral surface (mat, platform)
+
+APPROVED ENVIRONMENTS:
+  - Functional training gym — clean, minimal equipment
+  - Outdoor training if well-lit and purposeful
+  - Studio-style coaching space (dark, controlled lighting)
+  - Urban/city-adjacent training settings
+  - Neutral indoor spaces (homes, offices) for nutrition/lifestyle content
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 6 — WHAT TO EXCLUDE FROM IMAGES
+────────────────────────────────────────────────────────────────────────────────
+
+DO NOT INCLUDE:
+  - Shirtless flexing or physique-first poses
+  - Before/after body comparison imagery
+  - Extreme leanness, bodybuilder aesthetics
+  - Overly vibrant or saturated color grading
+  - Protein shake / supplement branding
+  - Generic stock photo gym aesthetics (smiling perfectly into camera mid-exercise)
+  - Crowded, chaotic, unstructured gym environments
+  - Hype-style imagery (explosive action, screaming, intense aggression)
+  - Children or minors
+  - Heavy filters or stylized photo treatments (LUTs, high-grain vintage, overblown highlights)
+  - Busy background clutter or visual noise
+  - Logos of other brands or gyms visible in scene
+  - Any text in fonts other than Cormorant Garamond or DM Sans (for text overlay images)
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 7 — IMAGE FORMAT SPECIFICATIONS
+────────────────────────────────────────────────────────────────────────────────
+
+STANDARD SIZES TO GENERATE:
+
+  Instagram Post (Square):       1080 x 1080 px  — Social content
+  Instagram Portrait (4:5):      1080 x 1350 px  — Testimonial / result posts
+  Instagram Story / Reel cover:  1080 x 1920 px  — Stories, reels, announcements
+  Facebook Post:                 1200 x 630 px   — Facebook feed images
+  Website Hero (wide):           1920 x 1080 px  — Homepage / landing page hero
+  Website Section Banner:        1440 x 600 px   — Interior section backgrounds
+  Email Header:                  600 x 200 px    — Email campaigns
+
+SAFE ZONE FOR TEXT OVERLAYS:
+  - Maintain 64px clear margin from all edges on 1080px canvas
+  - Keep center 60% of image clear for text overlay on square posts
+  - Leave lower 30% clean for CTA placement on portrait posts
+  - Leave upper 20% clean for brand mark on all social formats
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 8 — SOCIAL POST TEMPLATES (LAYOUT REFERENCE FOR IMAGE GENERATION)
+────────────────────────────────────────────────────────────────────────────────
+
+TEMPLATE A — Dark Hero (Square 1080x1080):
+  Background: #1A1A18 (charcoal)
+  Brand mark: Top center — "RF RESTART FITNESS PH" — 9px DM Sans 500, uppercase, soft gray
+  Headline: Bottom third — Cormorant Italic — off-white — one key word in orange
+  Supporting copy: 2-3 lines DM Sans Light — soft gray (#A8A89E)
+  CTA: Bottom — 'DM "RESTART" to begin' — DM Sans 500 uppercase — soft gray
+
+TEMPLATE B — Light Editorial (Square 1080x1080):
+  Background: #F5F5F0 (off-white)
+  Brand overline: Top left — "Restart Fitness PH" — DM Sans 500 uppercase — muted gray
+  Orange accent line: 24px wide, 2px tall — above headline
+  Headline: Cormorant Italic — charcoal — one emphasis word in orange
+  Body copy: DM Sans Light — muted gray
+  Hashtag footer: Bottom left — #RestartFitnessPH — DM Sans 300 — muted gray
+
+TEMPLATE C — Result Portrait (1080x1350):
+  Background: #1A1A18 (charcoal)
+  Brand mark: Top center — small, uppercase, soft gray
+  Gold overline: "Client result" — DM Sans 500 uppercase — #C9A84C
+  Headline: Cormorant Italic — off-white — one key word in gold (not orange)
+  Body: DM Sans Light — soft gray
+  CTA button: Full width — orange background — "Book a Discovery Call"
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 9 — EXAMPLE PROMPT STRUCTURES FOR GEMINI
+────────────────────────────────────────────────────────────────────────────────
+
+HERO IMAGE PROMPT (Dark Style):
+"A professional fitness coaching photograph. A focused adult (25-40 years old) performing
+a barbell squat in a clean, minimal gym. Dark studio lighting with controlled spotlighting.
+Background is near-black charcoal (#1A1A18). Subject is mid-movement, face showing
+concentration not performance. Leave upper third of frame clear for text overlay.
+Clean composition, editorial quality, no clutter. No filters. High contrast."
+
+COACHING SESSION PROMPT:
+"A coaching interaction between a fitness coach and a client in a functional training gym.
+Coach is observing form or reviewing a program on a clipboard. Clean, minimal gym background.
+Warm but controlled lighting — not overly bright. Adult clients aged 28-40. Focused,
+professional mood. Dark environment with selective light on subjects."
+
+SOCIAL POST BACKGROUND (Dark, Text Overlay Ready):
+"Minimal dark fitness background image for social media text overlay. Charcoal toned
+(#1A1A18). Subtle gym equipment elements: barbell rack, weights, training platform.
+Out of focus background with clear dark center for text. No people. Clean and structured.
+Moody editorial quality. 1080x1080 square format."
+
+LIFESTYLE / REAL LIFE PROMPT:
+"A busy adult professional preparing a simple, real meal after a workout session.
+Clean, modern kitchen or neutral indoor space. Natural light. Not a diet culture image —
+real food, normal portions, practical nutrition. Minimal aesthetic. Off-white and neutral
+tones (#F5F5F0 palette). Editorial quality, no filter."
+
+GROUP TRAINING PROMPT:
+"A small structured group training session in a clean functional gym. 3-5 adults aged
+25-45 performing the same movement under coach supervision. Organized, disciplined —
+not chaotic. Dark gym environment with overhead or directional lighting. Not boot camp
+energy — controlled and purposeful. Leave frame top-left clear for text or brand mark."
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 10 — BRAND VOICE REFERENCE (FOR CAPTION / TEXT OVERLAY COPY)
+────────────────────────────────────────────────────────────────────────────────
+
+TONE: Direct. Confident. Empathetic. Uncompromising.
+
+WRITE LIKE:
+  "Here's the process. Let's execute."
+  "Your schedule is real. So is our program."
+  "Effort without structure is just fatigue."
+
+DO NOT WRITE LIKE:
+  "Transform your body!" (hype)
+  "Start your fitness journey!" (generic)
+  "Feel the burn!" (motivational filler)
+  "Restart your life!" (restart cannot be used as a verb)
+  "Tailored just for you" (use "structured for you" instead)
+  "Last chance to sign up!" (false urgency)
+
+BANNED PHRASE: "the last first step" — permanently prohibited
+
+CTA HIERARCHY:
+  1. Book a Discovery Call       (website — primary)
+  2. DM "RESTART"                (Instagram / Facebook)
+  3. Learn the System            (secondary, ghost button)
+  4. Explore Urban Strong        (secondary, ghost button)
+
+
+────────────────────────────────────────────────────────────────────────────────
+SECTION 11 — BUSINESS STRUCTURE CONTEXT
+────────────────────────────────────────────────────────────────────────────────
+
+PARENT BRAND:     Restart Fitness PH
+  - Ecosystem brand / umbrella
+  - Holds the Restart Method
+  - Entry point for all business units
+  - Brand philosophy and coaching system owner
+
+BUSINESS UNIT 1:  Urban Strong Fitness
+  - Local gym and coaching studio
+  - Applies the Restart Method in person
+  - Offers: Group Training, Personal Coaching, Online Coaching
+  - Located: Philippines (Olongapo City area)
+  - Target: Local busy adults, community-based
+
+FUTURE UNITS:     To be added — do not reference in images yet.
+  - Imagery should work at parent brand level or Urban Strong level
+  - Do not mix business unit identities in one image
+
+IMAGE USAGE TAGGING GUIDE:
+  - Images featuring gym, local coaching, group sessions → Urban Strong Fitness
+  - Images featuring methodology, systems, general coaching → Restart Fitness PH (parent)
+  - Social media posts → either unit, clearly scoped in caption
+
+
+────────────────────────────────────────────────────────────────────────────────
+END OF DOCUMENT
+Restart Fitness PH — Brand Brief for AI Image Generation v1.0
+For use with: Gemini, Adobe Firefly, Midjourney, or any AI image tool.
+Do not distribute outside the brand team.
+================================================================================

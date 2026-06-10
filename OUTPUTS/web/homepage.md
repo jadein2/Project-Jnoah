@@ -1,105 +1,213 @@
 # Homepage — /
 Brand: Restart Fitness PH
-CTA: Book a Discovery Call (primary) · DM "RESTART" (transitional)
-Status: DRAFT
-Last updated: 2026-05-25
-Structure: 4-section funnel (from website-funnel-conversion research). Persuasion arc: Curiosity → Empathy → Safety/Desire → Action.
-
-> NOTE — items in [BRACKETS] need confirmed data before publish. No proof numbers were invented. 6FIX shown as available at launch per Jap. Pricing shown on site (PHP primary) per Jap. Pulled exactly from offer-engine.md.
+URL: restartfitnessph.com
+Primary CTA: Book a Discovery Call
+Transitional CTA: DM "RESTART"
+Status: DRAFT — awaiting client proof entries (Section 3) before publish
+Last updated: 2026-06-06
+Research source: /RESEARCH/website-funnel-conversion/RAW/website-funnel-conversion-research.md
 
 ---
 
-## SECTION 1 — THE HOOK
-*Funnel beat: Curiosity + early proof. Must be readable with CTA visible before scroll on mobile.*
+## SECTION 1 — HERO
 
-Overline: STRUCTURED ONLINE COACHING
+**Overline (Label / 10px DM Sans 500 · uppercase · tracked):**
+STRUCTURED ONLINE COACHING
 
-Headline: Stop guessing. Follow a system.
+**Headline (H1 / Cormorant Garamond Italic · 42px):**
+*Stop guessing. Follow a system.*
 
-Subheadline: Clear training, practical nutrition, and weekly accountability — coached through one system, so your effort finally has direction. Built for people who are tired of starting from scratch.
+**Subheadline (Subhead / DM Sans 300 · 20px · 29 words):**
+The Restart Fitness System is a structured online coaching program built around training, nutrition, habits, and accountability — for people who want real progress and want to keep it.
 
-Primary CTA: Book a Discovery Call
-Transitional CTA: Or DM "RESTART" on Instagram
+**Primary CTA button:**
+Book a Discovery Call → /start
 
-Proof strip (directly under the fold — proof early):
-- [CONFIRM: X+ years coaching]
-- [CONFIRM: X people coached]
-- Coaching online across the Philippines
-- [CONFIRM: one real result marker — e.g., "clients average [X] in their first [Y] weeks"]
+**Transitional CTA (below button · small · DM Sans 400):**
+or DM "RESTART" on Instagram
+
+---
+
+**PROOF STRIP (directly under hero — above the fold on mobile)**
+*3 short markers. DM Sans 500 · small · horizontal · muted separator between items.*
+
+11+ Years Coaching · 1,000+ Clients Coached · Philippines
+
+*Design note: proof strip sits tight under the CTA — visible on mobile without scrolling. No icons. Text only. rf-muted color on off-white background.*
 
 ---
 
 ## SECTION 2 — PROBLEM → SYSTEM
-*Funnel beat: Empathy → Safety. Merges the old schema's Problem + System sections.*
 
-Headline (social hook): You don't have a motivation problem. You have a structure problem.
+**Overline:**
+THE REAL PROBLEM
 
-Body: Most people who struggle with fitness aren't lazy. They're guessing. Random workouts that change every week. Nutrition they're not sure is right. And no one checking whether any of it is actually working. Motivation gets you started. It was never built to keep you going.
+**Headline (H2 / Cormorant Garamond Italic):**
+*Most people don't fail because they stop trying.*
 
-Bridge line: Not a gym. A coaching system.
+**Body (DM Sans 300 · 16px):**
+They fail because they're training without direction, guessing on nutrition, and losing consistency the moment real life gets in the way. That cycle doesn't end with more effort. It ends with structure.
 
-System intro: The Restart Fitness System gives your effort a structure to follow — four parts that work together.
-
-Pillars (text blocks, no icon row):
-- **Training** — Planned sessions that build strength and better movement. No random workouts.
-- **Nutrition** — Practical eating that fits your real life. Not another diet to fail.
-- **Habits** — Small actions that hold after the program ends.
-- **Accountability** — Weekly check-ins and feedback, so you actually follow through.
+The Restart Fitness System is built around four things that actually move the needle:
 
 ---
 
-## SECTION 3 — PROOF + OFFER PATH
-*Funnel beat: Safety + Desire. Specific proof, then one clear route to start. Pricing visible.*
+**Four pillars (text blocks — no icons, no three-column grid)**
 
-Headline (social hook): What happens when people stop guessing.
+**Training**
+Structured programs that build strength, improve movement, and progress over time — not random workouts week to week.
 
-Proof intro: Real people who followed the system — not a before-and-after wall, a process that worked.
+**Nutrition**
+Practical guidance that fits your schedule and fuels your results — not a strict diet that disappears after two weeks.
 
-Proof entries:
-- [CONFIRM proof 1 — first name/alias · what they came in with · what changed · timeframe]
-- [CONFIRM proof 2 — same format]
-- [CONFIRM proof 3 — same format]
+**Habits**
+Simple, repeatable actions installed over time — the kind that stay long after the program ends.
 
-Offer framing: Two ways to start, depending on where you are.
+**Accountability**
+Regular check-ins, video feedback, and adjustments — so there's always someone tracking your progress with you.
 
-Card A — 6FIX · 6-Week Foundation · ₱4,500
-Your first six weeks of real structure — training, nutrition, and habits, coached. Best if you're starting out or starting over.
-[Flag: available at launch]
+---
 
-Card B — 90-Day Coaching System · ₱18,000 (or ₱6,500 × 3 months)
-The full system over 90 days — training, nutrition, habits, accountability, and a final review. Best if you want a complete change, coached the whole way.
+**Bridge line (DM Sans 500 · body-level · centered or left — prominent):**
+Not a gym. A coaching system.
 
-Routing line: Not sure which fits? That's what the Discovery Call is for.
+---
+
+## SECTION 3 — PROOF + OFFER
+
+### 3A — Client Results
+
+**Overline:**
+RESULTS
+
+**Headline (H2 / Cormorant Garamond Italic):**
+*What happens when people follow a system.*
+
+**[PROOF ENTRIES — 2–3 required before publishing]**
+*Real names or approved aliases only. No invented numbers. No approximate results.*
+
+Format per entry:
+> **[Name / alias]**
+> [One sentence: their situation when they started]
+> [One to two sentences: what changed — specific outcome, timeframe]
+
+---
+
+**[PROOF ENTRY 1]**
+[Name]
+[Starting situation]
+[Result + timeframe]
+
+**[PROOF ENTRY 2]**
+[Name]
+[Starting situation]
+[Result + timeframe]
+
+**[PROOF ENTRY 3 — optional third entry]**
+[Name]
+[Starting situation]
+[Result + timeframe]
+
+---
+
+### 3B — The Offer
+
+**Overline:**
+THE PROGRAM
+
+**Headline (H2 / Cormorant Garamond Italic):**
+*90-Day Coaching System*
+
+**Body (DM Sans 300):**
+Three months of full coaching — training, nutrition, habits, and accountability — built around where you are now and where you want to go. This is the flagship Restart Fitness PH program.
+
+**What's included (clean text list — no icons):**
+— Structured training program built for your schedule and starting point
+— Practical nutrition guidance updated as you progress
+— Weekly check-ins and video feedback
+— Habit targets with accountability built in
+— Direct coaching support throughout the 90 days
+
+**Price (DM Sans 500 · prominent):**
+₱18,000
+
+*Payment option: ₱6,500 × 3 months*
+
+**Sub-note (DM Sans 300 · small · muted):**
+Not sure if this is the right fit? The Discovery Call is where we figure that out — no pressure, no obligation.
+
+**CTA button:**
+Book a Discovery Call → /start
 
 ---
 
 ## SECTION 4 — LEAD CAPTURE
-*Funnel beat: Action. Dual-entry booking — direct link + DM-triggered link.*
 
-Headline: Start with one conversation.
+**Overline:**
+GET STARTED
 
-Body: Book a free Discovery Call. We'll look at where you are now, what you've tried, and which program actually fits — about 20 minutes, no pressure, no obligation.
+**Headline (H2 / Cormorant Garamond Italic):**
+*Ready for a clear plan?*
 
-Primary CTA: Book a Discovery Call → /start
-Transitional CTA: Or DM "RESTART" on Instagram and I'll send you the booking link.
+**Body (DM Sans 300 · short):**
+Book a Discovery Call. It's a short conversation — we'll look at where you are, what you want to achieve, and whether coaching is the right next step. No pitch. No obligation.
 
----
+**Primary CTA button:**
+Book a Discovery Call → /start
 
-## Social hooks pulled from this page
-*For campaign.md / social-post.md — the website is the anchor the social calendar repurposes from.*
-
-| Section | Reusable hook |
-|---|---|
-| 1 | Stop guessing. Follow a system. |
-| 2 | You don't have a motivation problem. You have a structure problem. |
-| 2 | Motivation gets you started. It was never built to keep you going. |
-| 3 | What happens when people stop guessing. |
-| 4 | Start with one conversation. |
+**Transitional (below button · small · DM Sans 400):**
+Not ready to book? DM "RESTART" on Instagram.
 
 ---
 
-## Open items before publish
-1. Proof strip numbers (Section 1) — years coaching, people coached, one result marker
-2. Three client proof entries (Section 3) — name/alias, starting point, change, timeframe (consent required)
-3. Confirm 6FIX "available at launch" wording is how Jap wants it framed on the live site
-4. Confirm USD reference prices are needed on PH homepage, or PHP-only (offer-engine: PH pages = PHP primary, USD reference)
+## DESIGN NOTES — for Wix Studio handoff
+
+**Page background:** `#F5F5F0` (off-white) — light editorial mode
+**Text primary:** `#1A1A18`
+**Text secondary / body:** `#6B6B64`
+**CTA button:** `#E06D22` · hover `#B8541A` · DM Sans 500 · uppercase · letter-spacing 0.12em · 2px border radius · padding 13px 32px
+**Ghost / transitional CTA:** transparent · 1px solid `#1A1A18` · same type spec
+**Section padding desktop:** 96px vertical · 40px horizontal
+**Section padding mobile:** 48px vertical · 20px horizontal
+**Section separation:** spacing and typography scale only — no divider lines (No-Line Rule)
+**Proof strip:** single row · `#6B6B64` · centered · no box, no border, no background
+**Four pillars:** stacked text blocks — pillar label in DM Sans 500, body in DM Sans 300 — NOT an icon grid, NOT a three-column feature row
+**Mobile priority:** CTA visible without scrolling · proof strip above fold · all headlines readable at 320px
+
+---
+
+## COPY QA
+
+- [x] Hero leads with outcome, not program name
+- [x] Subheadline under 35 words (29 words)
+- [x] No "tailored" anywhere
+- [x] No "restart" used as a verb
+- [x] No "busy adults" / "busy people" as audience label
+- [x] No hype, no shame language, no AI-sounding copy
+- [x] Program name: "90-Day Coaching System" — correct public name
+- [x] System name: "The Restart Fitness System" — correct
+- [x] One primary CTA per section (two CTAs max on page)
+- [x] Proof strip uses confirmed numbers only (11+ years · 1,000+ clients)
+- [x] Four pillars written as text blocks — no icon cliché
+- [x] Price pulled from offer-engine.md (₱18,000 / ₱6,500×3)
+- [x] "Book a Discovery Call" as primary CTA throughout
+- [ ] Section 3A proof entries — PENDING (Jap to provide 2–3 confirmed client results)
+
+---
+
+## OPEN BEFORE PUBLISH
+
+1. **Client proof entries** — provide 2–3 confirmed client results for Section 3A. Use format above.
+2. **Booking flow** — confirm whether /start uses a short qualifier form (recommended: 2–4 fields before calendar opens) or direct calendar embed. Affects /start page copy.
+3. **Installment visibility** — confirm whether ₱6,500×3 shows publicly on the homepage or is discussed only during the discovery call.
+
+---
+
+## WORD COUNT
+Section 1 (excluding proof strip): ~60 words
+Section 2: ~165 words
+Section 3B: ~115 words
+Section 4: ~55 words
+Total (body copy only, no placeholders): ~395 words
+
+*Within range. Section 3A adds ~50–80 words per proof entry once populated.*

@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restart Fitness PH — Homepage Mockup v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+
+/* =============================================
+   RESET & ROOT
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:        #111110;
+  --charcoal:     #1A1A18;
+  --dark:         #242420;
+  --mid:          #3A3A36;
+  --muted:        #6B6B64;
+  --soft:         #A8A89E;
+  --light:        #E8E8E0;
+  --offwhite:     #F5F5F0;
+  --orange:       #E06D22;
+  --orange-dark:  #B8541A;
+  --orange-light: #F08040;
+  --gold:         #C9A84C;
+  --gold-dark:    #8A7034;
+  --gold-light:   #E8C870;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--offwhite); color: var(--charcoal); line-height: 1.6; }
+img  { display: block; max-width: 100%; }
+a    { text-decoration: none; color: inherit; }
+
+/* =============================================
+   UTILITY
+   ============================================= */
+.overline {
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+.accent-line {
+  width: 32px;
+  height: 2px;
+  background: var(--orange);
+  margin-bottom: 20px;
+}
+.accent-line.gold { background: var(--gold); }
+.accent-line.center { margin-left: auto; margin-right: auto; }
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 14px 36px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  transition: all .2s ease;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--orange-dark); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--charcoal);
+  border: 1px solid var(--charcoal);
+}
+.btn-ghost:hover { background: var(--charcoal); color: #fff; }
+
+.btn-ghost-light {
+  background: transparent;
+  color: var(--offwhite);
+  border: 1px solid rgba(245,245,240,.35);
+}
+.btn-ghost-light:hover { border-color: rgba(245,245,240,.8); }
+
+/* =============================================
+   NAVIGATION
+   ============================================= */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 64px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  letter-spacing: .03em;
+}
+.nav-logo span { color: var(--orange); }
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--soft);
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--offwhite); }
+.nav-links a.active { color: var(--orange); }
+
+.nav-cta {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--offwhite);
+  background: var(--orange);
+  padding: 10px 24px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s;
+}
+.nav-cta:hover { background: var(--orange-dark); }
+
+.nav-mobile-toggle { display: none; }
+
+/* =============================================
+   SECTION WRAPPER
+   ============================================= */
+.section { padding: 96px 48px; }
+.section-sm { padding: 64px 48px; }
+.inner { max-width: 1080px; margin: 0 auto; }
+.inner-narrow { max-width: 720px; margin: 0 auto; }
+
+/* =============================================
+   HERO — SECTION 1
+   ============================================= */
+.hero {
+  background: var(--charcoal);
+  padding: 120px 48px 0;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: end;
+}
+.hero-overline {
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 6vw, 72px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.02;
+  margin-bottom: 12px;
+  letter-spacing: -.01em;
+}
+.hero-headline em {
+  color: var(--orange);
+  font-style: italic;
+}
+.hero-sub {
+  font-size: 15px;
+  color: var(--soft);
+  line-height: 1.75;
+  margin-bottom: 40px;
+  max-width: 420px;
+  font-weight: 300;
+}
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 32px;
+}
+.hero-quote-card {
+  background: var(--dark);
+  padding: 32px;
+  border-left: 2px solid var(--orange);
+}
+.hero-quote-text {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+.hero-quote-attr {
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* STAT BAR */
+.stat-bar {
+  background: var(--offwhite);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--light);
+}
+.stat-item {
+  padding: 32px 24px;
+  border-right: 1px solid var(--light);
+  text-align: center;
+}
+.stat-item:last-child { border-right: none; }
+.stat-accent { width: 24px; height: 2px; background: var(--orange); margin: 0 auto 12px; }
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* =============================================
+   BRAND INTRO — SECTION 2
+   ============================================= */
+.intro { background: var(--offwhite); }
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.intro-left .accent-line { margin-bottom: 20px; }
+.intro-headline {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.intro-body {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.intro-mission {
+  border-left: 2px solid var(--orange);
+  padding-left: 20px;
+  margin: 32px 0;
+}
+.intro-mission-text {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.intro-mission-attr {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.intro-right { padding-top: 16px; }
+.pillar-list { list-style: none; margin-top: 8px; }
+.pillar-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--light);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.pillar-item:first-child { border-top: 1px solid var(--light); }
+.pillar-num {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--orange);
+  min-width: 24px;
+  margin-top: 2px;
+}
+.pillar-title {
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+.pillar-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* =============================================
+   METHOD SECTION — SECTION 3
+   ============================================= */
+.method { background: var(--charcoal); }
+.method-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 64px;
+}
+.method-header .overline { color: var(--orange); margin-bottom: 20px; }
+.method-headline {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.method-sub {
+  font-size: 14px;
+  color: var(--soft);
+  line-height: 1.75;
+  font-weight: 300;
+}
+.method-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.method-card {
+  background: var(--dark);
+  padding: 40px 32px;
+  transition: background .2s;
+}
+.method-card:hover { background: var(--mid); }
+.method-card-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.method-card-title {
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--orange);
+  margin-bottom: 12px;
+}
+.method-card-body {
+  font-size: 14px;
+  color: var(--soft);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* =============================================
+   BUSINESS UNIT — URBAN STRONG (SECTION 4)
+   ============================================= */
+.urban { background: var(--offwhite); }
+.urban-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--light);
+}
+.urban-content { padding: 64px 56px; }
+.urban-badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: #f0ede6;
+  color: var(--muted);
+  padding: 5px 12px;
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+.urban-headline {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.urban-body {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+.urban-features { list-style: none; margin-bottom: 40px; }
+.urban-feature {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light);
+  font-size: 13px;
+  color: var(--mid);
+  font-weight: 300;
+}
+.urban-feature:last-child { border-bottom: none; }
+.urban-feature-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.urban-visual {
+  background: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 48px;
+  text-align: center;
+}
+.urban-visual-headline {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+.urban-visual-headline em { color: var(--orange); }
+.urban-offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.urban-offer-item {
+  background: var(--dark);
+  padding: 20px 16px;
+  text-align: center;
+}
+.urban-offer-icon {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 6px;
+}
+.urban-offer-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+}
+
+/* =============================================
+   PROOF / RESULTS — SECTION 5
+   ============================================= */
+.proof { background: var(--dark); }
+.proof-header {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 64px;
+}
+.proof-header .overline { color: var(--gold); margin-bottom: 16px; }
+.proof-headline {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.1;
+}
+.proof-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.proof-card {
+  background: var(--charcoal);
+  padding: 36px 28px;
+}
+.proof-gold-line {
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 20px;
+}
+.proof-quote {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+.proof-name {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.proof-detail {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: .06em;
+}
+
+/* RESULTS CALLOUT */
+.results-bar {
+  background: var(--mid);
+  padding: 48px;
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.result-item {
+  text-align: center;
+  padding: 0 24px;
+}
+.result-item + .result-item {
+  border-left: 1px solid var(--dark);
+}
+.result-num {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.result-label {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+/* =============================================
+   WHO IT'S FOR — SECTION 6
+   ============================================= */
+.audience { background: var(--offwhite); }
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.audience-headline {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.5vw, 50px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--charcoal);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.audience-body {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.fit-list { list-style: none; }
+.fit-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--light);
+}
+.fit-item:first-child { border-top: 1px solid var(--light); }
+.fit-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #edf7f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #2a7a4a;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.fit-text {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.not-for-card {
+  background: var(--charcoal);
+  padding: 40px;
+}
+.not-for-title {
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.not-for-list { list-style: none; }
+.not-for-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--dark);
+}
+.not-for-item:last-child { border-bottom: none; }
+.not-for-x {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fdf0ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #b84040;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.not-for-text {
+  font-size: 13px;
+  color: var(--soft);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* =============================================
+   CTA SECTION — SECTION 7
+   ============================================= */
+.cta-section {
+  background: var(--charcoal);
+  padding: 96px 48px;
+  text-align: center;
+}
+.cta-inner { max-width: 600px; margin: 0 auto; }
+.cta-overline {
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+.cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 60px);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.cta-headline em { color: var(--orange); }
+.cta-sub {
+  font-size: 14px;
+  color: var(--soft);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-note {
+  margin-top: 24px;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background: var(--black);
+  padding: 64px 48px 40px;
+}
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--dark);
+  margin-bottom: 32px;
+}
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--offwhite);
+  margin-bottom: 12px;
+}
+.footer-brand-name span { color: var(--orange); }
+.footer-tagline {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 260px;
+}
+.footer-col-title {
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--soft);
+  margin-bottom: 20px;
+}
+.footer-links { list-style: none; }
+.footer-links li {
+  margin-bottom: 12px;
+}
+.footer-links a {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 300;
+  transition: color .2s;
+}
+.footer-links a:hover { color: var(--offwhite); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .06em;
+}
+.footer-copy span { color: var(--orange); }
+.footer-units {
+  display: flex;
+  gap: 24px;
+}
+.footer-unit-tag {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--dark);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+/* =============================================
+   MOCKUP NOTE BANNER
+   ============================================= */
+.mockup-banner {
+  background: var(--orange);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-body);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 900px) {
+  .nav { padding: 0 24px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .nav-mobile-toggle span {
+    display: block;
+    width: 24px;
+    height: 1.5px;
+    background: var(--soft);
+  }
+  .section { padding: 64px 24px; }
+  .section-sm { padding: 40px 24px; }
+  .hero { padding: 72px 24px 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { display: none; }
+  .stat-bar { grid-template-columns: repeat(2, 1fr); }
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .method-cards { grid-template-columns: 1fr; }
+  .urban-inner { grid-template-columns: 1fr; }
+  .urban-content { padding: 40px 32px; }
+  .urban-visual { padding: 40px 32px; min-height: 320px; }
+  .proof-cards { grid-template-columns: 1fr; }
+  .results-bar { grid-template-columns: 1fr; gap: 24px; }
+  .result-item + .result-item { border-left: none; border-top: 1px solid var(--dark); padding-top: 24px; }
+  .audience-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-top { grid-template-columns: 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .cta-section { padding: 72px 24px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- MOCKUP BANNER -->
+<div class="mockup-banner">⚠ Mockup v1 — Restart Fitness PH Homepage · For review only</div>
+
+<!-- =============================================
+     NAVIGATION
+     ============================================= -->
+<nav class="nav">
+  <div class="nav-logo">Restart Fitness <span>PH</span></div>
+  <ul class="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">The Method</a></li>
+    <li><a href="#">Urban Strong</a></li>
+    <li><a href="#">Results</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <button class="nav-cta">Book a Discovery Call</button>
+  <div class="nav-mobile-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+
+<!-- =============================================
+     HERO — SECTION 1
+     ============================================= -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="overline hero-overline">Restart Fitness PH</div>
+      <h1 class="hero-headline">
+        Stop <em>guessing.</em><br>
+        Follow a system.
+      </h1>
+      <p class="hero-sub">
+        Structured coaching for busy adults who want real progress — through accountability, practical guidance, and a system that actually sticks.
+      </p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary">Book a Discovery Call</a>
+        <a href="#" class="btn btn-ghost-light">Learn the System</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-quote-card">
+        <div class="hero-quote-text">"No hype. No shortcuts. Just a system that gets results."</div>
+        <div class="hero-quote-attr">The Restart Method · Core Principle</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT BAR -->
+  <div class="stat-bar" style="margin-top: 80px; margin-left: -48px; margin-right: -48px; padding-left: 48px; padding-right: 48px;">
+    <div class="stat-item">
+      <div class="stat-accent"></div>
+      <div class="stat-number">10+</div>
+      <div class="stat-label">Years Coaching</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-accent"></div>
+      <div class="stat-number">4</div>
+      <div class="stat-label">System Pillars</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-accent"></div>
+      <div class="stat-number">3</div>
+      <div class="stat-label">Coaching Formats</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-accent"></div>
+      <div class="stat-number">1</div>
+      <div class="stat-label">Clear Process</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     BRAND INTRO — SECTION 2
+     ============================================= -->
+<section class="section intro">
+  <div class="inner">
+    <div class="intro-grid">
+      <div class="intro-left">
+        <div class="accent-line"></div>
+        <div class="overline" style="color: var(--muted); margin-bottom: 16px;">What We Are</div>
+        <h2 class="intro-headline">
+          A coaching system<br>built around you.
+        </h2>
+        <p class="intro-body">
+          Restart Fitness PH is not a gym chain. It's not a generic fitness brand. It's a structured coaching ecosystem built around one belief: that results come from systems, not willpower alone.
+        </p>
+        <p class="intro-body">
+          We build the structure. You do the work. We hold you accountable through every step.
+        </p>
+        <div class="intro-mission">
+          <div class="intro-mission-text">"The Restart Method helps busy adults turn effort into real progress through structure, practical guidance, and accountability."</div>
+          <div class="intro-mission-attr">Brand Mission · Official Statement</div>
+        </div>
+        <a href="#" class="btn btn-ghost" style="margin-top: 8px;">Explore the Method</a>
+      </div>
+      <div class="intro-right">
+        <div class="overline" style="color: var(--muted); margin-bottom: 20px;">The 4 System Pillars</div>
+        <ul class="pillar-list">
+          <li class="pillar-item">
+            <div class="pillar-num">01</div>
+            <div>
+              <div class="pillar-title">Structure</div>
+              <div class="pillar-desc">Every session, every week, every phase is planned. Nothing is random. Nothing is left to guessing.</div>
+            </div>
+          </li>
+          <li class="pillar-item">
+            <div class="pillar-num">02</div>
+            <div>
+              <div class="pillar-title">Accountability</div>
+              <div class="pillar-desc">Consistency is coached, not assumed. We check in, we track, and we adjust — so you keep moving forward.</div>
+            </div>
+          </li>
+          <li class="pillar-item">
+            <div class="pillar-num">03</div>
+            <div>
+              <div class="pillar-title">Practical Nutrition</div>
+              <div class="pillar-desc">Real-life food strategies that fit your schedule. No extreme diets. No unsustainable rules.</div>
+            </div>
+          </li>
+          <li class="pillar-item">
+            <div class="pillar-num">04</div>
+            <div>
+              <div class="pillar-title">Measurable Progress</div>
+              <div class="pillar-desc">We define what progress looks like for you — and we track it. Results you can actually see and keep.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     THE METHOD — SECTION 3
+     ============================================= -->
+<section class="section method">
+  <div class="inner">
+    <div class="method-header">
+      <div class="overline">How It Works</div>
+      <h2 class="method-headline">The Restart Method</h2>
+      <p class="method-sub">Three coaching formats. One proven system. Designed to meet you where you are and take you where you want to go.</p>
+    </div>
+    <div class="method-cards">
+      <div class="method-card">
+        <div class="method-card-num">01</div>
+        <div class="method-card-title">Discovery</div>
+        <div class="method-card-body">We start by understanding your current situation — your schedule, history, goals, and real-life constraints. No assumptions.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-card-num">02</div>
+        <div class="method-card-title">System Design</div>
+        <div class="method-card-body">A structured training and nutrition plan built specifically for your lifestyle. Clear, practical, and designed to be followed — not just read.</div>
+      </div>
+      <div class="method-card">
+        <div class="method-card-num">03</div>
+        <div class="method-card-title">Coached Progress</div>
+        <div class="method-card-body">Regular check-ins, adjustments, and accountability. We coach consistency — because that's what creates results that stick.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     URBAN STRONG FITNESS — SECTION 4
+     ============================================= -->
+<section class="section urban">
+  <div class="inner">
+    <div style="margin-bottom: 48px;">
+      <div class="accent-line"></div>
+      <div class="overline" style="color: var(--muted); margin-bottom: 12px;">Our Business Units</div>
+      <h2 class="intro-headline" style="max-width: 500px;">Where the system<br>becomes reality.</h2>
+    </div>
+    <div class="urban-inner">
+      <div class="urban-content">
+        <div class="urban-badge">Business Unit · Local Gym</div>
+        <h3 class="urban-headline">Urban Strong<br>Fitness</h3>
+        <p class="urban-body">
+          Urban Strong Fitness is the local gym arm of Restart Fitness PH. Where the Restart Method is applied in person — structured group sessions, personal coaching, and a community built on commitment.
+        </p>
+        <ul class="urban-features">
+          <li class="urban-feature">
+            <div class="urban-feature-dot"></div>
+            Structured group training sessions
+          </li>
+          <li class="urban-feature">
+            <div class="urban-feature-dot"></div>
+            Personal coaching with the Restart Method
+          </li>
+          <li class="urban-feature">
+            <div class="urban-feature-dot"></div>
+            Nutrition guidance built into every program
+          </li>
+          <li class="urban-feature">
+            <div class="urban-feature-dot"></div>
+            Accountability check-ins and progress tracking
+          </li>
+          <li class="urban-feature">
+            <div class="urban-feature-dot"></div>
+            A community that trains with purpose
+          </li>
+        </ul>
+        <a href="#" class="btn btn-ghost">Explore Urban Strong</a>
+      </div>
+      <div class="urban-visual">
+        <h3 class="urban-visual-headline">
+          "No random WODs.<br>No fads.<br>
+          Just <em>coaching</em> that works."
+        </h3>
+        <div class="urban-offer-grid">
+          <div class="urban-offer-item">
+            <div class="urban-offer-icon">Format 01</div>
+            <div class="urban-offer-name">Group Training</div>
+          </div>
+          <div class="urban-offer-item">
+            <div class="urban-offer-icon">Format 02</div>
+            <div class="urban-offer-name">Personal Coaching</div>
+          </div>
+          <div class="urban-offer-item">
+            <div class="urban-offer-icon">Format 03</div>
+            <div class="urban-offer-name">Online Coaching</div>
+          </div>
+          <div class="urban-offer-item">
+            <div class="urban-offer-icon">Coming Soon</div>
+            <div class="urban-offer-name">New Units</div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Book a Discovery Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PROOF / RESULTS — SECTION 5
+     ============================================= -->
+<section class="section proof">
+  <div class="inner">
+    <div class="proof-header">
+      <div class="overline" style="color: var(--gold); margin-bottom: 16px;">Results &amp; Proof</div>
+      <h2 class="proof-headline">Results you can keep.</h2>
+    </div>
+    <div class="proof-cards">
+      <div class="proof-card">
+        <div class="proof-gold-line"></div>
+        <div class="proof-quote">"I finally have a system that works with my schedule, not against it."</div>
+        <div class="proof-name">Client · Urban Strong Fitness</div>
+        <div class="proof-detail">Personal Coaching · 6 months</div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-gold-line"></div>
+        <div class="proof-quote">"No guessing, no random workouts — just a clear plan and someone to hold me to it."</div>
+        <div class="proof-name">Client · Urban Strong Fitness</div>
+        <div class="proof-detail">Group Training · Ongoing</div>
+      </div>
+      <div class="proof-card">
+        <div class="proof-gold-line"></div>
+        <div class="proof-quote">"The accountability piece is what changed everything for me. I never had that before."</div>
+        <div class="proof-name">Client · Restart Method</div>
+        <div class="proof-detail">Online Coaching · 4 months</div>
+      </div>
+    </div>
+    <div class="results-bar">
+      <div class="result-item">
+        <div class="result-num">10+</div>
+        <div class="result-label">Years of Coaching Experience</div>
+      </div>
+      <div class="result-item">
+        <div class="result-num">3</div>
+        <div class="result-label">Coaching Formats Available</div>
+      </div>
+      <div class="result-item">
+        <div class="result-num">1</div>
+        <div class="result-label">Proven Method · The Restart System</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     WHO IT'S FOR — SECTION 6
+     ============================================= -->
+<section class="section audience">
+  <div class="inner">
+    <div class="audience-grid">
+      <div>
+        <div class="accent-line"></div>
+        <div class="overline" style="color: var(--muted); margin-bottom: 16px;">Who We Coach</div>
+        <h2 class="audience-headline">
+          We coach people<br>who commit.
+        </h2>
+        <p class="audience-body">
+          Restart Fitness PH is built for busy adults who are serious about making progress — not people looking for a shortcut. If you're ready to follow a system, we're ready to build it with you.
+        </p>
+        <ul class="fit-list">
+          <li class="fit-item">
+            <div class="fit-check">✓</div>
+            <div class="fit-text">Busy professionals who want structure, not guesswork</div>
+          </li>
+          <li class="fit-item">
+            <div class="fit-check">✓</div>
+            <div class="fit-text">Adults who've tried before and want a system that actually sticks</div>
+          </li>
+          <li class="fit-item">
+            <div class="fit-check">✓</div>
+            <div class="fit-text">People who value real guidance over generic workout plans</div>
+          </li>
+          <li class="fit-item">
+            <div class="fit-check">✓</div>
+            <div class="fit-text">Those ready to commit and follow through with accountability</div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="not-for-card">
+          <div class="not-for-title">This is not for you if…</div>
+          <ul class="not-for-list">
+            <li class="not-for-item">
+              <div class="not-for-x">✕</div>
+              <div class="not-for-text">You're looking for a quick fix or crash program</div>
+            </li>
+            <li class="not-for-item">
+              <div class="not-for-x">✕</div>
+              <div class="not-for-text">You want hype-driven workouts with no clear structure</div>
+            </li>
+            <li class="not-for-item">
+              <div class="not-for-x">✕</div>
+              <div class="not-for-text">You're not ready to follow a system consistently</div>
+            </li>
+            <li class="not-for-item">
+              <div class="not-for-x">✕</div>
+              <div class="not-for-text">You're looking for a gym to just show up and wing it</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CTA — SECTION 7
+     ============================================= -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="overline cta-overline">Ready to Start?</div>
+    <h2 class="cta-headline">
+      One call.<br>One <em>clear</em> direction.
+    </h2>
+    <p class="cta-sub">
+      A discovery call is where we understand your situation, explain the system, and decide together if it's the right fit. No pressure. No pitch. Just clarity.
+    </p>
+    <div class="cta-btns">
+      <a href="#" class="btn btn-primary">Book a Discovery Call</a>
+      <a href="#" class="btn btn-ghost-light">Explore Urban Strong</a>
+    </div>
+    <p class="cta-note">Or DM us "RESTART" on Instagram or Facebook</p>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Restart Fitness <span>PH</span></div>
+        <p class="footer-tagline">A structured coaching ecosystem for busy adults who want results that stick.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">The Method</a></li>
+          <li><a href="#">Urban Strong Fitness</a></li>
+          <li><a href="#">Results</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Book a Call</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">DM "RESTART" to start</a></li>
+        </ul>
+        <div style="margin-top: 32px;">
+          <div class="footer-col-title">Business Units</div>
+          <ul class="footer-links">
+            <li><a href="#">Urban Strong Fitness</a></li>
+            <li><a href="#" style="opacity: .4;">More Coming Soon</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 <span>Restart Fitness PH</span> · All rights reserved</div>
+      <div class="footer-units">
+        <div class="footer-unit-tag">Urban Strong Fitness</div>
+        <div class="footer-unit-tag" style="opacity: .35;">More Units — Soon</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Active Client Registry
 
-Last updated: 2026-06-05 (merged from vault + OneDrive copies)
+Last updated: 2026-06-08
 
 ---
 
@@ -10,7 +10,7 @@ Last updated: 2026-06-05 (merged from vault + OneDrive copies)
 |---|---|---|---|---|
 | Enosh | Online Coaching (Coached + Program Only) | Basketball S&C + Physique — Cycle 4 | C4 conditioning closer on file | /MEMORY/clients/Enosh/Enosh.md |
 | Aira Quito | Personal Training + 6FIX Nutrition | Body Recomp + Fat Loss — Cycle 3 | C3 Wk1 (5 days on file) / Nutrition P1 | /MEMORY/clients/Aira-Quito/Aira-Quito.md |
-| Em Tan | Program Only (Olympic Lifting) + Nutrition | Snatch + Clean + Squat Cycle | W6 heavy peak (last on file) | /MEMORY/clients/Em-Tan/Em-Tan.md |
+| Em Tan | Program Only (Olympic Lifting) + Nutrition | Snatch + Clean + Squat Cycle | Phase 2 / D5–D8 (Sustain Threshold) | /MEMORY/clients/Em-Tan/Em-Tan.md |
 | Jozen | Personal Training | Cycle 4 | C4 Wk1 on file | /MEMORY/clients/Jozen/Jozen.md |
 | Jude Saldua | Online Program Only | JUDE-1A — Lower Body 3-Day Split | Last program on file | /MEMORY/clients/Jude-Saldua/Jude-Saldua.md |
 | Jen Linzaga | Nutrition Coaching (6FIX) | Fat Loss Meal Prep — Phase 1 | P1 on file | /MEMORY/clients/Jen-Linzaga/Jen-Linzaga.md |
@@ -19,7 +19,7 @@ Last updated: 2026-06-05 (merged from vault + OneDrive copies)
 | Yury | Personal Training | Cycle 13 | C13 Wk1 (5 days on file) | /MEMORY/clients/Yury/Yury.md |
 | Jerome Foo | Nutrition Coaching Only (Restart PH) | Habit-Progressive Fat Loss | W1 — fasted training habit / 2,000–2,400 kcal coach-set | /MEMORY/clients/Jerome-Foo/Jerome-Foo.md |
 | Aileen | Online Coaching — Restart Fitness PH (90-Day) | Cycle 1 — Restart Fitness System | Complete — post-program | /MEMORY/clients/Aileen/Aileen.md |
-| Arriana Ramos | 6FIX — Phase 1 | 6FIX Foundation Program | P1 / Active | /MEMORY/clients/Arriana-Ramos/Arriana-Ramos.md |
+| Arianna Ramos | 6FIX — Phase 1 | 6FIX Foundation Program | P1 / Active | /MEMORY/clients/Arianna-Ramos/Arianna-Ramos.md |
 | Fame Florendo | 6FIX — Phase 1 | 6FIX Foundation Program | P1 / Active | /MEMORY/clients/Fame-Florendo/Fame-Florendo.md |
 | Karen Carandang | 6FIX — Phase 1 | 6FIX Foundation Program | P1 / Active | /MEMORY/clients/Karen-Carandang/Karen-Carandang.md |
 
@@ -36,25 +36,16 @@ Last updated: 2026-06-05 (merged from vault + OneDrive copies)
 
 ---
 
-## Test / Dummy Clients (system validation only)
-
-| Client | Service Tier | Current Cycle | Phase / Week | File |
-|---|---|---|---|---|
-| Dummy-1 | Personal Training | 8-Week Foundation Block | Phase 1 / Week 1 of 8 | /MEMORY/clients/Dummy-1/Dummy-1.md |
-| Dummy-2 | Personal Training | 8-Week Foundation Block | Phase 1 / Week 1 of 8 | /MEMORY/clients/Dummy-2/Dummy-2.md |
-| Mark-1 | Program Only | 6-Week Beginner Foundation | Phase 1 / Week 1 of 6 | /MEMORY/clients/Mark-1/Mark-1.md |
-| Tesla-3 | Group Class | Urban Strong Week 1 | Phase 1 / Week 1 of 4 | /MEMORY/clients/Tesla-3/Tesla-3.md |
-
----
 
 ## Flags
 
-- **Karen Carandang** — registry had "Katrina Carandang" from desktop audit. Jap confirmed "Karen" — verify full legal name for documentation if needed.
+- **Karen Carandang** — Legal name confirmed from form (2026-06-08): Katrina Mae S. Carandang. Preferred name: Karen. Use Katrina Mae S. Carandang on all formal documents.
+- **Arianna Ramos, Fame Florendo, Karen Carandang** — Body metrics on file from Urban Strong Goal Review Forms (2026-06-08). Arianna: 176→164 lbs over ~7 weeks. Fame: 183→177.4 lbs. Karen: 167.6→151.6 lbs. Training intake (schedule, environment, goals) still pending for all three.
+- **Arianna Ramos** — Form shows ARIANNA in all-caps. Registry and file now use "Arianna" — treat as confirmed unless legal docs show otherwise.
+- **Em Tan** — On Phase 2 / D5–D8. Phase 3 pending — needs load logs from Jap before building. Nutrition PDF carries Urban Strong Fitness branding — confirm which brand she's under.
 - **Mach** — full legal name unconfirmed. 1RM values for Olympic lifts still unconfirmed.
-- **Em Tan** — nutrition PDF carries Urban Strong Fitness branding. Confirm which brand she's under.
 - **Jude Saldua** — JUDE-1A program has repeated shoulder modification notes. Confirm shoulder restriction status.
 - **Jozen** — DOCX program file (JOZEN_8Session_Program_Trainerize.docx) on Desktop could not be read (binary). Extract manually if content is needed.
-- **Arriana Ramos, Fame Florendo, Karen Carandang** — profiles initialized 2026-05-25. Full intake forms pending — profiles currently hold minimal data only.
 - **Lenny Calamba** — confirm if still active. Last documented cycle: Nov–Dec 2023.
 - **Lily** — no program on file. Confirm status and service tier before building anything.
 - **Anthony** — confirm if individual athlete or full team.

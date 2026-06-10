@@ -13,6 +13,7 @@ Tracking the build phase-by-phase. Update after each session.
 - **Operator UX:** `STATE.md` + `CHATS.md` + Jnoah Cockpit v1 (artifact) + `sync jnoah` reconcile routine (`SYNC.md`).
 - **Governance:** platform-check (CLAUDE/AGENTS, `/.Codex/` path fix), domain lock, voice QA layering, scheduled-task merge (4 jobs → 2 recurring + 1 manual).
 - **URBN:** brand LIVE + decoupled; June Rebrand Launch campaign created; URBN offers folded into `offer-engine.md`; `design-engine.md` de-orphaned.
+- **URBN Soft Opening (2026-06-07):** Founding Member Rate offer package built. Deliverables: Policy v3 (member-specific retained-rate model), GC letter (Messenger), Canva design brief, 4 design candidates generated via Canva MCP, Slide 2 caption copy, Founding Member Agreement .docx (Option B universal rate reference clause). All files: `/OUTPUTS/design/2026-06-07-URBN-soft-opening-offer/`. Founding window: June 8–22. Canva candidate selection pending.
 - Read `STATE.md` for current active work; `decisions-log.md` for full history.
 
 ---

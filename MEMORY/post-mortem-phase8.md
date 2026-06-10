@@ -106,7 +106,7 @@ The core architecture is solid. Engines are well-built, the anti-AI protocol is 
 ### 12. Three client profiles don't exist in the system
 
 **File:** `registry.md` flags section
-**Problem:** Arriana Ramos, Fame Florendo, Katrina Carandang are flagged as having Desktop folders but no profiles in the system.
+**Problem:** Arianna Ramos, Fame Florendo, Katrina Carandang are flagged as having Desktop folders but no profiles in the system.
 **Impact:** Any task involving these clients will have no context. The system can't help with their programs.
 **Fix:** Create profiles for each when their service type and current status are confirmed.
 

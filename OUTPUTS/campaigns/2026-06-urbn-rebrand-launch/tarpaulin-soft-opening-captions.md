@@ -1,6 +1,6 @@
 # Tarpaulin / Banner Copy — Soft Opening (outdoor, gym-front)
 
-**Brand:** URBN Athletics · **Core line:** Built to Move Better · **Event:** Soft Opening June 11
+**Brand:** URBN Athletics · **Core line:** Built to Move Better · **Event:** Soft Opening June 8
 **Use:** Outdoor tarpaulin outside the gym. CTA routes walk-ups INSIDE — employee handles the free trial. No DM/number on the banner.
 **Rules:** Free Trial = FIT45 + URBN HYBRID only · no prices · "HYROX-style" (no official HYROX claim) · no banned words.
 
@@ -14,13 +14,13 @@ URBN Athletics — coached fitness for real, lasting results.
 FIT45 for beginners · URBN FIT group training · URBN HYBRID (HYROX-style) · Personal & Small Group coaching
 **FREE TRIAL — FIT45 & URBN HYBRID**
 Step inside — our team will set you up.
-URBN Athletics · Soft Opening June 11
+URBN Athletics · Soft Opening June 8
 
 ---
 
 ## Option B — New chapter / rebrand
 
-SOFT OPENING · JUNE 11
+SOFT OPENING · JUNE 8
 **URBAN STRONG IS NOW URBN ATHLETICS**
 The gym you trust — now better. Better coaching, a positive community, a higher standard, a better space.
 Beginner FIT45 · On-Ramp foundations · URBN FIT classes · URBN HYBRID racing prep · 1-on-1 & Small Group
@@ -36,7 +36,7 @@ NEW HERE? START FREE.
 **YOUR FIRST 2 SESSIONS ARE ON US**
 URBN Athletics is open — coached training for every level.
 FIT45 (new to fitness) · URBN FIT (group strength) · URBN HYBRID (endurance + strength) · Personal Training
-**FREE TRIAL — FIT45 & URBN HYBRID · Soft Opening June 11**
+**FREE TRIAL — FIT45 & URBN HYBRID · Soft Opening June 8**
 Come inside — our team gets you started today.
 URBN Athletics · Built to Move Better
 

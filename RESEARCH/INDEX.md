@@ -33,6 +33,8 @@ If the topic exists at the required depth, go to CROSS-REF mode — do not redo 
 | Topic | Slug | Status | Depth | Layers Done | Last Run | Files |
 |---|---|---|---|---|---|---|
 | 6Fix System Integration (Trainerize + Social + Wix) | 6fix-system-integration | COMPLETE | QUICK | 1, 3 | 2026-05-21 | /RESEARCH/6fix-system-integration/RAW/6fix-system-integration-research.md |
+| Website Funnel & Conversion (homepage structure, persuasion arc, PH web behavior, competitor teardown) | website-funnel-conversion | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-25 | /RESEARCH/website-funnel-conversion/RAW/website-funnel-conversion-research.md |
+| IG Profile Audit — @restartfitnessph + @japhetfelipe (live profile data, top-3 tile strategy) | ig-profile-audit | COMPLETE | STANDARD | 1, 3 | 2026-05-29 | /RESEARCH/ig-profile-audit/RAW/ig-profile-audit-research.md |
 | Social Pipeline System (idea → design → copy → production → DM → call → onboarding) | social-pipeline-system | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/social-pipeline-system/RAW/social-pipeline-system-research.md |
 | Story-Driven Content and DM Strategy (story arcs → social posts → Stories → carousel → website → DMs) | story-content-dm-strategy | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/story-content-dm-strategy/RAW/story-content-dm-strategy-research.md |
 

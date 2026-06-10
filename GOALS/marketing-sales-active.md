@@ -1,7 +1,7 @@
 # Marketing & Sales System — Active
 **Type:** project
 **Priority:** 2
-**Status:** PENDING
+**Status:** BEHIND
 **Baseline:** All engines built (campaign.md, sales-engine.md, offer-engine.md, social-post.md). Zero campaigns run. Zero leads through the full funnel.
 **Target:** Full DM → Discovery Call → Trainerize funnel executed on real leads. Campaign 001 complete. System post-mortem done. Campaign 002 started.
 **Deadline:** 2026-06-25

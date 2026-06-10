@@ -46,6 +46,18 @@ These apply to every response, every brand, every engine. No exceptions.
 
 ---
 
+## Self-learning loop
+
+When Jap corrects any output — copy, program, design, plan, anything — don't just fix it:
+
+1. Extract the general rule behind the correction.
+2. Propose the rule in one line. On approval, append an entry to /MEMORY/lessons-learned.md **and** write the rule into its canonical home (brand file, engine file, /GLOBAL/, or this file if universal).
+3. A lesson isn't done until it's routed — the log entry records where the rule went.
+
+`lint jnoah` (see LINT.md) is the companion drift check: contradictions between files, stale deadlines, orphan outputs, legacy-path strays. Run weekly or after heavy parallel-chat work. The banned-words list above grew from exactly this loop — now it's systematic instead of accidental.
+
+---
+
 ## How this system works
 
 This folder is a modular business operating system. It loads context in layers, in this order:
@@ -96,6 +108,8 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 - `load jnoah` → read this control file + ROUTER.md + STATE.md (chat START ritual — see CHATS.md)
 - `log + update state` → append /MEMORY/decisions-log.md + update STATE.md (chat END ritual)
 - `sync jnoah` → reconcile registry/STATE/cockpit from the vault + flag unlogged outputs (see SYNC.md). Run after heavy side-chat work or weekly.
+- `log lesson` → a correction happened → extract the rule → append /MEMORY/lessons-learned.md + route the rule to its canonical file (see Self-learning loop above)
+- `lint jnoah` → drift check: contradictions, stale deadlines, orphans, legacy-path strays (see LINT.md)
 - "what's now?" / "where did I leave off?" → read STATE.md (the current-state board)
 - "how do I run chats?" → CHATS.md (chat model: Command + Project + Worker)
 - "What's in the system?" → read README.md
@@ -109,6 +123,7 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 ---
 
 ## Last updated
+2026-06-10 — Self-learning loop added (learn ritual + /MEMORY/lessons-learned.md + LINT.md drift check). Commands: `log lesson`, `lint jnoah`. Mirrored from CLAUDE.md.
 2026-05-30 — URBN Athletics brand file LIVE (/BRANDS/URBN-athletics.md, canonical /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Hold lifted; identity blurb updated. Removed Restart's locked line "Stop guessing. Follow a system." from URBN (decoupling). Visual identity + domain still pending.
 2026-05-29 — Governance pass. Platform-check added (AGENTS.md/Codex · CLAUDE.md/Claude, content-synced). Fixed broken /.Codex/ paths → /.agents/. Urban Strong → URBN Athletics rebrand logged + decoupled from Restart (both standalone). Restart domain locked: restartfitnessph.com (planned). Voice QA = two layered checkers (anti-ai-copywriter authority + brand-review). 6FIX casing normalized in engines.
 2026-05-21 — Phase 12 complete — Goals system built. Goals engine, Goals skill, /GOALS/ folder, posting log bridge to campaign engine. Morning brief is now the daily entry point.

@@ -258,6 +258,24 @@ After each cycle close:
 
 ---
 
+## How to delete a client (full purge)
+
+**Say:** "Delete client [name]" or "Remove [name] from the system"
+
+Claude will:
+1. Load `mcp__cowork__allow_cowork_file_delete` via ToolSearch to enable deletion
+2. Delete the client folder: `rm -rf /sessions/.../mnt/vault/MEMORY/clients/[name]/`
+3. Delete any output files: `rm -rf /sessions/.../mnt/vault/OUTPUTS/programs/[name]/` and `/OUTPUTS/nutrition/[name]/` if they exist
+4. Remove the client's row from `/MEMORY/clients/registry.md`
+5. Log one line to `/MEMORY/decisions-log.md`
+
+The dashboard auto-clears on next file-watcher refresh — no manual work needed.
+
+**Rule:** Only purge clients Jap explicitly names. Never delete based on "inactive" status alone — inactive clients stay in the system unless deletion is confirmed.
+
+---
+
 ## Last updated
+2026-06-08 — Client deletion process added. Tested on Dummy-1, Dummy-2, Mark-1, Tesla-3.
 2026-05-23 — Equipment Access Flag + Limited Equipment Questionnaire added to schema and creation flow.
 2026-05-19 — built from Coach Jap system design session.
