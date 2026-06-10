@@ -1,7 +1,7 @@
 # STATE - Project Jnoah Mission Control
 
 Single source of "what's now." **Read first, update last.** Every chat starts by reading this; every chat ends by updating it.
-Last updated: 2026-06-07
+Last updated: 2026-06-11
 
 > This file is the backbone for two things: the chat model (see CHATS.md) and the Cockpit artifact (which renders this + the vault). Keep it short and current - it is a now board, not an archive. History lives in /MEMORY/decisions-log.md.
 
@@ -10,9 +10,9 @@ Last updated: 2026-06-07
 ## This week's top 3
 > Suggested from goals + where-you-left-off - edit freely.
 
-1. URBN June Rebrand Launch - Soft Opening timeline updated to Jun 8, 2026; Week 1 assets, no-live-dependency pre-builds, open data confirmation, and ClickUp push marked DONE. Next: monitor Soft Opening execution and resolve final visual identity/domain.
-2. Restart PH Week 1 social pipeline - manual Monday cover and Week 1 launch marked DONE. Next: monitor posting/DM response and log performance.
-3. Lock content pillars + develop the first 10 posts (Social Pipeline goal, tasks 1-2).
+1. URBN Founding window — Soft Opening (Jun 8) done. Founding Member Rate closes Jun 22; move-out Jun 20–21; HYROX Jun 27–29. Next: monitor conversions, build Grand Opening (Jul 11) assets.
+2. 6FIX Launch campaign — DRAFT not yet pushed to ClickUp. June window still open; push to ACTIVE or schedule.
+3. restartfitnessph.com build — 8 pages, zero progress, domain planned. Highest-leverage pending asset for Restart PH.
 
 ---
 
@@ -30,13 +30,11 @@ Last updated: 2026-06-07
 |---|---|---|---|---|
 | Content | 7 post concepts captured (4 conversion + 3 value) | Develop into full posts | Pending | 2026-05-18 |
 | Campaigns | Social Growth Pipeline - Week 1 | Week 1 launch marked done; monitor posting/DM response and log performance | ACTIVE | 2026-06-05 |
-| Campaigns (URBN) | Founding Member Rate offer package BUILT — Policy v3, GC letter, Canva design brief, 4 design candidates generated, Slide 2 copy, Founding Member Agreement .docx (Option B rate clause) | GC letter + banner ready to post Jun 8; monitor Founding window (closes Jun 22) | ACTIVE - time-critical | 2026-06-07 |
-| Clients | 12 active; cycles advanced (Yury C13, Jozen C4, Aira C3, Em-Tan W6, Enosh C4) | Continue per-client cycles | Active | 2026-06-04 |
+| Campaigns (URBN) | Soft Opening Jun 8 done — assets in market. Founding window open (closes Jun 22). Move-out Jun 20–21, HYROX Jun 27–29, Grand Opening Jul 11. | Build Grand Opening assets; monitor Founding conversions | ACTIVE - time-critical | 2026-06-11 |
+| Clients | 12 active; Aira C3 W2, Em-Tan Phase2/D5-D8, others per registry | Continue per-client cycles; Em-Tan Phase 3 pending load logs | Active | 2026-06-11 |
 | Sales/Web | restartfitnessph.com launch goal | Build site (8 pages, CTAs, DM funnel) | PENDING | - |
-| OS build | Operator UX lane (STATE.md + chat model) | Scheduled cockpit refresh | In progress | 2026-05-30 |
-| OS dashboard | Phase 1 modules 1-3 shipped (Outputs + Search + Marketing) | Next: Programs -> Social -> Research | In progress | 2026-06-05 |
-| OS skills | Built `mortem` skill (PRE/POST modes) | Available - try `pre-mortem [scope]` or `post-mortem [scope]` | LIVE | 2026-06-05 |
-| OS - Wave 2 | Governance cleanup | URBN brand LIVE; remaining: brand-file split, final doc parity cleanup | Active | 2026-05-30 |
+| OS dashboard | Phases 1–3 complete — 14 modules, connectors, chat, lessons, drift warnings, mortem skill | Next: P2-2 production build, P2-3 connector staleness, P2-5 auto-restart | LIVE | 2026-06-11 |
+| OS - P1 ops | Legacy vault decommission + API key rotation | Retire old Cowork chats; rotate key at console.anthropic.com | Pending | 2026-06-11 |
 
 ---
 
@@ -46,7 +44,7 @@ Last updated: 2026-06-07
 | Client | Service | Cycle / Week |
 |---|---|---|
 | Enosh | Online (Coached + Program Only) | Basketball S&C + Physique - Cycle 4 |
-| Aira Quito | PT + 6FIX Nutrition | Body Recomp + Fat Loss - Cycle 3 Wk1 |
+| Aira Quito | PT + 6FIX Nutrition | Body Recomp + Fat Loss - Cycle 3 Wk2 |
 | Em Tan | Program Only (Olympic) + Nutrition | Snatch/Clean/Squat - W6 peak |
 | Yury | Personal Training | Cycle 13 Wk1 |
 | Jozen | Personal Training | Cycle 4 Wk1 |
@@ -89,18 +87,14 @@ Confirm-status flags: **Lenny** (active?), **Lily** (no program on file), **Anth
 ## Recent decisions
 > Last few from /MEMORY/decisions-log.md
 
-- 2026-06-07 - URBN Founding Member Rate offer package complete: Policy v3 (retained-rate model), GC letter, Canva design brief, 4 design candidates, Slide 2 copy, Founding Member Agreement .docx with Option B universal rate reference clause. All files in /OUTPUTS/design/2026-06-07-URBN-soft-opening-offer/.
-- 2026-06-05 - URBN Soft Opening timeline updated to Jun 8, 2026 across the campaign package.
-- 2026-06-05 - URBN current task batch marked done: Week 1 assets, Jun 20-21 / Jun 27-29 pre-builds, FIT45/PFT/Pioneer confirmations, and ClickUp push.
-- 2026-06-05 - Restart PH Week 1 social pipeline and manual Monday cover marked done by user.
-- 2026-06-04 - Vault sync: registry + STATE refreshed (Yury C13, Jozen C4, Aira C3, Em-Tan W6, Enosh C4); cockpit rebuilt; content-log restarted (forward-only). Built `sync jnoah` reconcile routine.
-- 2026-06-03 - URBN June pricing locked (pricing-plan.md): Free Trial, Soft Opening 20%, Grand Opening Pioneer 30% (15 seats); added HYBRID 10-Session Pass 2,500. Canva hooked (folder FAHLRuNOQfo + canva-workspace.md). Today's design sheet filed.
-- 2026-05-30 - Routed URBN June handoff: created campaign /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch (marketing plan + creative handoff + brief + calendar); filed offer ladder as canonical URBN offer source.
-- 2026-05-30 - URBN Athletics brand file went LIVE (kit + canonical brain); removed Restart's line from URBN; hold lifted.
-- 2026-05-30 - Built Jnoah Cockpit v1 (Cowork artifact + Artifacts/jnoah-cockpit.html).
-- 2026-05-30 - Built STATE.md + CHATS.md (operator UX lane).
-- 2026-05-30 - Platform support cleanup: ROUTER, PROGRESS, README, HOW-TO-USE patched for Codex/Claude parity.
-- 2026-05-29 - Governance Wave 1: platform-check, domain lock, voice layering, 6FIX casing, URBN rebrand logged.
+- 2026-06-11 - P1-2 resolved: vault (99 changes, Jun 5–11) + full OS app (Phases 1–3, 56 files) committed and pushed to GitHub. App had never been committed since May 24 scaffold.
+- 2026-06-11 - P2-1 resolved: AGENTS.md parity pass — engine list updated to categorized format, /ENGINES/6fix/ added, 3 engines added. CHATS.md END ritual gains step 4 (commit per session).
+- 2026-06-10 - Full system post-mortem + pre-mortem audit run. 7 wins / 6 misses (post). 3P1 / 5P2 / 4P3 (pre). Files: /MEMORY/post-mortem-full-system-2026-06-10.md + pre-mortem-full-system-2026-06-10.md.
+- 2026-06-10 - Self-learning loop Phase B: /lessons page + drift warnings on Today dashboard live. First lint run caught 11 legacy strays (corrected). PowerShell bracketed-path lesson logged and routed to LINT.md.
+- 2026-06-10 - Aira C3 W2 built (5 sessions). Power Clean 4→5 sets, D-21/D-22 abductor fix resolved. program-state.md updated.
+- 2026-06-09 - 6FIX engine relocated to /ENGINES/6fix/ (11 files). ROUTER.md updated. CLAUDE.md engine list updated.
+- 2026-06-08 - URBN Soft Opening executed Jun 8. Fame starting weight corrected to 192 lbs.
+- 2026-06-07 - URBN Founding Member Rate offer package complete: Policy v3, GC letter, Canva design brief, Agreement .docx (Option B clause).
 
 ---
 

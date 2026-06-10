@@ -1,6 +1,6 @@
 # Active Client Registry
 
-Last updated: 2026-06-08
+Last updated: 2026-06-11
 
 ---
 
@@ -9,7 +9,7 @@ Last updated: 2026-06-08
 | Client | Service Tier | Current Cycle | Phase / Week | File |
 |---|---|---|---|---|
 | Enosh | Online Coaching (Coached + Program Only) | Basketball S&C + Physique — Cycle 4 | C4 conditioning closer on file | /MEMORY/clients/Enosh/Enosh.md |
-| Aira Quito | Personal Training + 6FIX Nutrition | Body Recomp + Fat Loss — Cycle 3 | C3 Wk1 (5 days on file) / Nutrition P1 | /MEMORY/clients/Aira-Quito/Aira-Quito.md |
+| Aira Quito | Personal Training + 6FIX Nutrition | Body Recomp + Fat Loss — Cycle 3 | C3 Wk2 (10 days on file) / Nutrition P1 | /MEMORY/clients/Aira-Quito/Aira-Quito.md |
 | Em Tan | Program Only (Olympic Lifting) + Nutrition | Snatch + Clean + Squat Cycle | Phase 2 / D5–D8 (Sustain Threshold) | /MEMORY/clients/Em-Tan/Em-Tan.md |
 | Jozen | Personal Training | Cycle 4 | C4 Wk1 on file | /MEMORY/clients/Jozen/Jozen.md |
 | Jude Saldua | Online Program Only | JUDE-1A — Lower Body 3-Day Split | Last program on file | /MEMORY/clients/Jude-Saldua/Jude-Saldua.md |

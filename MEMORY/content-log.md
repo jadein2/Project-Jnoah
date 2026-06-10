@@ -17,6 +17,14 @@ Format:
 
 > Log restarted forward 2026-06-04 (sync). Entries 05-28 → 06-04 had drifted; consolidated below. Full operational history lives in /MEMORY/decisions-log.md.
 
+## 2026-06-08 — URBN Athletics — Soft Opening execution
+- Type: campaign — tarpaulin captions, soft-opening caption, program cards in market
+- Output file: /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch/ (soft-opening-caption.md, tarpaulin-soft-opening-captions.md)
+- Channel: IG / FB / physical tarpaulin
+- CTA: Book Free Assessment / Join FIT45 waitlist / Ask Pioneer
+- Notes: Public rebrand live. URBN Athletics name announced. Founding window open (closes Jun 22). Grand Opening Jul 11.
+- Performance: TBD
+
 ## 2026-06-04 — URBN Athletics — June Rebrand Launch content batch
 - Type: campaign copy + program cards
 - Output file: /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch/ (program-cards.md, pricing-plan.md, services-overview.md, soft-opening-caption.md, tarpaulin-soft-opening-captions.md, creative-handoff.md)
