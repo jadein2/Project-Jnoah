@@ -20,7 +20,7 @@ You are working with Japhet "Jap" Felipe — CEO and head coach in Olongapo, Phi
 
 ## Businesses at a glance
 
-**URBN Athletics** (rebrand of Urban Strong Fitness — name-change rebrand, LIVE) — the in-person coached fitness gym in Olongapo for busy adults (28–55). Offers: FIT45, On-Ramp/Foundation, URBN FIT, URBN HYBRID/PFT, PT, small-group. Core line: "Built to Move Better." A *separate, standalone* track from Restart Fitness PH — neither is described publicly as part of the other; Jap is the only bridge (URBN can feed credibility/proof into Restart). Brand identity, voice, messaging, offers: /BRANDS/URBN-athletics.md (canonical: /Raw-Files/URBN Athletics/Main-Brand-Brain.md). ⚠️ Still pending: final visual identity (logo, palette, type) + public domain. Legacy reference: /BRANDS/urban-strong.md.
+**URBN Athletics** (rebrand of Urban Strong Fitness — name-change rebrand, LIVE) — the in-person coached fitness gym in Olongapo for busy adults (28–55). Offers: FIT45, On-Ramp/Foundation, URBN FIT, URBN HYBRID/PFT, PT, small-group. Core line: "Built to Move Better." A *separate, standalone* track from Restart Fitness PH — neither is described publicly as part of the other; Jap is the only bridge (URBN can feed credibility/proof into Restart). Brand identity, voice, messaging, offers: /BRANDS/URBN-athletics.md (canonical: /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Still pending: final visual identity (logo, palette, type) + public domain. Legacy reference: /BRANDS/urban-strong.md.
 
 **Restart Fitness PH** — Standalone online coaching business built around The Restart Fitness System (casual: The Restart System). Flagship: 90-Day Coaching System (internal: Restart Fitness System 90). Beginner program: 6FIX. Brand line: "Stop guessing. Follow a system." Primary domain: restartfitnessph.com (planned — not live yet). Primary website CTA: Book a Discovery Call. Primary social CTA: DM "RESTART". Audience word: people (never "busy adults"). A complete standalone entity — runs as its own brand independent of URBN. Locked brand identity — see /BRANDS/restart-fitness-ph.md.
 
@@ -77,7 +77,19 @@ This folder is a modular business operating system. It loads context in layers, 
 
 When you get a task: read this file → consult ROUTER.md → load relevant brand file → load engine file → apply any matching skill → produce output → log it to /MEMORY/.
 
-**Engine files that exist:** design-brief.md, carousel.md, blog-post.md, social-post.md, post-routing.md, training-program.md, nutrition-plan.md · client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md · campaign.md (/ENGINES/marketing/) · offer-engine.md, sales-engine.md (/ENGINES/sales/) · wix.md (/ENGINES/web/) · research-engine.md (/ENGINES/research/) · goals-engine.md (/ENGINES/goals/). **Not yet built:** poster.md. If routed to a missing engine, say so rather than improvising.
+**Engine files that exist:**
+- `/ENGINES/content/` — carousel.md, blog-post.md, social-post.md, post-routing.md
+- `/ENGINES/design/` — design-brief.md, design-engine.md, carousel.md
+- `/ENGINES/coach-jap/` — training-program.md, nutrition-plan.md, wod-brain.md, program-state-template.md
+- `/ENGINES/client/` — client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md, adhere-compliance.md
+- `/ENGINES/marketing/` — campaign.md
+- `/ENGINES/sales/` — offer-engine.md, sales-engine.md
+- `/ENGINES/web/` — wix.md
+- `/ENGINES/research/` — research-engine.md
+- `/ENGINES/goals/` — goals-engine.md
+- `/ENGINES/6fix/` — 6fix-master-index.md, 6fix-onboarding-system.md, 6fix-phase1-delivery.md, 6fix-phase2-program.md, 6fix-upgrade-sequence.md, 6fix-marketing-strategy.md, 6fix-compliance-dashboard.md, 6fix-wix-email-automation.md, 6fix-design-system.md, 6fix-trainerize-auto-messages.md, 6fix-phase2-questionnaire.md
+
+**Not yet built:** poster.md. If routed to a missing engine, say so rather than improvising.
 
 **Ignore `/files/`** — legacy backup copies of brand and memory files. Not canonical. Always read from the actual paths (/BRANDS/, /MEMORY/, etc.).
 
@@ -123,6 +135,7 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 ---
 
 ## Last updated
+2026-06-11 — AGENTS.md parity pass: engine list updated to categorized-by-folder format, /ENGINES/6fix/ added (11 files), adhere-compliance.md + design-engine.md + program-state-template.md + wod-brain.md added to their folders, stray emoji removed from URBN blurb. Mirrored from CLAUDE.md.
 2026-06-10 — Self-learning loop added (learn ritual + /MEMORY/lessons-learned.md + LINT.md drift check). Commands: `log lesson`, `lint jnoah`. Mirrored from CLAUDE.md.
 2026-05-30 — URBN Athletics brand file LIVE (/BRANDS/URBN-athletics.md, canonical /Raw-Files/URBN Athletics/Main-Brand-Brain.md). Hold lifted; identity blurb updated. Removed Restart's locked line "Stop guessing. Follow a system." from URBN (decoupling). Visual identity + domain still pending.
 2026-05-29 — Governance pass. Platform-check added (AGENTS.md/Codex · CLAUDE.md/Claude, content-synced). Fixed broken /.Codex/ paths → /.agents/. Urban Strong → URBN Athletics rebrand logged + decoupled from Restart (both standalone). Restart domain locked: restartfitnessph.com (planned). Voice QA = two layered checkers (anti-ai-copywriter authority + brand-review). 6FIX casing normalized in engines.
