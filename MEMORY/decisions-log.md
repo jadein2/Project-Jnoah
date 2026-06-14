@@ -2,6 +2,8 @@
 
 One line per decision or significant output. Newest at the top.
 
+2026-06-15 — [BUILD] Jnoah OS control layer shipped — dashboard goes from read-only to write-back. New vault write layer (path-validated, EOL-preserving, surgical, git-reversible). Controls: Goals status (Today + /goals), Campaign status (/marketing, tail-preserving), Outputs QA (qa_status frontmatter), Lessons add + mark-routed, Today quick-log + re-check drift, Client status + dated notes, connector staleness badges (Drive/Calendar/Notion/Website). 6 API routes + StatusControl component. Closes pre-mortem P2-2 (production build now passes) + P2-3 (staleness). App commit 7cbcbd1. All writes verified no-op→real→revert.
+2026-06-15 — [OPS] Protective commit (vault 904ac4b): captured ~68 uncommitted parallel-chat changes (marketing engine, Jemina Apostol, Katrina Mae rename, 6FIX forms, campaign restructure, new programs) surfaced during the OS build — work was sitting on one disk (pre-mortem P1-2).
 2026-06-12 — [6FIX] Short Phase 2 Intake Form (16 questions) built — /ENGINES/6fix/6fix-phase2-intake-form-trainerize-short.md. Condensed from the 43-question version, keeping objective baseline numbers only (training capacity, steps, protein consistency, sleep/stress/energy, goal/commitment).
 2026-06-12 — [6FIX] Phase 2 Intake Form build copy created — /ENGINES/6fix/6fix-phase2-intake-form-trainerize.md. 43-question Form 1 reformatted as a copy-paste-ready Trainerize build sheet (question text, field type, MC options, build checklist).
 

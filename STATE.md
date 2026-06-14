@@ -34,7 +34,7 @@ Last updated: 2026-06-14
 | Clients | Priority builds updated: Aira C3 W3, Em-Tan Phase3/D9-D12 under 80%, Jozen C4 W3, Yury C25 D7-D11, Enosh W3 Program Only | Collect load logs/feedback before next builds; Jozen W2 file missing | Active | 2026-06-14 |
 | Clients (6FIX P2) | Phase 2 plans + client-facing nutrition/training PDFs issued (Jen, Arianna, Katrina Mae); Fame Wk1 only | Await "GYM" opt-in; Fame intake; confirm Jen 2018 surgery type + Katrina real goal weight | Active | 2026-06-14 |
 | Sales/Web | restartfitnessph.com launch goal | Build site (8 pages, CTAs, DM funnel) | PENDING | - |
-| OS dashboard | Phases 1–3 complete — 14 modules, connectors, chat, lessons, drift warnings, mortem skill | Next: P2-2 production build, P2-3 connector staleness, P2-5 auto-restart | LIVE | 2026-06-11 |
+| OS dashboard | Control layer shipped — write-back across Goals/Campaigns/Outputs/Lessons/Clients/Today + connector staleness badges. Production build clean. P2-2 + P2-3 closed. | Next: P2-5 auto-restart script; legacy decommission (P1-1) | LIVE | 2026-06-15 |
 | OS - P1 ops | Legacy vault decommission + API key rotation | Retire old Cowork chats; rotate key at console.anthropic.com | Pending | 2026-06-11 |
 
 ---
