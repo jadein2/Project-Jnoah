@@ -117,8 +117,8 @@ Deadline / Event: —
 
 ## ACTIVE RECORD
 Current Cycle Goal: Body recomposition — accumulation phase, load calibration — foundation block
-Current Phase / Week: Accumulation Phase / W1–W2 (last documented)
-Current Program File: /OUTPUTS/programs/Aira-Quito/ — source: AIRA_BodyRecomp_4Week_PT_Program.md.docx
+Current Phase / Week: Accumulation Phase / Cycle 3 Week 3
+Current Program File: /OUTPUTS/programs/Aira-Quito/Aira-Cycle3-Week3.md
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -127,6 +127,7 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
+2026-06-14 - Cycle 3 Week 3 built by Coach Jap approval using RPE-based progression because W1-W2 load logs are still not on file. Week 4 should use actual loads if available.
 2026-05-19 — Profile migrated to structured schema. W1–W2 dashboard is the primary training record. Key source files: AIRA_BodyRecomp_4Week_PT_Program.md.docx and AIRA_Training_Dashboard_W1-W2.xlsx — both in references/. Session structure: Warm-up → Specific Warm-up → Strength Block A (superset) → Strength Block B (superset) → Metcon/Conditioning. High-quality client file — fill in personal profile fields (contact, start date) at next opportunity.
 
 2026-05-19 — Nutrition profile populated from 6Fix_Aira_Quito_7Day_MealPrep.pdf. Age (28), height (5'8"), starting weight (106 kg / 233.6 lb) confirmed from meal prep document. TDEE 2,849 / target 2,564 kcal (10% deficit). Macros: P 256g / C 224g / F 71g. 7-day rotating meal plan with silog breakfasts, salad at lunch + dinner, no dinner rice. File is on Desktop — add to references/ index.

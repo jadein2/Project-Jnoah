@@ -37,6 +37,7 @@ If the topic exists at the required depth, go to CROSS-REF mode — do not redo 
 | IG Profile Audit — @restartfitnessph + @japhetfelipe (live profile data, top-3 tile strategy) | ig-profile-audit | COMPLETE | STANDARD | 1, 3 | 2026-05-29 | /RESEARCH/ig-profile-audit/RAW/ig-profile-audit-research.md |
 | Social Pipeline System (idea → design → copy → production → DM → call → onboarding) | social-pipeline-system | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/social-pipeline-system/RAW/social-pipeline-system-research.md |
 | Story-Driven Content and DM Strategy (story arcs → social posts → Stories → carousel → website → DMs) | story-content-dm-strategy | COMPLETE | DEEP | 1, 2, 3, 4, 5 | 2026-05-22 | /RESEARCH/story-content-dm-strategy/RAW/story-content-dm-strategy-research.md |
+| Marketing Frameworks for Multi-Brand Fitness Business (13-framework stack, CRM schema, event map, dashboards) | marketing | COMPLETE | DEEP (external drop) | drop ingested | 2026-06-12 | /RESEARCH/marketing/deep-research-report-marketing.md |
 
 ---
 
@@ -48,6 +49,7 @@ Format: `YYYY-MM-DD — [slug] — [filename] — [status: INGESTED / PENDING]`
 `2026-05-21 — 6fix-system-integration — web research (6 searches) — INGESTED`
 `2026-05-22 — social-pipeline-system — web research (10 searches, DEEP depth) — INGESTED`
 `2026-05-22 — story-content-dm-strategy — web research (10 searches, DEEP depth) — INGESTED`
+`2026-06-12 — marketing — deep-research-report-marketing.md (external deep-research drop) — INGESTED`
 
 ---
 

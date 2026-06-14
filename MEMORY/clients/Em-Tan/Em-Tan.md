@@ -119,8 +119,8 @@ Deadline / Event: —
 
 ## ACTIVE RECORD
 Current Cycle Goal: Olympic lifting performance — Snatch + Clean cycle with Back Squat and Front Squat accessory
-Current Phase / Week: W5–W6 (last documented) — W6 = deload
-Current Program File: /OUTPUTS/programs/Em-Tan/ — source files in references/
+Current Phase / Week: Phase 3 / D9-D12 under-80 technical reload
+Current Program File: /OUTPUTS/programs/Em-Tan/Em-Tan-Phase3-D9-D12-Under80.md
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -129,6 +129,7 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
+2026-06-14 - Phase 3 D9-D12 built with snatch and clean & jerk technical blocks. All Olympic lifting and squat-cycle work capped at 80% per Coach Jap instruction.
 2026-05-19 — Trainerize intake form logged. Goals: aesthetics, health, strength, confidence, toning, weight loss. Exercises regularly. Cardio: average. Experience: intermediate. Available Mon–Fri, 4–5x/week. Equipment: free weights + kettlebells. Restrictions: tight hips + shoulder pain — flag for programming. Non-smoker. No additional comments submitted.
 
 2026-05-19 — Profile migrated to structured schema. No personal profile data on file (age, DOB, location, contact) — fill in at next contact. W5–W6 snapshot is the only training record. Full cycle start date unknown. 1RM values not documented — needed to verify all percentage prescriptions.

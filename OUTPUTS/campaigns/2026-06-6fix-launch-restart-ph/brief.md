@@ -1,6 +1,6 @@
 # Campaign Brief — 2026-06 6FIX Launch — Restart PH
 
-**Status:** DRAFT
+**Status:** ARCHIVED (2026-06-12) — never activated; all dates (DM deadline Jun 17, call Jun 19, cohort start Jun 22) died in DRAFT. Superseded by /OUTPUTS/campaigns/2026-07-6fix-public-launch-restart-ph/. Lesson logged: a campaign brief without a scheduled activation date is a dead campaign.
 **Campaign ID:** 2026-06 6FIX Launch — Restart PH
 **Campaign slug:** 2026-06-6fix-launch-restart-ph
 

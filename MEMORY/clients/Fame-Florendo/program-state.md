@@ -38,3 +38,13 @@ Program not yet started. No sessions on file.
 
 ## Notes
 6FIX Phase 1 entry-level client. Profile initialized 2026-05-25. Full profile: /MEMORY/clients/Fame-Florendo/Fame-Florendo.md
+
+---
+
+## 2026-06-14 — Phase 2 Week 1 built
+Cycle: 6FIX Phase 2 — Reset & Rebuild (Days 43–84)
+Phase / Week: Phase 2 / Week 1
+Setup: Home base, minimal equipment (confirmed via Jap 2026-06-14)
+Frequency: 2 sessions/wk (Session A movement assessment + Session B aerobic run)
+Program file: /OUTPUTS/programs/Fame-Florendo/2026-06-14-6fix-phase2-week1.md
+Still pending: health clearance on file, confirmed training days, full intake.

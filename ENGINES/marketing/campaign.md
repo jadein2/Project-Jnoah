@@ -1,8 +1,10 @@
 # Campaign Engine
 
-Orchestration engine for all marketing campaigns across Restart Fitness PH (and Urban Strong Fitness when active).
+Execution arm of the marketing system. Orchestrates all marketing campaigns across the portfolio (Restart Fitness PH, URBN Athletics).
 
-Load order: CLAUDE.md → ROUTER.md → this file → relevant brand file → relevant content/design engines.
+**This engine runs inside the marketing lifecycle** — marketing-engine.md (master) is the entry point for campaign-level work; it handles research (Stage 1) and the strategy check (Stage 2) before this engine's Phase 1 fires. This file owns Stages 3–4 and 8 (plan, produce, implement).
+
+Load order: CLAUDE.md → ROUTER.md → marketing-engine.md → this file → relevant brand file → relevant content/design engines.
 
 ---
 
@@ -31,6 +33,8 @@ Every campaign is always in one of four states:
 | **CLOSED** | Complete. ClickUp list archived. Results logged. |
 
 Track status in the campaign's ClickUp list name: `[Status] Campaign Name`.
+
+**Activation rule (lesson 2026-06-12):** a campaign brief is not done at approval — it is done when an activation date is on the calendar and the first asset is scheduled. Any campaign still in DRAFT 7 days before its first hard date is AT RISK: surface it in STATE.md top-3 / morning brief. The 2026-06 6FIX launch died in DRAFT with every date passed — never again.
 
 ---
 
@@ -82,6 +86,16 @@ If a research file exists for this campaign topic or the target audience pain:
 - Note the research file in the campaign brief under "Research source"
 
 If no research file exists: proceed to Phase 1. Consider running research first for major campaigns.
+
+## Strategy check — run before Phase 1
+
+Read /MEMORY/marketing/strategy-state.md and confirm (marketing-engine.md Stage 2):
+- Brand role card — which brand owns this campaign
+- Segment card — Phase 1 "Audience segment" and "Target pain" fields come from the card, not invented fresh
+- CEP claim — one CEP per campaign; mark ownership in the CEP map
+- C/C/V posture — does this campaign tip the quarter too Conversion-heavy?
+
+If no segment card fits, build the card first (strategy.md Layer 2). If this requires a real decision, fire the strategic-decision skill.
 
 ---
 
@@ -269,6 +283,7 @@ When a campaign ends:
    - Format: `YYYY-MM-DD — CAMPAIGN CLOSED — [Campaign name] — [What worked / What didn't / Result vs. goal]`
 4. Move all final output files to `/OUTPUTS/[campaign-slug]/archive/`
 5. Note any new content pillars, message angles, or formats that performed well — these become future content ideas
+6. Run the assessment protocol — performance.md (AARRR sheet, experiment verdicts, Gate 3 learning loop back to strategy-state.md). A campaign is not CLOSED until assessed.
 
 ---
 
@@ -341,4 +356,5 @@ Website content is currently a manual update — the Wix engine does not yet exi
 ---
 
 ## Last updated
+2026-06-12 — Integrated into marketing engine suite (Option B): header repointed to marketing-engine.md master, strategy check added before Phase 1, assessment step added to close protocol.
 2026-05-20 — Phase 7. Built from campaign architecture session + post-mortem audit. Post-mortem fixes applied: campaign status schema, naming convention, ClickUp dual-list rule, Phase 1 brief schema, Phase 4 handoff table, campaign close protocol, website placeholder.

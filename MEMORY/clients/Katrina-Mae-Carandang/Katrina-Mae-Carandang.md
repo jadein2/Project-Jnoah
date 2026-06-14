@@ -1,4 +1,4 @@
-# Karen Carandang
+# Katrina Mae Carandang
 
 ## PIPELINE STATUS
 Status: ACTIVE
@@ -10,8 +10,8 @@ Client Since: —
 ---
 
 ## PERSONAL PROFILE
-Full Name: Katrina Mae S. Carandang (legal name confirmed from form — "Karen" is preferred name)
-Preferred Name / Nickname: Karen
+Full Name: Katrina Mae S. Carandang (legal name confirmed from form — "Katrina Mae" is preferred name)
+Preferred Name / Nickname: Katrina Mae
 Age: 30
 Date of Birth: —
 Sex: —
@@ -107,7 +107,7 @@ Deadline / Event: —
 ## ACTIVE RECORD
 Current Cycle Goal: 6FIX Phase 1 — Foundation
 Current Phase / Week: Phase 1 / Week — (confirm start date)
-Current Program File: /OUTPUTS/programs/Karen-Carandang/
+Current Program File: /OUTPUTS/programs/Katrina-Mae-Carandang/
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -116,5 +116,6 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
-2026-06-08 — Body metrics updated from Urban Strong Fitness Goal Review Form. Starting point 4/24 at 167.6 lbs, 42.1% BF, 91.2 MM. Check-in 5/25 at 151.6 lbs, 38.8% BF, 89.4 MM — 16 lbs down in ~4 weeks. Age 30, height 5'2", email and contact confirmed. Legal name confirmed from form: Katrina Mae S. Carandang. "Karen" is preferred name. Update all formal documents to use Katrina Mae S. Carandang.
-2026-05-25 — Profile created. Registry had "Katrina Carandang" — Jap confirmed preferred name is "Karen." Full intake pending.
+2026-06-08 — Body metrics updated from Urban Strong Fitness Goal Review Form. Starting point 4/24 at 167.6 lbs, 42.1% BF, 91.2 MM. Check-in 5/25 at 151.6 lbs, 38.8% BF, 89.4 MM — 16 lbs down in ~4 weeks. Age 30, height 5'2", email and contact confirmed. Legal name confirmed from form: Katrina Mae S. Carandang. "Katrina Mae" is preferred name. Update all formal documents to use Katrina Mae S. Carandang.
+2026-05-25 — Profile created. Registry had "Katrina Carandang" — Jap confirmed preferred name is "Katrina Mae." Full intake pending.
+2026-06-14 — Per Jap: client is now referred to as Katrina Mae Carandang across the whole system (was "Karen"). Renamed client + program folders to Katrina-Mae-Carandang, profile/state/registry and both Phase 2 plan files updated. Legal name on formal docs remains Katrina Mae S. Carandang. Historical checkpoint/pre-mortem snapshots left intact as audit record.

@@ -1,32 +1,44 @@
-# Enosh — Program State
-Last updated: 2026-05-23
-Updated by: diagnostic build — 4 sessions added (C3, PO4, PO5, C4)
+# Enosh - Program State
+Last updated: 2026-06-14
+Updated by: Cycle 1 Week 3 program-only build
 
 ---
 
 ## Cycle position
-Cycle name: Basketball S&C + Physique — Cycle 1 (extended diagnostic)
-Sessions built: C1, C2, PO1, PO2, PO3, C3, PO4, PO5, C4
-Sessions pending: none — extended Cycle 1 complete (9/9)
-Next session type: Cycle 2 — run scope review after C4 debrief
-Cycle week: W1–W2 (all sessions built, not yet run)
+Cycle name: Basketball S&C + Physique - Cycle 1
+Service type: Program Only
+Current program file: /OUTPUTS/programs/Enosh/Enosh-Cycle1-Week3-ProgramOnly.md
+Sessions built: Week 3 - 3 program-only sessions
+Sessions pending: Week 4 - pending self-reported loads, running splits, and conditioning times
+Cycle week: W3
 
 ---
 
-## Pool log — last 14 days
-Format: Exercise — Session — Date
+## Week 3 direction
+No online coaching this week. All sessions are written for independent execution.
+
+Session structure:
+- Day 1: Lower Power + Running Conditioning
+- Day 2: Upper Strength + Physique
+- Day 3: Full Body + Running Conditioning
+
+Running conditioning count:
+- Day 1: 6 x 200m run intervals
+- Day 3: 3 rounds with 400m run
+
+---
+
+## Pool log - Cycle 1 Week 3
+Format: Exercise - Session - Date
 
 Hip adduction:
-- Hip Adductor Machine — PO2 — 2026-05-23
+- Hip Adductor Machine or Copenhagen Plank - Day 3 - 2026-06-14
 
 Hip abduction:
-- Hip Abductor Machine — C1 — 2026-05-22
-- Cable Hip Abduction — C3 — 2026-05-23
-- Banded Side Steps — PO4 — 2026-05-23
-- Side-Lying Hip Abduction @band — C4 — 2026-05-23
+- Banded Side Steps - Day 1 - 2026-06-14
 
 Posterior chain / lower back:
-- GHD Back Extension — PO4 — 2026-05-23
+- DB Romanian Deadlift - Day 1 - 2026-06-14
 
 ---
 
@@ -34,21 +46,18 @@ Posterior chain / lower back:
 
 | Movement | Load | Status | Source |
 |---|---|---|---|
-| Back Squat | — | ESTIMATED | to be confirmed C1 |
-| Hang Power Clean | — | ESTIMATED | to be confirmed C4 |
-| Bench Press | — | ESTIMATED | to be confirmed C2 |
-| Weighted Pull-Up | bodyweight first | ESTIMATED | to be confirmed C2/C3 |
-| Romanian Deadlift | — | ESTIMATED | — |
-| Push Press | — | ESTIMATED | to be confirmed C3 |
-| Front Squat | — | ESTIMATED | to be confirmed PO4 |
-| Sumo Deadlift | — | ESTIMATED | to be confirmed PO4 |
-| Conventional Deadlift | — | ESTIMATED | to be confirmed C3 |
+| Goblet Squat | To be confirmed Day 1 | ESTIMATED | W3 program-only |
+| DB Romanian Deadlift | To be confirmed Day 1 | ESTIMATED | W3 program-only |
+| DB Bench Press | To be confirmed Day 2 | ESTIMATED | W3 program-only |
+| DB Hang Power Clean | To be confirmed Day 3 | ESTIMATED | W3 program-only |
+| Pull-Up / Assisted Pull-Up | To be confirmed Day 3 | ESTIMATED | W3 program-only |
+| Running splits | To be confirmed Day 1 / Day 3 | ESTIMATED | W3 program-only |
 
 ---
 
 ## Active flags
-- All loads ESTIMATED — no coached sessions run yet. C1 is the baseline session.
-- Online coaching client. Self-directed on PO sessions — run order may differ from build order.
-- Pool log reflects programming order, not execution order. Update from check-in after C1.
-- Basketball S&C focus — explosive work (Box Jumps, Broad Jumps, HPC) must appear in every coached session.
-- Diagnostic complete: 4-session test batch (C3, PO4, PO5, C4) confirmed no pool violations and no stacking.
+- Coach Jap changed Enosh to program-only for this build. Do not label this week online coaching.
+- All loading stays RPE-based until baselines are confirmed.
+- Basketball S&C focus remains active: power, running conditioning, landing quality, and repeat sprint capacity.
+- Collect 200m splits, total Day 3 time, and top sets before Week 4.
+

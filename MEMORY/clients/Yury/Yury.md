@@ -27,7 +27,7 @@ Communication Channel: Trainerize
 
 ## SERVICE PROFILE
 Service Tier: Personal Training
-Program Name: Cycle 12 — Advanced Strength + Conditioning
+Program Name: Cycle 25 - Advanced Strength + Conditioning
 Session Frequency: —
 Session Days: —
 Training Environment: Urban Strong
@@ -125,9 +125,9 @@ Deadline / Event: —
 ---
 
 ## ACTIVE RECORD
-Current Cycle Goal: Advanced strength + conditioning — Cycle 12
-Current Phase / Week: Cycle 12 (last session on file)
-Current Program File: /OUTPUTS/programs/Yury/
+Current Cycle Goal: Advanced strength + conditioning - Cycle 25
+Current Phase / Week: Cycle 25 / Day 7 start
+Current Program File: /OUTPUTS/programs/Yury/Yury-Cycle25-Day7-Start.md
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -136,4 +136,5 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
+2026-06-14 - Cycle updated to Cycle 25 by Coach Jap instruction. Current file starts at Day 7 and covers Day 7 through Day 11 for this week. Build Day 12 onward from logged loads and metcon times.
 2026-05-19 — Profile migrated to structured schema. Highest-cycle client in the roster — Cycle 12 confirms long-term coaching relationship. Confirm full legal name. Log 1RM values and test-out results — test-out sessions are visible in Cycle 12 file but PR values not extracted to this record yet. Accumulated training history over 12 cycles means injury history is worth documenting explicitly. High trust = programming intensity can be pushed.

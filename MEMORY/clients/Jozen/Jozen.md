@@ -121,8 +121,8 @@ Deadline / Event: —
 
 ## ACTIVE RECORD
 Current Cycle Goal: Strength + Hypertrophy + Work Capacity — Cycle 4
-Current Phase / Week: Cycle 4 / Week 1 (rebuilding from correct hotel gym spec)
-Current Program File: /OUTPUTS/programs/Jozen/
+Current Phase / Week: Cycle 4 / Week 3
+Current Program File: /OUTPUTS/programs/Jozen/Jozen-Cycle4-Week3.md
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -131,5 +131,6 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
+2026-06-14 - Week 3 built from Raw-Files/Jozen_Training_Track_Handoff.md. Week 2 file is not present in this workspace; keep flagged until found or rebuilt.
 2026-05-30 — Profile corrected from handoff file. Age 40, Female, Hotel Gym confirmed by Jap. Equipment list updated from Raw-Files/Jozen_Training_Track_Handoff.md. Cycle 4 started. S1–S3 (previous Jnoah builds) were wrong format and wrong equipment — replaced by Jozen-Cycle4-Week1.md. Smith Machine = hotel gym constraint, not movement restriction.
 2026-05-19 — Profile migrated to structured schema. Progress photo (IMG_5124.JPG) on file in references/. Confirm full legal name. Three cycles established — long-term client.

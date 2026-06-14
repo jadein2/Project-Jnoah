@@ -26,7 +26,7 @@ Communication Channel: Trainerize
 ---
 
 ## SERVICE PROFILE
-Service Tier: Online Coaching (Coached Sessions + Program Only)
+Service Tier: Program Only
 Program Name: Cycle 1 — Basketball S&C + Physique
 Session Frequency: —
 Session Days: —
@@ -120,8 +120,8 @@ Deadline / Event: —
 
 ## ACTIVE RECORD
 Current Cycle Goal: Basketball S&C + Physique — Cycle 1 Foundation Block
-Current Phase / Week: Cycle 1 / Week 1
-Current Program File: /OUTPUTS/programs/Enosh/
+Current Phase / Week: Cycle 1 / Week 3
+Current Program File: /OUTPUTS/programs/Enosh/Enosh-Cycle1-Week3-ProgramOnly.md
 Last Session Date: —
 Last Check-In Date: —
 Last Decision Tag: —
@@ -130,4 +130,5 @@ Last Monthly Review: —
 ---
 
 ## COACH NOTES
+2026-06-14 - Coach Jap changed this build to program-only, no online coaching. Week 3 built with 3 self-directed sessions and 2 running-conditioning exposures. Collect 200m splits, Day 3 total time, top sets, and movement notes before Week 4.
 2026-05-22 — Profile created. Online coaching client. Age 22, 180 lbs, male. Goal: basketball S&C + physique. Full equipment access (globo + CrossFit gym). Confirm last name, injury history, and movement baselines at first coached session. Load all sessions RPE-based until 1RM is established. Basketball metric to track: vertical jump.

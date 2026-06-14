@@ -82,7 +82,7 @@ When you get a task: read this file → consult ROUTER.md → load relevant bran
 - `/ENGINES/design/` — design-brief.md, design-engine.md, carousel.md
 - `/ENGINES/coach-jap/` — training-program.md, nutrition-plan.md, wod-brain.md, program-state-template.md
 - `/ENGINES/client/` — client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md, adhere-compliance.md
-- `/ENGINES/marketing/` — campaign.md
+- `/ENGINES/marketing/` — marketing-engine.md (master — entry point for all marketing work), strategy.md, campaign.md (execution arm), experiments.md, performance.md. State: /MEMORY/marketing/ (strategy-state.md, experiments-log.md)
 - `/ENGINES/sales/` — offer-engine.md, sales-engine.md
 - `/ENGINES/web/` — wix.md
 - `/ENGINES/research/` — research-engine.md
@@ -135,6 +135,7 @@ Keep this file under 200 lines. When it grows past that, extract the heaviest se
 ---
 
 ## Last updated
+2026-06-12 — Marketing engine unification (Option B): /ENGINES/marketing/ now a 5-file suite (marketing-engine.md master + strategy/campaign/experiments/performance). First two agents created in /.claude/agents/. Research base: /RESEARCH/marketing/.
 2026-06-10 — Self-learning loop added (learn ritual + /MEMORY/lessons-learned.md + LINT.md drift check). Commands: `log lesson`, `lint jnoah`. END ritual in CHATS.md now includes a lessons check.
 2026-06-09 — /ENGINES/6fix/ added to engine list (moved from OUTPUTS/programs/6FIX — product system, not client sessions).
 2026-06-01 — Engine list corrected: categorized by folder, 3 missing engines added (adhere-compliance.md, design-engine.md, program-state-template.md). Emoji removed from URBN blurb.

@@ -759,12 +759,14 @@ When files or rules conflict:
 
 ## Output destination
 
-- Single sessions → `/OUTPUTS/programs/[client-name]/YYYY-MM-DD-session.md`
-- Weekly blocks → `/OUTPUTS/programs/[client-name]/YYYY-MM-DD-week-X.md`
-- Full cycles → `/OUTPUTS/programs/[client-name]/YYYY-MM-DD-cycle-[goal].md`
-- Group class → `/OUTPUTS/programs/group-class/YYYY-MM-DD-week-X.md`
+Naming follows the "Output file format rule" above — `YYYY-MM-DD` date-prefixed names are retired.
+
+- Weekly blocks (3+ sessions/week — the default) → `/OUTPUTS/programs/[client-name]/[ClientName]-[CycleLabel]-Week[N].md`
+- Individual sessions (1–2 sessions/week — rare exception) → `/OUTPUTS/programs/[client-name]/[ClientName]-[CycleLabel]-Week[N]-Day[N]-[descriptor].md`
+- Group class → `/OUTPUTS/programs/group-class/[GroupName]-[CycleLabel]-Week[N].md`
 
 ---
 
 ## Last updated
+2026-06-14 — Output destination section (was lines 760-765) rewritten to match the Output file format rule (2026-05-30) — retired `YYYY-MM-DD`-prefixed naming, now `[ClientName]-[CycleLabel]-Week[N].md`. Resolves 2026-06-12 lessons-learned PENDING item. ROUTER.md Programs row updated to match.
 2026-05-21 — Simple format added as PT default. Standard available on explicit request ("standard format"). Format B renamed to Format B — Simple / Format B — Standard. Quick commands updated.

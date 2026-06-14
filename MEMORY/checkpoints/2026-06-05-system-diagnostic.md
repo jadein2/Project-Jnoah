@@ -151,15 +151,15 @@ Registry status:
 
 Mismatch:
 - STATE.md says "12 active" and still lists Jaedie Padua and Anthony in active-client quick status.
-- MEMORY/clients/registry.md marks Jaedie Padua and Anthony inactive and includes newer real clients: Aileen, Arianna Ramos, Fame Florendo, Karen Carandang.
+- MEMORY/clients/registry.md marks Jaedie Padua and Anthony inactive and includes newer real clients: Aileen, Arianna Ramos, Fame Florendo, Katrina Mae Carandang.
 
 Registry flags:
-- Karen Carandang full legal name needs verification.
+- Katrina Mae Carandang full legal name needs verification.
 - Mach legal name and Olympic 1RM values unconfirmed.
 - Em Tan brand assignment needs confirmation.
 - Jude shoulder restriction status needs confirmation.
 - Jozen DOCX source could not be extracted automatically.
-- Arianna, Fame, Karen have minimal profiles; full intake pending.
+- Arianna, Fame, Katrina Mae have minimal profiles; full intake pending.
 - Lenny, Lily, Anthony statuses need confirmation.
 
 ## Campaign Diagnostic

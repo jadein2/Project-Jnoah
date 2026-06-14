@@ -67,7 +67,13 @@
       "Bash(curl -s http://localhost:3000/)",
       "Bash(curl -s http://localhost:3000/lessons)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git fetch *)",
+      "Bash(git checkout *)",
+      "Bash(curl -s http://localhost:3000/api/campaigns -X POST -H \"Content-Type: application/json\" -d '{\"slug\":\"2026-06-urbn-rebrand-launch\",\"status\":\"ACTIVE\"}')",
+      "Bash(curl -s http://localhost:3000/api/outputs/qa -X POST -H \"Content-Type: application/json\" -d '{\"path\":\"carousel/2026-05-17-restart-ph-why-people-quit.md\",\"status\":\"pass\"}')",
+      "Bash(curl -s http://localhost:3000/api/outputs/qa -X POST -H \"Content-Type: application/json\" -d '{\"path\":\"carousel/2026-05-17-restart-ph-why-people-quit.md\",\"status\":\"fail\"}')"
     ]
   }
 }

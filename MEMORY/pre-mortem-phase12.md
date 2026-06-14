@@ -41,7 +41,7 @@ Confirm the actual live domain with Jap. Update wix.md Site header + all CTA ref
 **Where:** /MEMORY/clients/
 
 **Clients affected (original):** Jaedie-Padua · Anthony · Mach · Lenny-Calamba · Lily
-**Status update:** Jaedie, Anthony, Lenny, Lily confirmed INACTIVE — state files not required. Mach confirmed ACTIVE — state file created 2026-05-25. 3 new 6FIX clients (Arianna, Fame, Karen) also created. All current active clients with programming now have state files.
+**Status update:** Jaedie, Anthony, Lenny, Lily confirmed INACTIVE — state files not required. Mach confirmed ACTIVE — state file created 2026-05-25. 3 new 6FIX clients (Arianna, Fame, Katrina Mae) also created. All current active clients with programming now have state files.
 
 **What's happening:**
 training-program.md mandates reading program-state.md before every session: "Do not rely on session context or output file parsing alone." The 7–10 day rotation checklist in wod-brain.md also depends on the pool log inside state files. All 5 of these clients have no state file.
@@ -58,7 +58,7 @@ Create state files for all 5 using the template at /ENGINES/coach-jap/program-st
 
 **Where:** /MEMORY/clients/registry.md (flags section)
 
-**Clients:** Arianna Ramos · Fame Florendo · Karen Carandang (name corrected from "Katrina")
+**Clients:** Arianna Ramos · Fame Florendo · Katrina Mae Carandang (name corrected from "Katrina")
 
 **What's happening:**
 Registry flags note "folders exist on Desktop with no files." There are no folders for these clients in /MEMORY/clients/ at all. Their existence is only in a flag note.
@@ -69,7 +69,7 @@ If any programming or nutrition work is requested for these clients, the system 
 **Fix:**
 Confirm status with Jap. If active: create folders and build profiles using client-profile.md schema. If inactive or never onboarded: remove from the registry flags or mark explicitly as "not onboarded."
 
-**Resolution:** Jap confirmed all 3 are active 6FIX Phase 1 clients. Folders and profiles created for all 3. "Katrina" corrected to "Karen" — legal name flag retained. Registry restructured with Active / Inactive / Test/Dummy sections. Mach also moved to Nutrition + Program. program-state.md files created for all 3.
+**Resolution:** Jap confirmed all 3 are active 6FIX Phase 1 clients. Folders and profiles created for all 3. "Katrina" corrected to "Katrina Mae" — legal name flag retained. Registry restructured with Active / Inactive / Test/Dummy sections. Mach also moved to Nutrition + Program. program-state.md files created for all 3.
 
 ---
 

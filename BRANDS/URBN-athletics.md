@@ -237,6 +237,12 @@ Secondary CTAs:
 - Ask about the Pioneer rate
 - Book your assessment
 - Join the next PFT
+- Reserve a Free Trial
+
+Offer naming rule (locked 2026-06-12 — never conflate these two):
+
+- **Pioneer rate** — for NEW members acquired from the soft-opening marketing effort onward.
+- **Founding Member Rate** — for PREVIOUS Urban Strong Fitness clients only (comeback offer). Closed Jun 22, 2026 — no extensions.
 
 Avoid CTAs that sound cheap or desperate:
 

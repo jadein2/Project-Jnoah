@@ -82,7 +82,7 @@ When you get a task: read this file → consult ROUTER.md → load relevant bran
 - `/ENGINES/design/` — design-brief.md, design-engine.md, carousel.md
 - `/ENGINES/coach-jap/` — training-program.md, nutrition-plan.md, wod-brain.md, program-state-template.md
 - `/ENGINES/client/` — client-onboarding.md, discovery-call.md, check-in.md, client-agreement.md, program-only-flow.md, client-profile.md, handoff-trainerize.md, adhere-compliance.md
-- `/ENGINES/marketing/` — campaign.md
+- `/ENGINES/marketing/` — marketing-engine.md (master — entry point for all marketing work), strategy.md, campaign.md (execution arm), experiments.md, performance.md. State: /MEMORY/marketing/ (strategy-state.md, experiments-log.md). Agents (Claude Code only, /.claude/agents/): marketing-strategist, campaign-performance-analyst
 - `/ENGINES/sales/` — offer-engine.md, sales-engine.md
 - `/ENGINES/web/` — wix.md
 - `/ENGINES/research/` — research-engine.md

@@ -1,76 +1,61 @@
-# Yury — Program State
-Last updated: 2026-05-30
-Updated by: Cycle 13 Week 1 build
+# Yury - Program State
+Last updated: 2026-06-14
+Updated by: Cycle 25 Day 7 start build
 
 ---
 
 ## Cycle position
-Cycle name: Cycle 13 — Advanced Strength + Conditioning
-Sessions built: Week 1 — all 5 sessions consolidated in Yury-Cycle13-Week1.md
-Current program file: /OUTPUTS/programs/Yury/Yury-Cycle13-Week1.md
-Sessions pending: Week 2 — pending feedback on Week 1
-Cycle week: W1
+Cycle name: Cycle 25 - Advanced Strength + Conditioning
+Current program file: /OUTPUTS/programs/Yury/Yury-Cycle25-Day7-Start.md
+Sessions built: Day 7 through Day 11 for this week
+Sessions pending: Day 12 onward - pending feedback and logged baselines
+Cycle week: Day 7 start
 
 ---
 
 ## Session structure
-5 coached sessions per week (Jap present every session).
+5 coached sessions per week, Jap present every session.
 
-- Day 1: Olympic Lifting (Clean & Jerk — alternates with Snatch per cycle)
-- Day 2: Lower Body Strength + High Intensity Metcon
-- Day 3: Upper Body Push/Pull + Metcon
-- Day 4: Posterior Chain + Conditioning
-- Day 5: Full Body Closer (Power + Gymnastics + Long Metcon)
+- Day 7: Full Body Mixed
+- Day 8: Posterior Chain
+- Day 9: Olympic Snatch
+- Day 10: Upper Push/Pull
+- Day 11: Lower Body Strength
 
 ---
 
-## Pool log — Cycle 13 Week 1
-Format: Exercise — Session — Date
+## Pool log - Cycle 25 Day 7-11
+Format: Exercise - Session - Date
 
 Hip adduction:
-- Hip Adductor Machine — Day 2 — 2026-05-30
-- Copenhagen Plank Hold — Day 5 — 2026-05-30
+- Hip Adductor Machine - Day 8 - 2026-06-14
+- Copenhagen Plank Hold - Day 11 - 2026-06-14
 
 Hip abduction:
-- Hip Abductor Machine — Day 1 — 2026-05-30
-- Banded Side Steps — Day 4 — 2026-05-30
+- Banded Side Steps - Day 7 - 2026-06-14
 
 Posterior chain / lower back:
-- Roman Chair Back Extension — Day 2 — 2026-05-30
-- GHD Back Extension (2 sets, light) — Day 4 — 2026-05-30
+- GHD Back Extension - Day 11 - 2026-06-14
 
 ---
 
-## Load baselines — Cycle 13
+## Load baselines
 
 | Movement | Load | Status | Source |
 |---|---|---|---|
-| Clean & Jerk | To be confirmed Day 1 | ESTIMATED | Cycle 13 baseline |
-| Front Squat | To be confirmed Day 1 | ESTIMATED | Cycle 13 baseline |
-| Back Squat | To be confirmed Day 2 | ESTIMATED | Cycle 13 baseline |
-| Romanian Deadlift | To be confirmed Day 2 | ESTIMATED | Cycle 13 baseline |
-| Bench Press | To be confirmed Day 3 | ESTIMATED | Cycle 13 baseline |
-| Push Press | To be confirmed Day 3 | ESTIMATED | Cycle 13 baseline |
-| Weighted Pull-Up | To be confirmed Day 3 | ESTIMATED | Cycle 13 baseline |
-| Conventional Deadlift | To be confirmed Day 4 | ESTIMATED | Cycle 13 baseline |
-| Barbell Hip Thrust | To be confirmed Day 4 | ESTIMATED | Cycle 13 baseline |
-| Power Clean | To be confirmed Day 5 | ESTIMATED | Lighter than Day 1 C&J |
-
----
-
-## New this cycle
-- Broad Jump (Day 5) — plyometric baseline, note landing quality
-- Toes-to-Bar / KTC (Day 5) — gymnastics skill
-- Kneeling Landmine Press (Day 5) — pressing variation
-- Copenhagen Plank Hold (Day 5) — hip adduction pool, new variation
-- KB Sumo Deadlift High Pull (Day 4 metcon)
-- GHD Sit-Ups (Day 4 metcon)
+| Conventional Deadlift | To be confirmed Day 7 | ESTIMATED | Cycle 25 Day 7 |
+| Romanian Deadlift | To be confirmed Day 8 | ESTIMATED | Cycle 25 Day 8 |
+| Snatch | To be confirmed Day 9 | ESTIMATED | Cycle 25 Day 9 |
+| Back Squat | To be confirmed Day 9 / Day 11 | ESTIMATED | Cycle 25 |
+| Bench Press | To be confirmed Day 10 | ESTIMATED | Cycle 25 Day 10 |
+| Push Press | To be confirmed Day 10 | ESTIMATED | Cycle 25 Day 10 |
 
 ---
 
 ## Active flags
-- Long-term client (Cycle 13). Week 1 is full baseline calibration — record every load.
-- All sessions coached — Jap present every session.
-- Day 1 C&J: squat clean acceptable this week; assess front squat receiving position first.
-- Day 5 TTB/KTC: note where position breaks — kip vs strict, knee vs toes.
+- Cycle changed from Cycle 13 to Cycle 25 by Coach Jap instruction.
+- This week starts at Day 7, not Day 1.
+- Advanced client with full access. Intensity can be high, but no unlogged max testing in this build.
 - Do not reference training location in program files.
+- Log all working loads and metcon times; Day 12 onward should build from those logs.
+

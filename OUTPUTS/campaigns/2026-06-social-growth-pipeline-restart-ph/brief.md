@@ -1,7 +1,7 @@
 # Campaign Brief
 ## 2026-06 Social Growth + Pipeline — Restart PH
 
-**Status:** ACTIVE  
+**Status:** CLOSED EARLY (2026-06-12) — superseded by 2026-06-dm-first-pipeline-restart-ph. Close entry: /MEMORY/campaigns/campaign-performance.md. Reason: discovery-call funnel produced zero requests; DMs arrive via referral/free-trial entry instead.  
 **Brand:** Restart Fitness PH  
 **Built:** 2026-05-20  
 **Activated:** 2026-05-28  
