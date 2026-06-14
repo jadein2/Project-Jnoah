@@ -99,6 +99,6 @@ Close early. Supersede with **2026-06 DM-First Pipeline** (folder: 2026-06-dm-fi
 
 ## 2026-06 — URBN June Rebrand Launch (URBN Athletics)
 - Folder: /OUTPUTS/campaigns/2026-06-urbn-rebrand-launch
-- Objective: public rebrand + Soft Opening (Jun 11) + lead gen; commercial target 44 → 100 members.
+- Objective: public rebrand + Soft Opening (Jun 8) + lead gen; commercial target 44 → 100 members.
 - Targets to track (plan §12): inquiries, Free Assessment bookings/show-ups, On-Ramp sign-ups, Pioneer sales, PFT bookings, new memberships, member assessments, churn-risk flags, best post/CTA.
 - Status: DRAFT (plan + creative ready). Actuals: TBD — log weekly Jun 1–7 / 8–14 / 15–21 / 22–30.

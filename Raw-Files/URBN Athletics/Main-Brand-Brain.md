@@ -530,7 +530,7 @@ These details are included here because they affect public brand, sales, or roll
 - Comeback offer for old members: Pioneer Price
 - PFT: free testing promo to generate URBN HYBRID leads
 - Monthly member assessment: once per month, assigned coach, scheduled one week in advance
-- Soft Opening date: June 11, 2026
+- Soft Opening date: June 8, 2026
 - Tentative Grand Opening date: July 11, 2026
 - Current lease ends: end of June
 - Tentative move-out target: June 20-21

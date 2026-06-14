@@ -72,7 +72,7 @@ Cut the one 63s master into **three 9:16 vertical ads (15–25s each)**, one per
 - **Length:** 15–25s. Hook in the **first 2 seconds** (text + motion). Designed sound-off → **burned-in captions/text** required.
 - **Brand:** `URBN Athletics` wordmark; end card with **Built to Move Better** + the CTA.
 - **One CTA per ad.** **No peso prices** on the creative. Soft Opening / scarcity allowed as text.
-- **End card CTA frame** per ad (Reserve a Free Trial / Join the PFT / Book a Free Assessment) + "Olongapo · Soft Opening June 11."
+- **End card CTA frame** per ad (Reserve a Free Trial / Join the PFT / Book a Free Assessment) + "Olongapo · Soft Opening June 8."
 - **Deliverables per class:** 1× 9:16 (15s), 1× 9:16 (25s), 1× 1:1 (15s) = flexibility for testing.
 
 ## 6. Decisions to confirm (before we cut)
@@ -80,7 +80,7 @@ Cut the one 63s master into **three 9:16 vertical ads (15–25s each)**, one per
 2. **Objective / CTA mechanic:** (a) **Lead form** (name + contact + preferred time, employee follows up fast) — recommended for trials; or (b) **Click-to-Message** (DM, matches "ask inside") ; or (c) Traffic to a page. 
 3. **Budget & flight:** suggest a small test — e.g. ~₱300–500/day split across the 3 ads for 5–7 days from Soft Opening, then scale the winner. Confirm budget.
 4. **Geo/targeting:** Olongapo + ~10–15 km (Subic/Zambales). Confirm radius.
-5. **Timing:** launch with Soft Opening (Jun 11) so the free-trial offer is live.
+5. **Timing:** launch with Soft Opening (Jun 8) so the free-trial offer is live.
 
 ## 7. Build order (once confirmed)
 1. Editor cuts 3 vertical ads from the master per §4 (or I storyboard exact in/out points).

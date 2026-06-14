@@ -221,7 +221,7 @@ Separate brand from Restart. In-person coached gym. Source of truth: `/Raw-Files
 - Wants 1-on-1 or small crew → Personal Training / Small Group
 
 ### Schedules (reference)
-FIT45: Mon–Fri 6:30 AM / 3:15 PM (tentative) · URBN FIT: 9:15 AM, 4:15, 5:15, 7:15 PM · URBN HYBRID: 6:15 PM · Group On-Ramp: Tue/Thu 6 PM, Sat 10 AM. Soft Opening Jun 11 · Grand Opening (tentative) Jul 11 2026.
+FIT45: Mon–Fri 6:30 AM / 3:15 PM (tentative) · URBN FIT: 9:15 AM, 4:15, 5:15, 7:15 PM · URBN HYBRID: 6:15 PM · Group On-Ramp: Tue/Thu 6 PM, Sat 10 AM. Soft Opening Jun 8 · Grand Opening (tentative) Jul 11 2026.
 
 ---
 

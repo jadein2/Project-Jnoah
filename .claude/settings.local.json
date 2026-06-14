@@ -73,7 +73,17 @@
       "Bash(git checkout *)",
       "Bash(curl -s http://localhost:3000/api/campaigns -X POST -H \"Content-Type: application/json\" -d '{\"slug\":\"2026-06-urbn-rebrand-launch\",\"status\":\"ACTIVE\"}')",
       "Bash(curl -s http://localhost:3000/api/outputs/qa -X POST -H \"Content-Type: application/json\" -d '{\"path\":\"carousel/2026-05-17-restart-ph-why-people-quit.md\",\"status\":\"pass\"}')",
-      "Bash(curl -s http://localhost:3000/api/outputs/qa -X POST -H \"Content-Type: application/json\" -d '{\"path\":\"carousel/2026-05-17-restart-ph-why-people-quit.md\",\"status\":\"fail\"}')"
+      "Bash(curl -s http://localhost:3000/api/outputs/qa -X POST -H \"Content-Type: application/json\" -d '{\"path\":\"carousel/2026-05-17-restart-ph-why-people-quit.md\",\"status\":\"fail\"}')",
+      "Bash(curl -s -o /dev/null http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/api/clients -X POST -H \"Content-Type: application/json\" -d '{\"action\":\"status\",\"slug\":\"Jozen\",\"status\":\"ACTIVE\"}')",
+      "Bash(curl -s http://localhost:3000/api/clients -X POST -H \"Content-Type: application/json\" -d '{\"action\":\"status\",\"slug\":\"Jozen\",\"status\":\"PAUSED\"}')",
+      "Bash(curl -s http://localhost:3000/api/clients -X POST -H \"Content-Type: application/json\" -d '{\"action\":\"note\",\"slug\":\"Jozen\",\"note\":\"WAVE4 test note\"}')",
+      "Bash(ls -1 *.md *.ps1 *.bat)",
+      "Bash(tail -8 .gitignore)",
+      "Bash(curl -s \"http://localhost:3000/\")",
+      "Bash(node -e ' *)",
+      "Bash(grep -oE \"Only in legacy OneDrive vault: [^<\\\\\\\\\\\\\"]+\")",
+      "Bash(git commit -q -m ' *)"
     ]
   }
 }

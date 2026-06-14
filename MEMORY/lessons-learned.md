@@ -46,3 +46,8 @@ Entry format (greppable):
 - Correction: campaign plans and STATE treated "Pioneer rate" and "Founding Member Rate" as one renamed offer. Jap corrected: Pioneer = NEW members acquired from soft-opening marketing onward; Founding Member Rate = PREVIOUS Urban Strong Fitness clients only (comeback offer, closed Jun 22 firm).
 - Rule: the two offers never appear interchangeably. Founding posts address old Urban Strong clients explicitly; Pioneer posts address new prospects. Founding is dead after Jun 22 — never resurrect.
 - Routed to: /BRANDS/URBN-athletics.md (offer naming rule under CTAs)
+
+## [2026-06-15] ops | Canonical files can hold stale planned dates — confirm real-world facts with Jap
+- Correction: I concluded the URBN Soft Opening date was Jun 11 by trusting the canonical brand brain (Main-Brand-Brain.md) plus several recent plan files, and corrected brief.md/STATE to match. Jap corrected it: the real date was Jun 8. The brand brain held a stale *planned* date that never happened.
+- Rule: a date in a brand / plan / engine file may be a stale planned value, not what actually occurred. For real-world event facts (open / launch / ship / "happened on" dates), confirm with Jap before rewriting records. Never settle an event-fact conflict by "the most canonical file wins" — canonical files can be stale on real-world facts. Flag and ask.
+- Routed to: LINT.md (Rules — real-world event facts)

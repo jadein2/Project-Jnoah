@@ -248,7 +248,7 @@ FIT45 introduction push:
 
 Soft Opening date:
 
-- June 11, 2026
+- June 8, 2026
 
 Soft Opening campaign:
 

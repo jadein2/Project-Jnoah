@@ -1,6 +1,6 @@
 # URBN Athletics: Campaign Analysis and Full Implementation Plan
 
-**Prepared:** Sat Jun 13, 2026. **Campaign:** June Rebrand Launch (Soft Opening Jun 11 to Grand Opening Jul 11).
+**Prepared:** Sat Jun 13, 2026. **Campaign:** June Rebrand Launch (Soft Opening Jun 8 to Grand Opening Jul 11).
 **Voice:** no em or en dashes (hard rule). **Source material:** the `2026-06-urbn-rebrand-launch` folder.
 
 ---

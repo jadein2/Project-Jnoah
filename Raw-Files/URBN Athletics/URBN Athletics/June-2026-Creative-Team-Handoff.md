@@ -155,7 +155,7 @@ Top label:
 `SOFT OPENING`
 
 Headline:
-`URBN Athletics opens June 11`
+`URBN Athletics opens June 8`
 
 Support:
 `A new chapter for the same coaching-first community.`
@@ -168,7 +168,7 @@ Footer:
 
 **Caption**
 
-URBN Athletics Soft Opening is on June 11.
+URBN Athletics Soft Opening is on June 8.
 
 This is the next chapter of our coaching-first community. Same standard, clearer direction, and a stronger path for beginners, members, and performance-minded athletes.
 

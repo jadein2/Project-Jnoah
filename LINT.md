@@ -57,6 +57,11 @@ Show the full report, wait for go. After fixes: append one `[SYSTEM] — lint` l
 - brief.md beats STATE.md on campaign status. Program files beat registry.md on cycles.
   The artifact closest to the work wins; the index mirrors it.
 - Anything ambiguous gets flagged, not auto-resolved.
+- **Real-world event facts are Jap's to confirm.** A date an event actually happened
+  (open / launch / ship / "happened on") can be stale in a brand, plan, or engine file —
+  even the canonical brand brain may hold a *planned* date that never occurred. Never
+  settle an event-fact conflict by "most canonical file wins"; flag it and ask.
+  (Lesson 2026-06-15: trusted the brand brain's "Soft Opening Jun 11" — actual was Jun 8.)
 - **File ops on paths with `[brackets]`, em-dashes, or other special chars: use Node `fs`,
   never PowerShell `Copy-Item`** — PowerShell expands brackets as wildcards and silently
   copies nothing. Always verify a copy by listing the destination, never by exit status.
@@ -66,4 +71,5 @@ Show the full report, wait for go. After fixes: append one `[SYSTEM] — lint` l
 ---
 
 ## Last updated
+2026-06-15 — Added Rule: real-world event facts are Jap's to confirm (canonical files can hold stale planned dates). From lesson 2026-06-15 (Soft Opening Jun 11 vs actual Jun 8).
 2026-06-10 — Created (self-learning loop Phase A). Eight checks defined.

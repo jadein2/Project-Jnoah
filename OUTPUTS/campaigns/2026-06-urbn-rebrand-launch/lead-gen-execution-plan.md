@@ -1,6 +1,6 @@
 # URBN Athletics — 3-Week Lead-Gen → Member Execution Plan
 
-**Window:** Soft Opening (Jun 11) → ~Grand Opening (Jul 11) · **Goal:** acquire leads → convert to paying Founding Members.
+**Window:** Soft Opening (Jun 8) → ~Grand Opening (Jul 11) · **Goal:** acquire leads → convert to paying Founding Members.
 **Strategy base:** `lead-to-member-strategy-framework.md` · **Ads:** `video-ads-plan.md` · **Pricing:** `pricing-plan.md`
 **Coverage:** Jap + employee, **8am–6pm** live follow-up · after-hours = auto-reply + 8am action.
 **Locked offers:** Founding Member status · Value stack (PFT/InBody + nutrition guide + friend pass) · Show-Up Guarantee (show-up-or-free) · 6-Week Kickstart Challenge. **20% = deadline, not the hook.**

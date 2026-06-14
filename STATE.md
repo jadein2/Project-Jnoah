@@ -22,7 +22,7 @@ Last updated: 2026-06-14
 - **restartfitnessph.com** - domain not live yet (planned).
 - **Story-Driven + 6FIX Launch campaigns** - DRAFT, not yet pushed to ClickUp.
 - **P1-1 legacy vault — half done.** Legacy OneDrive OUTPUTS archived to OUTPUTS-ARCHIVED (2026-06-15) so stray writes break loudly; marker note left at legacy root. Remaining (Jap): retire/move the old Cowork chat still attached to the OneDrive project. **P1-3 (API key rotation)** also still pending Jap.
-- **URBN Soft Opening date** — RESOLVED 2026-06-15: actual date is **Jun 8** (confirmed by Jap). The Jun 8 campaign artifacts were right all along. Stale "Jun 11" now lives in: Main-Brand-Brain.md (canonical brand brain), offer-engine.md, week-2-plan.md, video-ads-plan.md, lead-gen-execution-plan.md, URBN-campaign-plan-and-implementation.md, brief-2026-06-14.md — correct these when convenient (brand brain first, it's canonical).
+- **URBN Soft Opening date** — RESOLVED 2026-06-15: actual date is **Jun 8** (confirmed by Jap). Swept Jun 11→Jun 8 across brand brain (×2), offer-engine, campaign-performance, video-ads, lead-gen, URBN-campaign-plan, brief-2026-06-14, Program-Architecture (×2), creative-handoff. **Still on Jun 11 (left intentionally — weekday/countdown structure assumes Thu Jun 11; Jun 8 is a Monday): week-2-plan.md + raw June-Marketing-Plan.md.** Those two need re-dating, not a string swap — reconcile or ask me to re-plan.
 
 ---
 
