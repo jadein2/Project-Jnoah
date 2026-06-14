@@ -22,7 +22,7 @@ Last updated: 2026-06-14
 - **restartfitnessph.com** - domain not live yet (planned).
 - **Story-Driven + 6FIX Launch campaigns** - DRAFT, not yet pushed to ClickUp.
 - **P1-1 legacy vault — half done.** Legacy OneDrive OUTPUTS archived to OUTPUTS-ARCHIVED (2026-06-15) so stray writes break loudly; marker note left at legacy root. Remaining (Jap): retire/move the old Cowork chat still attached to the OneDrive project. **P1-3 (API key rotation)** also still pending Jap.
-- **URBN Soft Opening date conflict** — brief.md/STATE say Jun 8; weekly brief-2026-06-14.md says Jun 11. Confirm the real date and align.
+- **URBN Soft Opening date** — RESOLVED 2026-06-15: actual date is Jun 11 (canonical brand brain + weekly brief). brief.md + STATE corrected. Stale "Jun 8" still in older campaign artifacts (captions, tarpaulin, calendar, pricing-plan, marketing-plan, TASKS, creative-handoff) — sweep when convenient; check tarpaulin wasn't already printed with Jun 8.
 
 ---
 
@@ -32,7 +32,7 @@ Last updated: 2026-06-14
 |---|---|---|---|---|
 | Content | 7 post concepts captured (4 conversion + 3 value) | Develop into full posts | Pending | 2026-05-18 |
 | Campaigns | Social Growth Pipeline - Week 1 | Week 1 launch marked done; monitor posting/DM response and log performance | ACTIVE | 2026-06-05 |
-| Campaigns (URBN) | Soft Opening Jun 8 done — assets in market. Founding window open (closes Jun 22). Move-out Jun 20–21, HYROX Jun 27–29, Grand Opening Jul 11. | Build Grand Opening assets; monitor Founding conversions | ACTIVE - time-critical | 2026-06-11 |
+| Campaigns (URBN) | Soft Opening Jun 11 done — assets in market. Founding window open (closes Jun 22). Move-out Jun 20–21, HYROX Jun 27–29, Grand Opening Jul 11. | Build Grand Opening assets; monitor Founding conversions | ACTIVE - time-critical | 2026-06-11 |
 | Clients | Priority builds updated: Aira C3 W3, Em-Tan Phase3/D9-D12 under 80%, Jozen C4 W3, Yury C25 D7-D11, Enosh W3 Program Only | Collect load logs/feedback before next builds; Jozen W2 file missing | Active | 2026-06-14 |
 | Clients (6FIX P2) | Phase 2 plans + client-facing nutrition/training PDFs issued (Jen, Arianna, Katrina Mae); Fame Wk1 only | Await "GYM" opt-in; Fame intake; confirm Jen 2018 surgery type + Katrina real goal weight | Active | 2026-06-14 |
 | Sales/Web | restartfitnessph.com launch goal | Build site (8 pages, CTAs, DM funnel) | PENDING | - |
@@ -104,7 +104,7 @@ Confirm-status flags: **Lenny** (active?), **Lily** (no program on file), **Anth
 - 2026-06-10 - Self-learning loop Phase B: /lessons page + drift warnings on Today dashboard live. First lint run caught 11 legacy strays (corrected). PowerShell bracketed-path lesson logged and routed to LINT.md.
 - 2026-06-10 - Aira C3 W2 built (5 sessions). Power Clean 4→5 sets, D-21/D-22 abductor fix resolved. program-state.md updated.
 - 2026-06-09 - 6FIX engine relocated to /ENGINES/6fix/ (11 files). ROUTER.md updated. CLAUDE.md engine list updated.
-- 2026-06-08 - URBN Soft Opening executed Jun 8. Fame starting weight corrected to 192 lbs.
+- 2026-06-11 - URBN Soft Opening executed Jun 11 (corrected from Jun 8 — original plan date; canonical brand brain + weekly brief confirm Jun 11). Fame starting weight corrected to 192 lbs.
 - 2026-06-07 - URBN Founding Member Rate offer package complete: Policy v3, GC letter, Canva design brief, Agreement .docx (Option B clause).
 
 ---
