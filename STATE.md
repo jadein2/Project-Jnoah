@@ -21,6 +21,8 @@ Last updated: 2026-06-14
 - **URBN visual identity + public domain** - URBN brand file is now LIVE; pending only final logo/palette/type + domain before final visual assets ship.
 - **restartfitnessph.com** - domain not live yet (planned).
 - **Story-Driven + 6FIX Launch campaigns** - DRAFT, not yet pushed to ClickUp.
+- **P1-1 legacy vault — half done.** Legacy OneDrive OUTPUTS archived to OUTPUTS-ARCHIVED (2026-06-15) so stray writes break loudly; marker note left at legacy root. Remaining (Jap): retire/move the old Cowork chat still attached to the OneDrive project. **P1-3 (API key rotation)** also still pending Jap.
+- **URBN Soft Opening date conflict** — brief.md/STATE say Jun 8; weekly brief-2026-06-14.md says Jun 11. Confirm the real date and align.
 
 ---
 
